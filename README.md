@@ -1,34 +1,6 @@
-# MM-DOCS Template
-
-[![Build status](https://ci.appveyor.com/api/projects/status/1sybv5w5lgywnwc4?svg=true)](https://ci.appveyor.com/project/majkinetor/mm-docs-template)
-[![](http://transparent-favicon.info/favicon.ico)](#)
-[![](http://transparent-favicon.info/favicon.ico)](#)
-[VIEW DEMO](https://majkinetor.github.io/mm-docs-template)
-
-This project is used to produce all forms of documentation for the service using Markdown and other repository friendly markup languages.
+# OneRemote Documentation
 
 The documentation is created using the [mm-docs](https://github.com/majkinetor/mm-docs) documentation bundle.
-
-View how compiled static site looks like on [demo site](https://majkinetor.github.io/mm-docs-template) or grab generated [artifact](https://ci.appveyor.com/project/majkinetor/mm-docs-template/build/artifacts). Check out [pdf export](https://majkinetor.github.io/mm-docs-template/docs.pdf) of [single demo page](https://majkinetor.github.io/mm-docs-template/demo).
-
-See entire docs as a [single page](https://majkinetor.github.io/mm-docs-template/print_page/) and/or [download](https://majkinetor.github.io/mm-docs-template/download/) it.
-
-## Features
-
-- Documentation in Markdown, HTML, PlantUML, MatJax
-- Beautiful responsive design using the [material](https://squidfunk.github.io/mkdocs-material) theme
-- Navigational bar, TOC, color themes, go-to-top, search and various rich presentation functionalities
-- Custom includables that can be imported in any page: footer, header, abbreviations etc.
-- Variables, Python macros and jinja templates
-- Multilanguage support
-- Keep documentation for multiple user groups in the same project and build only specific one
-- Fast PDF export and single page documentation site
-- Bad link checker for internal and external links
-- Metainformation for every page - last git modification date, source file, authors, etc.
-- GitLab/GitHub repository connection for editing within a browser
-- Automated AppVeyor build and deploy to GitHub pages using Ubuntu image
-- Live reload during editing
-- Cross platform for hosting and development with convenient optional PowerShell task system
 
 ## Prerequisites
 
