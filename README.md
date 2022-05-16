@@ -8,15 +8,16 @@ The documentation is created using the [mm-docs](https://github.com/majkinetor/m
   - For Windows Desktop use: `cinst docker-desktop`
 - PowerShell (optional)
   - [Invoke-Build](https://www.powershellgallery.com/packages/InvokeBuild) module
+    - or use included `./Invoke-Build.ps1` script in the repository root
 
 ## Usage
 
 Within PowerShell use `Invoke-Build` (ib):
 
-|       Command        |                                             Description                                              |
-| -------------------- | ---------------------------------------------------------------------------------------------------- |
-| `ib Build`           | Build static site, always set explicit version env var, for example `$Env:MM_DOCS_VERSION = '0.2.2'` |
-| `ib Run -aPort 8888` | Serve static site on port 8888 (default is 8000)<br>This enables concurrent use on several projects  |
+|  Command   |            Description             |
+| ---------- | ---------------------------------- |
+| `ib Build` | Build static site                  |
+| `ib Run`   | Serve static site with live reload |
 
 Otherwise, run appropriate docker commands:
 
