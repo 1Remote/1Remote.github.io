@@ -1,3 +1,3 @@
-# PREmoteM Documentation
+# OneRemote Documentation
 
 TODO
