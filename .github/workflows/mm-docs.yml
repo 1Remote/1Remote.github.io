@@ -1,0 +1,28 @@
+name: mm-docs
+on: [push]
+jobs:
+  Build:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        shell: pwsh
+    steps:
+      - uses: actions/checkout@v3
+      - run: ./Invoke-Build.ps1 Build
+      - run: ./Invoke-Build.ps1 Run, ExportPdf, Stop
+      - name: Upload Artifact - PDF
+        uses: actions/upload-artifact@v2
+        with:
+          name: pdf
+          path: ./source/pdf/docs.pdf
+      - name: Upload Artifact - Site
+        uses: actions/upload-artifact@v2
+        with:
+          name: site
+          path: ./source/site
+      - name: GitHub Pages
+        uses: crazy-max/ghaction-github-pages@v2.6.0
+        with:
+          build_dir: ./source/site
+    env:
+      GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
