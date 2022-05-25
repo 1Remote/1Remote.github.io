@@ -125,8 +125,7 @@ plugins:
         enumerate_headings: false
         enumerate_figures: true
         include_css: false
-        enabled: true
+        enabled: false
         exclude:
 nav:
 - Home: index.md
-- Download: download.md
