@@ -1,6 +1,6 @@
 ﻿# {{name}}
 
-{{name}} is a modern remote access manager and connection launcher for Windows OS. It comes integrated with a number of different protocols but also provides extensibility options via existing CLI tools implementing any kind of protocol.
+{{name}} is a remote access manager and connection launcher for Windows OS. It comes integrated with a number of different protocols but also provides extensibility options via existing CLI tools implementing any kind of protocol.
 
 ## Features
 

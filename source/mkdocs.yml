@@ -1,9 +1,9 @@
-﻿site_name: OneRemote
+﻿site_name: 1Remote
 site_description: One Remote Access Manager to Rule Them All
-site_author: OneRemote Team
-copyright: © OneRemote Team 2022
+site_author: 1Remote Team
+copyright: © 1Remote Team 2022
 
-repo_url: https://github.com/OneRemote/docs
+repo_url: https://github.com/1Remote/docs
 edit_uri: edit/main
 
 dev_addr: 0.0.0.0:8000
@@ -40,7 +40,7 @@ extra_javascript:
 
 extra:
     url_prefix: !ENV MM_DOCS_URL_PREFIX
-    name: OneRemote
+    name: 1Remote
     shortname: 1RM
     social:
     - icon: dummy value to show social override
@@ -117,7 +117,7 @@ plugins:
         add_cover_page: true
         cover_page_template: pdf/cover_page.tpl
         # Table of contents
-        add_table_of_contents: true
+        add_table_of_contents: false
         toc_title: Content
         toc_depth: 2
         # Content-related
@@ -125,7 +125,7 @@ plugins:
         enumerate_headings: false
         enumerate_figures: true
         include_css: false
-        enabled: false
+        enabled: true
         exclude:
 nav:
 - Home: index.md
