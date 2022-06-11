@@ -3,8 +3,8 @@ site_description: One Remote Access Manager to Rule Them All
 site_author: 1Remote Team
 copyright: © 1Remote Team 2022
 
-repo_url: https://github.com/1Remote/docs
-edit_uri: edit/main
+repo_url: https://github.com/1Remote/1Remote.github.io
+edit_uri: blob/main/source/docs
 
 dev_addr: 0.0.0.0:8000
 
