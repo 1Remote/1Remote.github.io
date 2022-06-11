@@ -4,7 +4,7 @@ site_author: 1Remote Team
 copyright: © 1Remote Team 2022
 
 repo_url: https://github.com/1Remote/1Remote.github.io
-edit_uri: blob/main/source/docs
+edit_uri: edit/main/source/docs
 
 dev_addr: 0.0.0.0:8000
 
