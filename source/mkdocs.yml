@@ -6,25 +6,25 @@ copyright: © 1Remote Team 2022
 repo_url: https://github.com/1Remote/1Remote.github.io
 edit_uri: edit/main/source/docs
 
-dev_addr: 0.0.0.0:8000
+dev_addr: 127.0.0.1:8000
 
 theme:
-    custom_dir: overrides
-    features:
-        - navigation.expand
-        - navigation.instant
-        - navigation.top
-        - navigation.indexes
-    name: material
-    palette:
-        - scheme: default
-          toggle:
-              icon: material/lightbulb-outline
-              name: Switch to dark mode
-        - scheme: slate
-          toggle:
-              icon: material/lightbulb
-              name: Switch to light mode
+  custom_dir: overrides
+  features:
+    - navigation.expand
+    - navigation.instant
+    - navigation.top
+    - navigation.indexes
+  name: material
+  palette:
+    - scheme: default
+      toggle:
+        icon: material/lightbulb-outline
+        name: Switch to dark mode
+    - scheme: slate
+      toggle:
+        icon: material/lightbulb
+        name: Switch to light mode
 
 extra_css:
   - _extra/css/extra.css
@@ -37,95 +37,119 @@ extra_javascript:
   - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
   - https://unpkg.com/tablesort@5.3.0/dist/tablesort.min.js
 
-
 extra:
-    url_prefix: !ENV MM_DOCS_URL_PREFIX
-    name: 1Remote
-    shortname: 1RM
-    social:
+  url_prefix: !ENV MM_DOCS_URL_PREFIX
+  name: 1Remote
+  shortname: 1RM
+  social:
     - icon: dummy value to show social override
 
 # https://github.com/Python-Markdown/markdown/wiki/Third-Party-Extensions
 markdown_extensions:
-    # PyMdown extensions: https://python-markdown.github.io/extensions
-    - toc:
-        permalink: ↵
-    - abbr
-    - admonition
-    - attr_list
-    - codehilite
-    - def_list
-    - footnotes
-    - md_in_html
-    - meta
-    - sane_lists
-    - tables
+  # PyMdown extensions: https://python-markdown.github.io/extensions
+  - toc:
+      permalink:
+  - abbr
+  - admonition
+  - attr_list
+  - codehilite
+  - def_list
+  - footnotes
+  - md_in_html
+  - meta
+  - sane_lists
+  - tables
 
-    # PyMdown Extensions extensions: https://facelessuser.github.io/pymdown-extensions/
-    - pymdownx.arithmatex:
-        generic: true
-    - pymdownx.betterem:
-        smart_enable: all
-    - pymdownx.caret
-    - pymdownx.critic
-    - pymdownx.details
-    - pymdownx.emoji:
-        emoji_index: !!python/name:materialx.emoji.twemoji
-        emoji_generator: !!python/name:materialx.emoji.to_svg
-    - pymdownx.inlinehilite
-    - pymdownx.keys
-    - pymdownx.magiclink
-    - pymdownx.mark
-    - pymdownx.superfences:
-        custom_fences:
-          - name: mermaid
-            class: mermaid
-            format: !!python/name:pymdownx.superfences.fence_code_format
-    - pymdownx.smartsymbols
-    - pymdownx.tabbed:
-        alternate_style: true
-    - pymdownx.tasklist:
-        custom_checkbox: true
-    - pymdownx.tilde
+  # PyMdown Extensions extensions: https://facelessuser.github.io/pymdown-extensions/
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.betterem:
+      smart_enable: all
+  - pymdownx.caret
+  - pymdownx.critic
+  - pymdownx.details
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
+  - pymdownx.inlinehilite
+  - pymdownx.keys
+  - pymdownx.magiclink
+  - pymdownx.mark
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.smartsymbols
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.tilde
 
-    # Extra extensions
-    - markdown_include.include:
-        base_path: inc
-    - plantuml_markdown:
-        cachedir: __pycache__
+  # Extra extensions
+  - markdown_include.include:
+      base_path: inc
+  - plantuml_markdown:
+      cachedir: __pycache__
 
 plugins:
-    - exclude:
-        glob: _*.md
-    - macros:
-        include_dir: inc
-    - search:
-        language: en    # https://squidfunk.github.io/mkdocs-material/getting-started/#language
-    - tags:
-        tags_file: tags.md
-    - pdf-export:
-        verbose: false
-        media_type: print
-        enabled_if_env: MM_DOCS_ENABLE_PDF_EXPORT
-        combined: false
-    - print-site: #https://github.com/timvink/mkdocs-print-site-plugin/blob/master/docs/options.md
-        add_to_navigation: false
-        print_page_title: 'Print Site'
-        # Banner and cover
-        add_print_site_banner: true
-        print_site_banner_template: pdf/banner.tpl
-        add_cover_page: true
-        cover_page_template: pdf/cover_page.tpl
-        # Table of contents
-        add_table_of_contents: false
-        toc_title: Content
-        toc_depth: 2
-        # Content-related
-        add_full_urls: true
-        enumerate_headings: false
-        enumerate_figures: true
-        include_css: false
-        enabled: true
-        exclude:
+  - exclude:
+      glob: _*.md
+  - macros:
+      include_dir: inc
+  - search:
+      language: en # https://squidfunk.github.io/mkdocs-material/usage/#language
+  - tags:
+      tags_file: tags.md
+  - pdf-export:
+      verbose: false
+      media_type: print
+      enabled_if_env: MM_DOCS_ENABLE_PDF_EXPORT
+      combined: false
+  - print-site: #https://github.com/timvink/mkdocs-print-site-plugin/blob/master/docs/options.md
+      add_to_navigation: false
+      print_page_title: "Print Site"
+      # Banner and cover
+      add_print_site_banner: true
+      print_site_banner_template: pdf/banner.tpl
+      add_cover_page: true
+      cover_page_template: pdf/cover_page.tpl
+      # Table of contents
+      add_table_of_contents: false
+      toc_title: Content
+      toc_depth: 2
+      # Content-related
+      add_full_urls: true
+      enumerate_headings: false
+      enumerate_figures: true
+      include_css: false
+      enabled: true
+      exclude:
 nav:
-- Home: index.md
+  - Home: index.md
+  - Usage:
+      - Quick Start: usage/quick-start.md
+      - Servers management: usage/data-management.md
+      - Multi-Credential: usage/multi-credential.md
+      - Database:
+          - Data synchronization: usage/database/data-synchronization.md
+          - Use a online database: usage/database/use-a-online-database.md
+      - Protocol:
+          - Special:
+              - App: usage/protocol/special/app.md
+              - RemoteApp: usage/protocol/special/remoteapp.md
+              - Rdp in mstsc.exe mode: usage/protocol/special/rdp-in-mstsc-mode.md
+          - Runner: usage/protocol/runner.md
+      - Security: usage/security.md
+      - Team staff:
+          - Team sharing: usage/team/team-sharing.md
+          - Team deploy: usage/team/team-deploy.md
+      - Misc:
+          - Highline a server: usage/misc/highline-a-server.md
+          - Pre-open a VPN: usage/misc/open-a-vpn-before-connect.md
+          - Customized: usage/misc/customized.md
+  - Pricing: pricing.md
+  - Download: download.md
+  - Privacy Policy: privacy-policy.md
+  - About: about.md
