@@ -3,18 +3,25 @@ site_description: One Remote Access Manager to Rule Them All
 site_author: 1Remote Team
 copyright: © 1Remote Team 2022
 
-repo_url: https://github.com/1Remote/1Remote.github.io
+repo_url: https://github.com/1Remote/1Remote
 edit_uri: edit/main/source/docs
 
 dev_addr: 127.0.0.1:8000
 
+hide:
+  #   - navigation
+  - toc
 theme:
   custom_dir: overrides
   features:
-    - navigation.expand
+    # - navigation.expand
     - navigation.instant
-    - navigation.top
+    - navigation.top # Back-to-top button
     - navigation.indexes
+    - navigation.tabs
+    # - navigation.tabs.sticky # tab will not auto hide
+    - navigation.sections
+    - navigation.tracking
   name: material
   palette:
     - scheme: default
@@ -31,8 +38,10 @@ extra_css:
   - _extra/css/pdf.css
 
 extra_javascript:
+  - _extra/js/jquery-3.6.0.min.js
   - _extra/js/mathjax.js
   - _extra/js/tablesort.js
+  - _extra/js/click-image.js
   - https://polyfill.io/v3/polyfill.min.js?features=es6
   - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
   - https://unpkg.com/tablesort@5.3.0/dist/tablesort.min.js
@@ -129,10 +138,15 @@ plugins:
 nav:
   - Home: index.md
   - Usage:
-      - Quick Start: usage/quick-start.md
-      - Servers management: usage/data-management.md
-      - Multi-Credential: usage/multi-credential.md
-      - Database:
+      - Basic:
+          - Quick Start: usage/quick-start.md
+          - Overview: usage/management.md
+          - Launcher:
+              - Basic: usage/launcher/basic.md
+              - Quick connect: usage/launcher/quick-connect.md
+      - Alternative-Credential: usage/alternative-credential.md
+      - Database & Security:
+          - Security: usage/database/security.md
           - Data synchronization: usage/database/data-synchronization.md
           - Use a online database: usage/database/use-a-online-database.md
       - Protocol:
@@ -141,7 +155,6 @@ nav:
               - RemoteApp: usage/protocol/special/remoteapp.md
               - Rdp in mstsc.exe mode: usage/protocol/special/rdp-in-mstsc-mode.md
           - Runner: usage/protocol/runner.md
-      - Security: usage/security.md
       - Team staff:
           - Team sharing: usage/team/team-sharing.md
           - Team deploy: usage/team/team-deploy.md

@@ -1,5 +1,37 @@
 
-### Data Backup and Synchronization
+You may work with multiple devices to manage your servers. In this case, you can use the database synchronization settings to share server information across different devices.
+
+## By export
+
+Nothing to talk about, export, copy to other device, import...over.
+
+## Sqlite Synchronization
+
+- Our main database is a un-occupied Sqlite database, so you can copy the database while 1Remote is still in used.
+- We will check update and reload data every X minutes.
+
+This means you can copy the database to other device using sync tools, and 1Remote will automatically detect the change and run a data reload procedure.
+
+> please do not remove the database file while 1Remote is still in used.
+
+!!! tip
+    In `Options` -> `Database` -> `Local` -> `Edit`, you can check up where your database file is. 
+
+    You can also change the db path there.
+
+![sqlite](img/sqlite-edit.jpg)
+
+
+recommended tools:
+
+- Synology NAS: [Cloud Station](https://www.synology.com/en-us/dsm/feature/cloud_station)
+- Google Drive: [Google Drive](https://www.google.com/drive/)
+- OneDrive: [OneDrive](https://www.onedrive.com/)
+- Jianguoyun: [Jianguoyun](https://www.jianguoyun.com/)
+
+## By using MySQL
+
+
 
 - Data export: By selecting multiple servers using the checkboxes and clicking the `Export` button at the bottom of the main window, you can export the server information to a JSON file. (Note that the exported data is stored in plain text, so please handle it with care.)
 - Database backup: Click the **`Settings`** button in the top right corner of the main window, expand the menu, select the **`Options`** button, and go to the Database tab. Find the database named "Local" and you can see its storage path. You can manually enter this path to backup the database.

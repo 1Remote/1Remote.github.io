@@ -37,7 +37,7 @@ Use one of the following methods to install the application:
 Free for personal use.
 Team and Enterprise pricing available. -->
 
-### Quick start
+## Quick start
 
 1. Open 1Remote.exe, open the main window.
 
