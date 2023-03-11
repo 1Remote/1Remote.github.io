@@ -13,6 +13,9 @@ hide:
   - toc
 theme:
   custom_dir: overrides
+  icon:
+    logo: material/library-shelves
+  logo: img/logo.png
   features:
     # - navigation.expand
     - navigation.instant
@@ -148,20 +151,20 @@ nav:
       - Database & Security:
           - Security: usage/database/security.md
           - Data synchronization: usage/database/data-synchronization.md
-          - Use a online database: usage/database/use-a-online-database.md
+          - Use online database: usage/database/use-online-database.md
       - Protocol:
-          - Special:
-              - App: usage/protocol/special/app.md
-              - RemoteApp: usage/protocol/special/remoteapp.md
-              - Rdp in mstsc.exe mode: usage/protocol/special/rdp-in-mstsc-mode.md
+          - Especial:
+              - App: usage/protocol/especial/app.md
+              - RemoteApp: usage/protocol/especial/remoteapp.md
+              - Rdp in mstsc.exe mode: usage/protocol/especial/rdp-in-mstsc-mode.md
           - Runner: usage/protocol/runner.md
-      - Team staff:
+      - Team (experimental):
           - Team sharing: usage/team/team-sharing.md
           - Team deploy: usage/team/team-deploy.md
       - Misc:
           - Highline a server: usage/misc/highline-a-server.md
           - Pre-open a VPN: usage/misc/open-a-vpn-before-connect.md
-          - Customized: usage/misc/customized.md
+        #   - Customized: usage/misc/customized.md
   - Pricing: pricing.md
   - Download: download.md
   - Privacy Policy: privacy-policy.md

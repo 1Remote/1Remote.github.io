@@ -1,15 +1,42 @@
-# Team sharing
 
-A typical use case is when you need to manage your personal servers (e.g. blog server, online photo server), as well as several servers in your team for work. You may face the following challenges:
+## Why
 
-!!! warning "Challenges"
-        - Your personal servers are not willing to share with others.
-        - Your team's servers need to be shared among several colleagues.
-        - Only you and your boss can add and modify servers, while other colleagues can only view the servers listed, they are not able to edit them or see the password.
+![team](./img/team-demo.png)
 
-In this case, how can you manage your servers flexibly? 1Remote provides a solution for this problem: you can connect to multiple databases at the same time, and different access permissions can be set for different people:
+Assuming you are the team leader. In your company, you may have several servers to manage, AI Servers are for the AI team, while Web Servers are for the Web team.
 
-- Your personal server information is stored in the default **`Local`** database, which only you can see and use.
-- The team's servers are stored in a MySQL database named **`Team.`** You and your boss can connect with an administrator account to add and modify servers, while other colleagues can only read the server list with a read-only account.
+A typical use case is:
 
-![create accounts](img/team-sharing-create-account.jpg)
+- Only you and your boss have the permission to add and modify servers, while other colleagues can only view the servers listed, they are not able to edit them or see the password.
+- AI team member can only access the AI servers, while Web team member can only access the Web servers.
+
+With the help of readonly account of MySQL, 1Remote can help you manage the servers flexibly.
+
+| Account                | Connect | View address | Edit | Delete | View password |
+| ---------------------- | ------- | ------------ | ---- | ------ | ------------- |
+| Select permission only | ✅       | ✅            | ❌    | ❌      | ❌             |
+| Full permission        | ✅       | ✅            | ✅    | ✅      | ✅             |
+
+## How
+
+1. Create two accounts in MySQL, giving them different permissions:
+
+    ![create accounts](img/team-sharing-create-account.jpg)
+
+    In database "test", account 'writable' can insert and update data, while account 'readonly' can only select data.
+
+2. You can connect to `test` database with account `writable`, and import servers into the database.
+3. Your team member connect to `test` database with account `readonly`, they will not able to edit the servers, but they can view the servers and connect to them.
+
+    Connection shows `Readonly`:
+
+    ![readonly-connected](img/readonly-connected.jpg)
+
+    Edit button of team member is disabled:
+
+    ![readonly-connected-server](img/readonly-connected-server-list.jpg)
+
+4. Once you edit the servers, the team member will see the changes in a few seconds.
+
+!!! warning
+    This app does not use concurrency locks on data editing, so if you modify the database on 2 devices at the same time, data loss may occur. Please try to avoid this situation.
