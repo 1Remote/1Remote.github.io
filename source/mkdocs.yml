@@ -164,7 +164,8 @@ nav:
       - Misc:
           - Highline a server: usage/misc/highline-a-server.md
           - Pre-open a VPN: usage/misc/open-a-vpn-before-connect.md
-        #   - Customized: usage/misc/customized.md
+          - Note for servers: usage/misc/note-for-servers.md
+            #   - Customized: usage/misc/customized.md
   - Pricing: pricing.md
   - Download: download.md
   - Privacy Policy: privacy-policy.md
