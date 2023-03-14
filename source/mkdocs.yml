@@ -55,6 +55,9 @@ extra:
   shortname: 1RM
   social:
     - icon: dummy value to show social override
+  analytics:
+    provider: google
+    property: G-3WQM1ZE8WM
 
 # https://github.com/Python-Markdown/markdown/wiki/Third-Party-Extensions
 markdown_extensions:
