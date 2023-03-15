@@ -2,6 +2,9 @@
 
 {{name}} is a remote access manager and connection launcher for Windows OS. It comes integrated with a number of different protocols but also provides extensibility options via existing CLI tools implementing any kind of protocol.
 
+!!! warning
+    {{name}} is still under development, you can try it's previous version named **`PRemoteM`** instead.
+
 <img src="https://raw.githubusercontent.com/1Remote/PRemoteM/Doc/DocPic/maindemo.png" width="800" />
 
 ## Features
@@ -20,18 +23,23 @@
 
 ## Installation
 
-!!! warning "Requirements"
+<!-- !!! warning "Requirements"
     - [Windows10 17763 and above](https://support.lenovo.com/us/en/solutions/ht502786)
     - [.NET 6 Desktop Runtime](https://dotnet.microsoft.com/en-us/download/dotnet/6.0/runtime)
 
-Use one of the following methods to install the application:
+Use one of the following methods to install the application: -->
+
+!!! danger "unstable-alert"
+    {{name}} is still under development, you can try it's previous version named **`PRemoteM`** instead. [PRemoteM](https://github.com/1Remote/1Remote/releases)
+
+PRemoteM:
 
 - [GitHub release](https://github.com/1Remote/1Remote/releases)
 - [Microsoft Store](https://www.microsoft.com/store/productId/9PNMNF92JNFP)
 <!-- - Using [Winget](https://github.com/microsoft/winget-cli): `winget install premotem`
 - [Chocolatey](https://chocolatey.org/packages/premotem): `choco install premotem` -->
 
-!!! note
+??? tip "Want to run on Win7?"
     You can clone and build with `ReleaseNet48` if you are likely to run 1Remote on Windows 7.
 <!-- ## Pricing
 Free for personal use.
