@@ -26,7 +26,7 @@ Here are some examples:
 
 To demonstrate, here we add WinSCP as a SFTP runner.
 
-!!! note
+!!! example
     WinSCP is a free SFTP, SCP, Amazon S3, WebDAV, and FTP client for Windows, it can open new session through command line.
 
     ```

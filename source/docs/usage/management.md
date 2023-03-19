@@ -20,9 +20,6 @@
 6. Continue entering server **address**, **port**, **credentials** and other information, and select your desired connection settings.
 7. Click the **`Save`** button to complete adding the server and return to the homepage.
 
-!!! warning
-    We are not able to get password form RDP file, so you may have to enter password manually.
-
 ### Style switching
 
 Servers are displayed in the main window as cards or lists. You can click the **`Settings`** button in the upper-right corner of the interface to expand the menu and choose **`Toggle Cards/List`** to switch the display mode of servers.
@@ -54,10 +51,10 @@ By selecting multiple servers using the checkboxes and clicking the **`Edit`** b
 
 ### Data export
 
-When multiple servers are selected, **`Export`** button can export selected items to json file which you can import it to another PC or simply make a backup. Please see the [Data synchronization](usage/database/data-synchronization.md) for further details.
-
-!!! warning
+!!! warning inline end
     The exported data is stored in plain text, so please handle it with care.
+
+When multiple servers are selected, **`Export`** button can export selected items to json file which you can import it to another PC or simply make a backup. Please see the [Data synchronization](usage/database/data-synchronization.md) for further details.
 
 ### Data import
 
@@ -73,9 +70,11 @@ When multiple servers are selected, **`Export`** button can export selected item
 
 #### Importing from RDP Files
 
+!!! warning inline end
+    We are not able to get password form RDP file, so you may have to enter password manually.
+
 1. In MSTSC.exe, click "Show Options" to expand the window, click the **`Save As...`** button under "Connection settings", and save as an RDP file.
 2. In 1Remote, click the **`+`** button in the upper-right corner of the main window, and choose "**import *.rdp**". Select the RDP file you just saved in the pop-up dialog, and click "Open" to complete the import.
-
 
 ## Starting Remote Connections
 
