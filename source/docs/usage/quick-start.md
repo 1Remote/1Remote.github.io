@@ -2,7 +2,7 @@
 
 ## Installation
 
-[Download](./download.md){ .md-button }
+[Download](../download.md){ .md-button }
 
 ## Adding Servers
 
@@ -25,3 +25,5 @@ Press default shortcut ++alt++ + ++m++ and select server you want then press ++e
 - Change language: **`Setting`** -> **`General`** -> **`Language`**
 - Change theme: **`Setting`** -> **`Theme`** -> **`Theme`**. On this page, you can also customize your favorite color scheme.
 - Change SSH color scheme: **`Setting`** -> **`Protocol`** -> **`SSH`** -> **`KiTTY`** -> **`Themes`**
+
+[Learn more from the **Overview**](./overview.md){ .md-button .md-button--primary .inline .auto_width}
