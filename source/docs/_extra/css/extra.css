@@ -72,6 +72,10 @@ img.emojione {
     color: green;
 }
 
+.auto_width {
+    width: auto !important;
+}
+
 
 /*
 article OL {

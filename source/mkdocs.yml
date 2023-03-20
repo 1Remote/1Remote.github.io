@@ -15,6 +15,7 @@ theme:
   custom_dir: overrides
   icon:
     logo: material/library-shelves
+  favicon: img/logo.png
   logo: img/logo.png
   features:
     # - navigation.expand
@@ -146,7 +147,7 @@ nav:
   - Usage:
       - Basic:
           - Quick Start: usage/quick-start.md
-          - Overview: usage/management.md
+          - Overview: usage/overview.md
           - Launcher:
               - Basic: usage/launcher/basic.md
               - Quick connect: usage/launcher/quick-connect.md
@@ -168,6 +169,7 @@ nav:
           - Highline a server: usage/misc/highline-a-server.md
           - Pre-open a VPN: usage/misc/open-a-vpn-before-connect.md
           - Note for servers: usage/misc/note-for-servers.md
+          - Help translation: usage/misc/help-translation.md
             #   - Customized: usage/misc/customized.md
   - Pricing: pricing.md
   - Download: download.md

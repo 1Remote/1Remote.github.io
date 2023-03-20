@@ -2,7 +2,7 @@
 
 ## Installation
 
-Check [**Download**](../download.md) for details.
+[Download](./download.md){ .md-button }
 
 ## Adding Servers
 
