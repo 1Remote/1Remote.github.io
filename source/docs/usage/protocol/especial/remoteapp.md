@@ -1,4 +1,6 @@
-A RemoteApp program is an application installed on an RD Session Host server. Remote Desktop Connection (RDC) and the RD Session Host use Remote Desktop Protocol (RDP) to redirect screen information for just the application instead of the full session-based virtual desktop.
+```A RemoteApp program is an application installed on an RD Session Host server. Remote Desktop Connection (RDC) and the RD Session Host use Remote Desktop Protocol (RDP) to redirect screen information for just the application instead of the full session-based virtual desktop.```
+
+![rdpapp](./img/remoteapp.jpg)
 
 With RemoteApp programs, you can use RDS to make programs on a Remote Desktop Session Host (RD Session Host) server appear as if they are running on a user 's local computer. RemoteApp program windows are shown on and integrated with a client's Desktop instead of being presented as part of a session-based virtual desktop. A RemoteApp program open on a Desktop.
 

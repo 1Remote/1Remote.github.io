@@ -4,7 +4,7 @@ site_author: 1Remote Team
 copyright: © 1Remote Team 2022
 
 repo_url: https://github.com/1Remote/1Remote
-edit_uri: edit/main/source/docs
+edit_uri: https://github.com/1Remote/1Remote.github.io/edit/main/source/docs
 
 dev_addr: 127.0.0.1:8000
 
@@ -19,23 +19,38 @@ theme:
   logo: img/logo.png
   features:
     # - navigation.expand
-    - navigation.instant
+    - navigation.instant # now behaves like a Single Page Application
     - navigation.top # Back-to-top button
-    - navigation.indexes
+    - navigation.indexes # documents can be directly attached to sections, which is particularly useful for providing overview pages: https://squidfunk.github.io/mkdocs-material/setup/setting-up-navigation/#with-section-index-pages
+    - header.autohide
     - navigation.tabs
     # - navigation.tabs.sticky # tab will not auto hide
     - navigation.sections
     - navigation.tracking
   name: material
-  palette:
+  # palette:
+  #   - scheme: default
+  #     toggle:
+  #       icon: material/lightbulb-outline
+  #       name: Switch to dark mode
+  #   - scheme: slate
+  #     toggle:
+  #       icon: material/lightbulb
+  #       name: Switch to light mode
+
+  palette: # https://www.materialpalette.com/colors
     - scheme: default
-      toggle:
-        icon: material/lightbulb-outline
-        name: Switch to dark mode
-    - scheme: slate
-      toggle:
-        icon: material/lightbulb
-        name: Switch to light mode
+      #primary: "teal" # comment to replace by /docs/assets/stylesheets
+      accent: purple
+    #   toggle:
+    #     icon: material/toggle-switch-off-outline
+    #     name: Switch to dark mode
+    # - scheme: slate
+    #   #primary: "teal" # comment to replace by /docs/assets/stylesheets
+    #   accent: teal
+    #   toggle:
+    #     icon: material/toggle-switch
+    #     name: Switch to light mode
 
 extra_css:
   - _extra/css/extra.css
