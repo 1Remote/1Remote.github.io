@@ -1,5 +1,9 @@
-# Pricing
 
+---
+hide: [toc, navigation]
+---
+
+# Pricing
 !!! note
     - The exe version of 1Remote on GitHub is **completely free** for personal use.
     - For Microsoft Store build, you may need to pay for a lifetime license.
