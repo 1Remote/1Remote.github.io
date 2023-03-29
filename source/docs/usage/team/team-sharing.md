@@ -23,6 +23,9 @@ Your team members can connect to the same database with read-only permission, th
 
 You can connect to the same database with full permission, you can add, edit and delete servers.
 
+!!! note
+    Please note that the Team sharing feature offers only very basic access control, and is not designed to provide individualized access control for each team member.
+
 ## How
 
 1. Create two accounts in MySQL, giving them different permissions:

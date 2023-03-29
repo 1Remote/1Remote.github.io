@@ -1,7 +1,7 @@
 ﻿site_name: 1Remote
 site_description: One Remote Access Manager to Rule Them All
 site_author: 1Remote Team
-copyright: © 1Remote Team 2022
+copyright: © 1Remote Team 2023
 
 repo_url: https://github.com/1Remote/1Remote
 edit_uri: https://github.com/1Remote/1Remote.github.io/edit/main/source/docs
@@ -40,8 +40,8 @@ theme:
 
   palette: # https://www.materialpalette.com/colors
     - scheme: default
-      #primary: "teal" # comment to replace by /docs/assets/stylesheets
-      accent: purple
+      #primary: "teal" # comment to replace by /docs/css/extra.css
+      accent: red
     #   toggle:
     #     icon: material/toggle-switch-off-outline
     #     name: Switch to dark mode

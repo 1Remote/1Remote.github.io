@@ -9,17 +9,17 @@
 }
 
 * {
-    --md-primary-fg-color: #102b3e;
-    --md-primary-fg-color--light: #445a68;
-    --md-primary-fg-color--dark: #0c2230;
+    --md-primary-fg-color: #2875be;
+    --md-primary-fg-color--light: #1684eb;
+    --md-primary-fg-color--dark: #163d63;
     --md-typeset-color: var(--md-default-fg-color);
     --md-typeset-a-color: var(--md-primary-fg-color--light);
 }
 
 :root {
-    --md-primary-fg-color: #102b3e;
-    --md-primary-fg-color--light: #445a68;
-    --md-primary-fg-color--dark: #0c2230;
+    --md-primary-fg-color: #1684eb;
+    --md-primary-fg-color--light: #77addf;
+    --md-primary-fg-color--dark: #163d63;
 }
 
 :root>* {

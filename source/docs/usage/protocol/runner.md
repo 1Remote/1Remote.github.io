@@ -11,6 +11,10 @@ Currently, 1Remote offering some built-in runner for all of the supported protoc
 - RDP Runner based on [Remote Desktop ActiveX control](https://docs.microsoft.com/en-us/windows/win32/termserv/remote-desktop-activex-control)
 - SSH Runner is [KiTTY](http://www.9bis.net/kitty/#!index.md),
 - VNC Runner based on [VNCSharp](https://github.com/humphd/VncSharp)
+
+    !!! warning
+        VncSharp has been archived for long, and it is not maintained anymore, so it may not work well. I strongly suggest you use **[TightVNC](https://www.tightvnc.com/)** as our VNC runner.
+
 - SFTP Runner based on [SSH.NET](https://github.com/sshnet/SSH.NET)
 - FTP Runner based on [FluentFTP](https://github.com/robinrodricks/FluentFTP)
 
@@ -20,9 +24,19 @@ And you can customize the runners for some of the protocols
 
 1Remote supports custom external `Runner`, as long as the external program supports run passing startup parameters through command line or environment variables.
 
-Here are some examples:
+Here are some available CLI tools:
 
-### WinSCP
+| APP           | Type | Arguments                                                                                             |
+| ------------- | ---- | ----------------------------------------------------------------------------------------------------- |
+| WinSCP        | SFTP | sftp://%USERNAME%:%PASSWORD%@%HOSTNAME%:%PORT%                                                        |
+| FileZilla FTP | SFTP | sftp://%USERNAME%:%PASSWORD%@%HOSTNAME%                                                               |
+| FileZilla FTP | FTP  | ftp://%USERNAME%:%PASSWORD%@%HOSTNAME%                                                                |
+| Kitty         | SSH  | -ssh %HOSTNAME% -P %PORT% -l %USERNAME% -pw %PASSWORD% -%SSH_VERSION% -cmd ""%STARTUP_AUTO_COMMAND%"" |
+| TightVNC      | VNC  | %HOSTNAME%::%PORT% -password=%PASSWORD% -scale=auto                                                   |
+| UltraVNC      | VNC  | %HOSTNAME%:%PORT% -password %PASSWORD%                                                                |
+
+
+### How to create a new Runner(example by WinSCP)
 
 To demonstrate, here we add WinSCP as a SFTP runner.
 
@@ -50,7 +64,7 @@ To demonstrate, here we add WinSCP as a SFTP runner.
 
     since the demo is `sftp://username:password@example.com:22/`
 
-    then we set parameter to `sftp://%PRM_USERNAME%:%PRM_PASSWORD%@%PRM_HOSTNAME%:%PRM_PORT%`
+    then we set parameter to `sftp://%USERNAME%:%PASSWORD%@%HOSTNAME%:%PORT%`
 
 6. Change the default Runner to WinSCP
 

@@ -1,4 +1,9 @@
-# 1Remote Quick Start
+# {{name}} Quick Start
+
+![logo](img/p2o.png)
+
+> {{name}} is the upgraded version of PRemoteM.
+> {{name}} is open source and free to use.
 
 ## Installation
 
