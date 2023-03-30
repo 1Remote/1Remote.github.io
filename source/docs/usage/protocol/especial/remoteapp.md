@@ -42,3 +42,5 @@ Here I run QQ.exe and Edge.exe via RemoteApp:
 
     - http://sbsfaq.com/the-following-remoteapp-program-is-not-in-the-list-of-authorized-programs-on-windows-essential-server/
     - https://www.beyondtrust.com/docs/privileged-identity/app-launcher-and-recording/installation/set-up-rds.htm
+
+{% include 'footer.md' %}

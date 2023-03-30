@@ -1,9 +1,7 @@
-
 ---
 hide: [toc, navigation]
 ---
 
-# Pricing
 !!! note
     - The exe version of 1Remote on GitHub is **completely free** for personal use.
     - For Microsoft Store build, you may need to pay for a lifetime license.
@@ -27,3 +25,5 @@ If you are:
 Please contact us at  [veckshawn@gmail.com](mailto:veckshawn@gmail.com), I will send you some free licenses💖.
 
 Feel free to contact me if you have any questions for these [veckshawn@gmail.com](mailto:veckshawn@gmail.com).
+
+{% include 'footer.md' %}

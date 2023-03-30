@@ -28,3 +28,6 @@ If you write a note for the server, you can use the ++left++ arrow key to show t
 Or simply click the note icon.
 
 ![launcher-show-note](img/launcher-show-note.gif)
+
+{% include 'footer.md' %}
+

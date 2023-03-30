@@ -22,3 +22,5 @@ If you like this app, please help us make it stronger by doing any of the follow
 2. [Help translation](./usage/msic/help-translation.md)
 3. [Buy a coffee](https://ko-fi.com/VShawn)
 4. [Join DEV](https://github.com/1Remote/1Remote/blob/1Remote_dev/DEVELOP.md)
+
+{% include 'footer.md' %}

@@ -123,3 +123,5 @@ By click / right-click / ctrl-click on the tag, you can include or exclude the t
 e.g. sometimes I wanna list all my servers in home but exclude RDP.
 
 ![tag-filter-demo](./img/tag-filter-demo.jpg)
+
+{% include 'footer.md' %}

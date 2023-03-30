@@ -49,3 +49,6 @@ You can connect to the same database with full permission, you can add, edit and
 
 !!! warning
     This app does not use concurrency locks on data editing, so if you modify the database on 2 devices at the same time, data loss may occur. Please try to avoid this situation.
+
+
+{% include 'footer.md' %}

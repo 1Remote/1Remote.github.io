@@ -27,3 +27,6 @@ close-vpn.ps1:
 ```shell
 "C:\Program Files\OpenVPN\bin\openvpn-gui.exe" --command disconnect myconnection.ovpn
 ```
+
+{% include 'footer.md' %}
+

@@ -47,3 +47,6 @@ Specifically:
     5. Go back to the main page of 1Remote and click the **`+`** button in the upper right corner to add a new server configuration to the newly added database.
     6. Create a new account named session_user in MySQL and only grant it select permission to the session_ai database. Distribute this account to your team members so that they can read the server configuration stored in the session_ai database but cannot view or modify their passwords.
     7. Noted: 1Remote updates data by querying periodically. Therefore, when you modify server information, other users may need to wait for several seconds before they can get the latest data. -->
+
+{% include 'footer.md' %}
+

@@ -10,7 +10,7 @@ Since this program is a resident background app that starts a session through th
 
 ### What we provide
 
-For the data sync / sharing reason, 1Remote only provide a basic string encryption in database (account, password, etc.). So it is recommended to enable hard disk encryption (like [Bitlocker](https://docs.microsoft.com/en-us/windows/security/information-protection/)etc.) to ensure that event when the 1Remote database is leaked or the hard disk is cracked physically, the theft will get nothings.
+For the data sync / sharing reason, 1Remote only provide a basic string encryption in database (account, password, etc.). So it is recommended to enable hard disk encryption (like [Bitlocker](https://docs.microsoft.com/en-us/windows/security/information-protection/)) to ensure that event when the 1Remote database is leaked or the hard disk is cracked physically, the theft will get nothings.
 
 ## Summary
 
@@ -30,9 +30,12 @@ For the data sync / sharing reason, 1Remote only provide a basic string encrypti
 
 #### 我们提供的加密功能
 
-考虑到数据同步、共享等因素，我们只提供了数据库的中基础数据的加密功能（账号、密码等）这并不完全保险，推荐开启硬盘加密(like [Bitlocker](https://docs.microsoft.com/en-us/windows/security/information-protection/)etc.) 。以确保即便 1Remote 数据库被泄露，或计算机硬盘遭到物理破解时，盗窃者依旧无法获取到其中的机密。
+考虑到数据同步、共享等因素，我们只提供了数据库的中基础数据的加密功能（账号、密码等）这并不完全保险，推荐开启硬盘加密(like [Bitlocker](https://docs.microsoft.com/en-us/windows/security/information-protection/)) 。以确保即便 1Remote 数据库被泄露，或计算机硬盘遭到物理破解时，盗窃者依旧无法获取到其中的机密。
 
 #### 总结
 
 - 确保每次离开电脑后，系统都会被锁。
 - (**推荐**) 开启 BitLocker in Windows 10。
+
+{% include 'footer.md' %}
+

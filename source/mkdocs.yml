@@ -70,7 +70,9 @@ extra:
   name: 1Remote
   shortname: 1RM
   social:
-    - icon: dummy value to show social override
+    - icon: fontawesome/brands/github
+      link: https://github.com/1Remote/
+
   analytics:
     provider: google
     property: G-3WQM1ZE8WM

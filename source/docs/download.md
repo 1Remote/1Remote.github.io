@@ -29,3 +29,5 @@ hide: [navigation]
 
 <!-- - Using [Winget](https://github.com/microsoft/winget-cli): `winget install premotem`
 - [Chocolatey](https://chocolatey.org/packages/premotem): `choco install premotem` -->
+
+{% include 'footer.md' %}

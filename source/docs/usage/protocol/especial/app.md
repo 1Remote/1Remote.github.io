@@ -43,3 +43,5 @@ Since the latest version of NoMachine no longer provides a session starting meth
     This is also applicable to other command parameters supported session launcher, such as PUTTY, WinSCP, etc.
 
     Even you can use this method to add one other programs (such as Word, NotePad, etc.) to 1Remote for a quick start.
+
+{% include 'footer.md' %}

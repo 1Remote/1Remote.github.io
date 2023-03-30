@@ -30,3 +30,4 @@
 - Sharing sessions in a small team via MySQL.
 - Portable mode supported.
 
+{% include 'footer.md' %}

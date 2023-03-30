@@ -49,3 +49,6 @@ Using a MySQL database is a more professional way to synchronize data. When serv
     2. Click the **`Edit`** button to the right of the "Local" database in the **`Database`** tab, then click the **`Select`** button in the pop-up window and choose the database file you moved to the sync folder. Save the changes.
     3. The app will check whether the database file has changed every once in a while. If changes are detected, the file will be automatically synchronized to the database.
     4. (Note: This app does not use concurrency locks on the data, so if you modify the database on multiple devices at the same time, data loss may occur. Please try to avoid this situation.) -->
+
+{% include 'footer.md' %}
+

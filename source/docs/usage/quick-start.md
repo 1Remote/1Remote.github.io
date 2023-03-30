@@ -32,3 +32,5 @@ Press default shortcut ++alt++ + ++m++ and select server you want then press ++e
 - Change SSH color scheme: **`Setting`** -> **`Protocol`** -> **`SSH`** -> **`KiTTY`** -> **`Themes`**
 
 [Learn more from the **Overview**](./overview.md){ .md-button .md-button--primary .inline .auto_width}
+
+{% include 'footer.md' %}

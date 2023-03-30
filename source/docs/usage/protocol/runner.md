@@ -74,3 +74,4 @@ To demonstrate, here we add WinSCP as a SFTP runner.
 
     ![image](./img/winscp-run.jpg)
 
+{% include 'footer.md' %}

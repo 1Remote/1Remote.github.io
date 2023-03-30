@@ -10,3 +10,6 @@ Then your "VIP" servers will be highlighted:
 ![image](img/highline-a-server2.jpg)
 
 ![image](img/highline-a-server3.jpg)
+
+{% include 'footer.md' %}
+
