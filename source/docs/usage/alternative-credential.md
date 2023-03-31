@@ -41,5 +41,4 @@ If you got **`Automatic address switching`** enabled, 1Remote will automatically
 
 You **have no need** to switch the address to WLAN manually when you are outside:).
 
-
 {% include 'footer.md' %}
