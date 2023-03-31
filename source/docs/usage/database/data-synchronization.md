@@ -17,7 +17,7 @@ This means you can copy the database to other device using sync tools, and 1Remo
 > please do not remove the database file while 1Remote is still in used.
 
 !!! tip
-    In `Options` -> `Database` -> `Local` -> `Edit`, you can check up where your database file is. 
+    In `Options` -> `Database` -> `Local` -> `Edit`, you can check up where your database file is.
 
     You can also change the db path there.
 

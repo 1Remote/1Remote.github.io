@@ -184,7 +184,9 @@ nav:
           - Team deploy: usage/team/team-deploy.md
       - Misc:
           - Highline a server: usage/misc/highline-a-server.md
-          - Pre-open a VPN: usage/misc/open-a-vpn-before-connect.md
+          - Streamline by pre/post connect script:
+              - Overview: usage/misc/pre-post-script-control/overview.md
+              - Pre-open a VPN: usage/misc/pre-post-script-control/open-a-vpn-before-connect.md
           - Note for servers: usage/misc/note-for-servers.md
           - Help translation: usage/misc/help-translation.md
             #   - Customized: usage/misc/customized.md
