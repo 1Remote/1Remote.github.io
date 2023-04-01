@@ -1,0 +1,353 @@
+{% extends "main-styles.html" %}
+
+{% block tabs %}
+{{ super() }}
+
+<section class="main-container ">
+    <div class="md-grid md-typeset">
+        <div class="hero">
+
+            <!-- Hero image -->
+            <div class="hero-image">
+                <img
+                    src="img/home_override/hero1.png"
+                    alt=""
+                    width="800"
+                    draggable="false"
+                >
+            </div>
+
+            <!-- Hero content -->
+            <div class="hero-content">
+                <h1>1Remote</h1>
+                <p>
+                    1Remote is a modern personal remote session manager and launcher.
+                    It is a single place to manage all your remote sessions
+                    supporting number of different protocols.
+                    <br>
+                    <br>
+                </p>
+
+                <br>
+
+                <p>
+
+                    ⭐
+                    <strong>
+                        Open source & Free to use
+                    </strong>
+                    <br>
+
+                    ⭐
+                    <strong>
+                        Support RDP, SSH, VNC, Telnet, (S)FTP,
+                        <a href="https://github.com/1Remote/1Remote/wiki/%5BProtocol%5D-RemoteApp">RemoteApp</a>
+                    </strong>
+                    <br>
+
+                    ⭐
+                    <strong>
+                        Multi-screen and HiDPI RDP connection
+                    </strong>
+                    <br>
+
+                    ⭐
+                    <strong>
+                        Quick and convenient remote session launcher (Alt + M)
+                    </strong>
+                    <br>
+
+                    ⭐
+                    <strong>
+                        Keep multiple accounts and addresses in one connection.
+                    </strong>
+                    <br>
+<!--
+                    ⭐
+                    <strong>
+                        Detailed configuration: tags, icons, colors, connection scripts etc...
+                    </strong>
+                    <br> -->
+
+                    ⭐
+                    <strong>
+                        Tabbed interface, Multiple languages, themes...
+                    </strong>
+                    <br>
+
+                    <!-- ⭐
+                    <strong>
+                        Customizable SFTP \ FTP \ VNC protocols, you can replace the internal runner with your favorite tools.
+                    </strong>
+                    <br> -->
+
+                    ⭐
+                    <strong>
+                        Easy to deploy, just unpack and run with portable mode.
+                    </strong>
+                    <br>
+
+
+                <a
+                        href="{{ page.next_page.url | url }}"
+                        title="{{ page.next_page.title | e }}"
+                        class="md-button md-button"
+                >
+                    Get started
+                </a>
+                <br>
+
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- image left -->
+<section class="container">
+    <div class="md-grid md-typeset">
+        <div class="container-image-left" style="margin-top: 50px">
+            <img src="img/home_override/hero2.gif" width="300px" draggable="false"
+                    align="left"
+            >
+        </div>
+        <div class="hero">
+            <div class="container-content-right">
+                <h1>Make life easier with 1Remote!</h1>
+                <p>1Remote simplifies remote session management with a single hub for multiple protocols. </p>
+                <p>You can easily switch between sessions with convenient launcher (Alt + M) and tabbed interface.</p>
+                <br>
+                <p>
+                  <i>📌 One launcher, all your favorites!</i>
+                  <br>
+                  <i>📌 Tabbed interface for easy access.</i>
+                </p>
+<!--
+                <a href="usage/protocol/especial/remoteapp/"
+                    target="_blank"
+                    class="md-button md-button">
+                    RemoteApp
+                </a>
+
+                <a href="usage/protocol/runner/"
+                    target="_blank"
+                    class="md-button md-button">
+                    Runner
+                </a> -->
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+<!-- image right -->
+<section class="container">
+    <div class="md-grid md-typeset">
+        <div class="hero">
+            <div class="container-image-right" style="margin-top: 50px;">
+                <img src="img/home_override/protocols.png" width="500px" draggable="false" align="right">
+            </div>
+            <div class="container-content-left">
+                <h1>Solution for all of your servers</h1>
+                <p>
+                  <i>One platform, all protocols: </i>
+                  <br/>
+                  <i style="margin-left: 2rem;">✅ RDP</i>
+                  <br/>
+                  <i style="margin-left: 2rem;">✅ SSH</i>
+                  <br/>
+                  <i style="margin-left: 2rem;">✅ FTP / SFTP</i>
+                  <br/>
+                  <i style="margin-left: 2rem;">✅ VNC</i>
+                  <br/>
+                  <i style="margin-left: 2rem;">✅ RemoteApp   <a href="/usage/protocol/especial/remoteapp/">learn more</a></i>
+                  <br/>
+                  <i style="margin-left: 2rem;">✅ Other cli tools   <a href="/usage/protocol/especial/app/">learn more</a></i>
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+
+<!-- image left -->
+<section class="container">
+    <div class="md-grid md-typeset">
+        <div class="container-image-left" style="margin-top: 50px;">
+            <img src="https://raw.githubusercontent.com/1Remote/PRemoteM/Doc/DocPic/multi-screen.jpg" width="500px" draggable="false" align="right">
+        </div>
+        <div class="hero">
+            <div class="container-content-right">
+                <h1>Multiple monitors <br/>meet high resolution RDP</h1>
+                <br>
+                <p>
+                  <i>Harness the power of multiple monitors in high definition via RDP!</i>
+                  <br/>
+                  <i>Take remote work to the next level.</i>
+                </p>
+                <p style="width: 30rem;
+                          border-radius: 10px;
+                          background: #80808059;
+                          padding: 0 1rem;">
+                  <b>The developer said:</b> I developed this tool precisely because other tools were unable to run RDP smoothly in my high-resolution, multi-display environments when I WFH!
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+<!-- image right -->
+<section class="container">
+    <div class="md-grid md-typeset">
+        <div class="hero">
+            <div class="container-image-right" style="margin-top: 50px;">
+                <img src="img/home_override/cli-integrate.jpg" width="500px" draggable="false" align="right">
+            </div>
+            <div class="container-content-left">
+                <h1>Connect the way you want</h1>
+                <br>
+                <p style="max-width: 30rem;">Say goodbye to complicated commands and clunky interfaces, and hello to a world of effortless connectivity. With 1Remote, you can easily start RDP, SSH, FTP, and SFTP sessions from your favorite CLI tools like WinSCP and TightVNC - no need to change your workflow! Experience the power of seamless remote access with 1Remote. Try it now and see the difference!
+                </p>
+                <a href="usage/protocol/runner"
+                    target="_blank"
+                    class="md-button md-button">
+                    Learn more About CLI tools integrate
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+
+<!-- image left -->
+<section class="container">
+    <div class="md-grid md-typeset">
+        <div class="container-image-left" style="margin-top: 50px;">
+            <img src="usage/img/multi-credential-demo.png" width="500px" draggable="false" align="left">
+        </div>
+        <div class="hero">
+            <div class="container-content-right">
+                <h1>Streamline your server management</h1>
+                <br>
+                <p>✨ Access your PC effortlessly with automatic LAN and WAN address switching. </p>
+
+                <p>✨ Manage multiple user accounts seamlessly, and switch between them with ease.</p>
+
+                <p>Take control of your server like never before!</p>
+                <br>
+                <a href="usage/alternative-credential/"
+                    target="_blank"
+                    class="md-button md-button">
+                    Learn more About Multi-credential
+                </a>
+                <a href="usage/misc/pre-post-script-control/overview"
+                    target="_blank"
+                    class="md-button md-button">
+                    Learn more About Auto script
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+
+
+<!-- image right -->
+<section class="container">
+    <div class="md-grid md-typeset">
+        <div class="hero">
+            <div class="container-image-right" style="margin-top: 50px;">
+                <img src="img/home_override/team_sharing_network.png" width="500" draggable="false" align="right">
+            </div>
+            <div class="container-content-left">
+                <h1>Achieve more with team sharing</h1>
+                <p>
+                  <i>🚀 Share servers with team in real-time.</i>
+                  <br/>
+                  <i>🚀 Increase productivity with teamwork.</i>
+                  <br/>
+                  <i>🚀 Keep data secure with controlled access.</i>
+                  <br/>
+                  <i>🚀 Versatile sharing for team needs.</i>
+                  <br/>
+                </p>
+                <a href="usage/team/team-sharing/"
+                    target="_blank"
+                    class="md-button md-button">
+                    Learn more
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+
+<!-- image left -->
+<section class="container">
+    <div class="md-grid md-typeset">
+        <div class="container-image-left" style="margin-top: 50px;">
+            <img src="img/home_override/ratings.jpg" draggable="false" align="left">
+        </div>
+        <div class="hero">
+            <div class="container-content-right">
+                <h1>What Our Users Are Saying</h1>
+                <br>
+                <p>Over 10,000 users worldwide have downloaded 1Remote from <a href="https://www.microsoft.com/store/productId/9PNMNF92JNFP" target="_blank">Microsoft Store</a> and reported 90% satisfaction rate</p>
+
+                <img src="img/home_override/reviews.jpg" draggable="false" align="left">
+
+            </div>
+        </div>
+    </div>
+</section>
+
+<section style="display: flex;justify-content: center;align-items: center;">
+    <div class="md-grid md-typeset">
+                <a
+                        href="{{ page.next_page.url | url }}"
+                        title="{{ page.next_page.title | e }}"
+                        class="md-button md-button"
+                >
+                    Get started
+                </a>
+    </div>
+</section>
+
+
+
+{% endblock %}
+
+
+
+{% block content %}{% endblock content %}
+{% block footer %}
+{{ super() }}
+{% endblock footer %}
+
+
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?915b78fdd0e2f52a5f6f6816de6cb939";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>

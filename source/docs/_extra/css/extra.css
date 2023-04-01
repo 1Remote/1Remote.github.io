@@ -1,3 +1,60 @@
+.md-typeset__table {
+    min-width: 100%;
+}
+
+@media only screen and (min-width: 768px) {
+    td:nth-child(1) {
+        white-space: nowrap;
+    }
+}
+
+* {
+    --md-primary-fg-color: #2875be;
+    --md-primary-fg-color--light: #1684eb;
+    --md-primary-fg-color--dark: #163d63;
+    --md-typeset-color: var(--md-default-fg-color);
+    --md-typeset-a-color: var(--md-primary-fg-color--light);
+}
+
+:root {
+    --md-primary-fg-color: #1684eb;
+    --md-primary-fg-color--light: #77addf;
+    --md-primary-fg-color--dark: #163d63;
+}
+
+:root>* {
+    --md-typeset-color: var(--md-default-fg-color);
+    --md-typeset-a-color: var(--md-primary-fg-color--light);
+}
+
+/*
+markdown and image alignment
+ALT tag and a CSS selector on the alt tag
+*/
+img[src*='#left'] {
+    float: left;
+}
+
+img[src*='#right'] {
+    float: right;
+}
+
+img[src*='#center'] {
+    display: block;
+    margin: auto;
+}
+
+/*
+Tables set to 100% width
+*/
+.md-typeset__table {
+    min-width: 100%;
+}
+
+.md-typeset table:not([class]) {
+    display: table;
+}
+
 img {
     /* box-shadow: 2px 2px 10px 2px #888888; */
     display: block;
@@ -70,6 +127,10 @@ img.emojione {
 
 .green {
     color: green;
+}
+
+.auto_width {
+    width: auto !important;
 }
 
 

@@ -20,3 +20,5 @@ One you press ++enter++ key, a password acquire window will show up, you need to
 
 !!! warning
     We don't save the credential for security season, so you need to fill the password every time you start a quick connect session.
+
+{% include 'footer.md' %}

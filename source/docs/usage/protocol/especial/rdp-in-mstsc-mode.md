@@ -30,3 +30,5 @@ more settings：
 
 - [Microsoft](https://docs.microsoft.com/en-us/windows-server/remote/remote-desktop-services/clients/rdp-files)
 - [2003/XP](https://docs.microsoft.com/en-us/troubleshoot/windows-server/remote/remote-desktop-protocol-settings)
+
+{% include 'footer.md' %}

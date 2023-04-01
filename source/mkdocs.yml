@@ -1,10 +1,10 @@
 ﻿site_name: 1Remote
 site_description: One Remote Access Manager to Rule Them All
 site_author: 1Remote Team
-copyright: © 1Remote Team 2022
+copyright: © 1Remote Team 2023
 
 repo_url: https://github.com/1Remote/1Remote
-edit_uri: edit/main/source/docs
+edit_uri: https://github.com/1Remote/1Remote.github.io/edit/main/source/docs
 
 dev_addr: 127.0.0.1:8000
 
@@ -15,26 +15,42 @@ theme:
   custom_dir: overrides
   icon:
     logo: material/library-shelves
+  favicon: img/logo.png
   logo: img/logo.png
   features:
     # - navigation.expand
-    - navigation.instant
+    - navigation.instant # now behaves like a Single Page Application
     - navigation.top # Back-to-top button
-    - navigation.indexes
+    - navigation.indexes # documents can be directly attached to sections, which is particularly useful for providing overview pages: https://squidfunk.github.io/mkdocs-material/setup/setting-up-navigation/#with-section-index-pages
+    - header.autohide
     - navigation.tabs
     # - navigation.tabs.sticky # tab will not auto hide
     - navigation.sections
     - navigation.tracking
   name: material
-  palette:
+  # palette:
+  #   - scheme: default
+  #     toggle:
+  #       icon: material/lightbulb-outline
+  #       name: Switch to dark mode
+  #   - scheme: slate
+  #     toggle:
+  #       icon: material/lightbulb
+  #       name: Switch to light mode
+
+  palette: # https://www.materialpalette.com/colors
     - scheme: default
-      toggle:
-        icon: material/lightbulb-outline
-        name: Switch to dark mode
-    - scheme: slate
-      toggle:
-        icon: material/lightbulb
-        name: Switch to light mode
+      #primary: "teal" # comment to replace by /docs/css/extra.css
+      accent: red
+    #   toggle:
+    #     icon: material/toggle-switch-off-outline
+    #     name: Switch to dark mode
+    # - scheme: slate
+    #   #primary: "teal" # comment to replace by /docs/assets/stylesheets
+    #   accent: teal
+    #   toggle:
+    #     icon: material/toggle-switch
+    #     name: Switch to light mode
 
 extra_css:
   - _extra/css/extra.css
@@ -54,7 +70,9 @@ extra:
   name: 1Remote
   shortname: 1RM
   social:
-    - icon: dummy value to show social override
+    - icon: fontawesome/brands/github
+      link: https://github.com/1Remote/
+
   analytics:
     provider: google
     property: G-3WQM1ZE8WM
@@ -146,7 +164,7 @@ nav:
   - Usage:
       - Basic:
           - Quick Start: usage/quick-start.md
-          - Overview: usage/management.md
+          - Overview: usage/overview.md
           - Launcher:
               - Basic: usage/launcher/basic.md
               - Quick connect: usage/launcher/quick-connect.md
@@ -166,8 +184,11 @@ nav:
           - Team deploy: usage/team/team-deploy.md
       - Misc:
           - Highline a server: usage/misc/highline-a-server.md
-          - Pre-open a VPN: usage/misc/open-a-vpn-before-connect.md
+          - Streamline by pre/post connect script:
+              - Overview: usage/misc/pre-post-script-control/overview.md
+              - Pre-open a VPN: usage/misc/pre-post-script-control/open-a-vpn-before-connect.md
           - Note for servers: usage/misc/note-for-servers.md
+          - Help translation: usage/misc/help-translation.md
             #   - Customized: usage/misc/customized.md
   - Pricing: pricing.md
   - Download: download.md

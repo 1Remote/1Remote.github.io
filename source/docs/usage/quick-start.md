@@ -1,8 +1,13 @@
-# 1Remote Quick Start
+# {{name}} Quick Start
+
+![logo](img/p2o.png)
+
+> {{name}} is the upgraded version of PRemoteM.
+> {{name}} is open source and free to use.
 
 ## Installation
 
-Check [**Download**](../download.md) for details.
+[Download](../download.md){ .md-button }
 
 ## Adding Servers
 
@@ -25,3 +30,7 @@ Press default shortcut ++alt++ + ++m++ and select server you want then press ++e
 - Change language: **`Setting`** -> **`General`** -> **`Language`**
 - Change theme: **`Setting`** -> **`Theme`** -> **`Theme`**. On this page, you can also customize your favorite color scheme.
 - Change SSH color scheme: **`Setting`** -> **`Protocol`** -> **`SSH`** -> **`KiTTY`** -> **`Themes`**
+
+[Learn more from the **Overview**](./overview.md){ .md-button }
+
+{% include 'footer.md' %}

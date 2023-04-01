@@ -40,3 +40,5 @@ If you got **`Automatic address switching`** enabled, 1Remote will automatically
 ![multi-credential-detecting](img/multi-credential-detecting.jpg)
 
 You **have no need** to switch the address to WLAN manually when you are outside:).
+
+{% include 'footer.md' %}

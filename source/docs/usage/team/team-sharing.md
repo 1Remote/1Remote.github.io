@@ -1,8 +1,6 @@
 
 ## Why
 
-![team](./img/team-demo.png)
-
 Assuming you are the team leader. In your company, you may have several servers to manage, AI Servers are for the AI team, while Web Servers are for the Web team.
 
 A typical use case is:
@@ -10,12 +8,23 @@ A typical use case is:
 - Only you and your boss have the permission to add and modify servers, while other colleagues can only view the servers listed, they are not able to edit them or see the password.
 - AI team member can only access the AI servers, while Web team member can only access the Web servers.
 
-With the help of readonly account of MySQL, 1Remote can help you manage the servers flexibly.
+![team](./img/team-demo.png)
+
+1Remote can help you manage these servers flexibly with `Team sharing` feature.
+
+In this feature, you can create two accounts in MySQL, giving them different permissions:
 
 | Account                | Connect | View address | Edit | Delete | View password |
 | ---------------------- | ------- | ------------ | ---- | ------ | ------------- |
 | Select permission only | ✅       | ✅            | ❌    | ❌      | ❌             |
 | Full permission        | ✅       | ✅            | ✅    | ✅      | ✅             |
+
+Your team members can connect to the same database with read-only permission, they can only view the servers, but they are not able to edit them.
+
+You can connect to the same database with full permission, you can add, edit and delete servers.
+
+!!! note
+    Please note that the Team sharing feature offers only very basic access control, and is not designed to provide individualized access control for each team member.
 
 ## How
 
@@ -40,3 +49,6 @@ With the help of readonly account of MySQL, 1Remote can help you manage the serv
 
 !!! warning
     This app does not use concurrency locks on data editing, so if you modify the database on 2 devices at the same time, data loss may occur. Please try to avoid this situation.
+
+
+{% include 'footer.md' %}

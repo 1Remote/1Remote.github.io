@@ -52,4 +52,6 @@ This policy is effective as of 2020-11-30
 
 ## Contact Us
 
-If you have any questions or suggestions about my Privacy Policy, do not hesitate to contact me at singlex@foxmail.com.
+If you have any questions or suggestions about my Privacy Policy, do not hesitate to contact me at veckshawn@gmail.com.
+
+{% include 'footer.md' %}

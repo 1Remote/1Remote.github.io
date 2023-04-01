@@ -1,12 +1,31 @@
-- 1Remote is total free for personal use with exe build
-- For Microsoft Store build, you may need to pay for a lifetime license. We will give away free lifetime license for some special events.
-- For commercial use, please contact us at [veckshawn@gmail.com](mailto:veckshawn@gmail.com)
+---
+hide: [toc, navigation]
+---
 
-All features are available on all this versions. Microsoft Store version may introduce some unique new features in the future.
+# Pricing
 
-| features          | exe build | Microsoft Store build |
-| ----------------- | --------- | --------------------- |
-| Update by one key | ⛔         | ✅                     |
-| Other features    | ✅         | ✅                     |
+!!! note
+    - The exe version of 1Remote on GitHub is **completely free** for personal use.
+    - For Microsoft Store build, you may need to pay for a lifetime license.
+    - We will give away free lifetime license for some special events.
+    - For commercial use, I am not currently considering charging for commercial licensing of 1Remote, so you can use it in your company, but I will not provide any support for commercial use.
 
-If you are our donator. Please contact us at [veckshawn@gmail.com], I will send you some free licenses❤.
+All features are available on all this versions. *Microsoft Store version may introduce some unique new features in the future.*
+
+| features          | EXE build                          | Microsoft Store build           |
+| ----------------- | ---------------------------------- | ------------------------------- |
+| Update by one key | ⛔   You have to update it manually | ✅  You can update it from store |
+| Other features    | ✅                                  | ✅                               |
+| Price             | Free                               | About $1.99                     |
+
+
+If you are:
+
+- our donator
+- contributor of 1Remote
+
+Please contact us at  [veckshawn@gmail.com](mailto:veckshawn@gmail.com), I will send you some free licenses💖.
+
+Feel free to contact me if you have any questions for these [veckshawn@gmail.com](mailto:veckshawn@gmail.com).
+
+{% include 'footer.md' %}

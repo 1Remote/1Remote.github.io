@@ -9,3 +9,6 @@ You can edit the note in the edit page or click the edit button on top-right of 
 We support link, image and others markdown syntax.
 
 ![image](img/note-3.jpg)
+
+{% include 'footer.md' %}
+

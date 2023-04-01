@@ -12,3 +12,6 @@ Assuming you are the IT administrator and you have already import servers into M
     ![folder](./img/folder.jpg)
 
 3. **`1Remote.DataSources.json`** is where we keep MySQL connection string, share this file with your team members, placed it in the same folder with `1Remote.db`.
+
+
+{% include 'footer.md' %}
