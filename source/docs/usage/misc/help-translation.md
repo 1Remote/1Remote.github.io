@@ -8,8 +8,8 @@ It would be really awesome to offer **PRemoteM** in many different languages! So
 4. Run the python script [run_google_translate.bat](https://github.com/1Remote/PRemoteM/blob/dev_net6/Ui/Resources/Languages/run_google_translate.bat), it will analysis the glossary you edited, and fill the blank in it (using Google translate). Then new `.xaml` and `LanguagesList.cs` will be generated.
 
 !!! note
-    - You may have to edit or remove the proxy in the [script](https://github.com/1Remote/1Remote/blob/dev_net6/Ui/Resources/Languages/glossary_maker.py#L142-L144)
-    - Do not edit any `.xaml` / `.cs` files directly, they are auto generated from glossary csv file.
+  - You may have to edit or remove the proxy in the [script](https://github.com/1Remote/1Remote/blob/dev_net6/Ui/Resources/Languages/glossary_maker.py#L142-L144)
+  - Do not edit any `.xaml` / `.cs` files directly, they are auto generated from glossary csv file.
 
       **See all this below were generated, do not edit any of them.**
 
@@ -28,75 +28,81 @@ It would be really awesome to offer **PRemoteM** in many different languages! So
 
 If you'd like to help out, please add your name and how we can contact you to this list. And thank you!
 
-- Arabic
+### Arabic
 
-  - [ ] ar-DZ
-  - [ ] ar-SA
-  - [ ] ...
+- [ ] ar-DZ
+- [ ] ar-SA
+- [ ] ...
 
-- Bangla
+### Bangla
 
-  - [ ] bn-BD
-  - [ ] bn-IN
+- [ ] bn-BD
+- [ ] bn-IN
 
-- Chinese
+### Chinese
 
-  - [x] [zh-CN](../tree/dev_net6/Ui/Resources/Languages/zh-cn.xaml) (@[Shawn](https://github.com/VShawn))
-  - [ ] zh-TW (@[yrctw](https://github.com/yrctw))
-  - [ ] zh-HK
+- [x] zh-CN (@[Shawn](https://github.com/VShawn))
+- [x] zh-TW (@[yrctw](https://github.com/yrctw))
+- [ ] zh-HK
 
-- Czech
+### Czech
 
-  - [x] cs-CZ (@[p-bo](https://github.com/p-bo))
+- [x] cs-CZ (@[p-bo](https://github.com/p-bo))
 
-- Dutch
+### Dutch
 
-  - [ ] nl-BE
-  - [ ] nl-NL
+- [ ] nl-BE
+- [ ] nl-NL
 
-- English
+### English
 
-  - [x] [en-US](../tree/dev_net6/Ui/Resources/Languages/en-us.json) (@[Shawn](https://github.com/VShawn) @[majkinetor](https://github.com/majkinetor) @[luki1412](https://github.com/luki1412))
-  - [ ] ...
+- [x] en-US (@[Shawn](https://github.com/VShawn) @[majkinetor](https://github.com/majkinetor) @[luki1412](https://github.com/luki1412))
+- [ ] ...
 
-- French
+### French
 
-  - [ ] [fr-FR](../tree/dev_net6/Ui/Resources/Languages/fr-fr.json) (@Vincent)
-  - [ ] ...
+- [x] fr-FR(@Vincent)
+- [ ] ...
 
-- German
+### Galego
 
-  - [x] [de-DE](../tree/dev_net6/Ui/Resources/Languages/de-de.json)(@[NAV-Management](https://github.com/NAV-Management))
-  - [ ] ...
+- [x] gl-ES (Hugo Alexandre Perez)
 
-- Italian
+### German
 
-  - [ ] it-IT
-  - [ ] ...
+- [x] de-DE (@[NAV-Management](https://github.com/NAV-Management))
+- [ ] ...
 
-- Japanese
+### Italian
 
-  - [x] ja-JP VShawn by Google translate.
+- [ ] it-IT
+- [ ] ...
 
-- Korean
+### Japanese
 
-  - [ ] ko-KR
+- [x] ja-JP VShawn by Google translate.
 
-- Spanish
+### Korean
 
-  - [ ] es-ES
-  - [ ] es-MX
-  - [ ] es-AR
-  - [ ] ...
+- [ ] ko-KR
 
-- Portuguese
+### Spanish
 
-  - [x] pt-BR (@[KernelGM](https://github.com/KernelGM))
+- [ ] es-ES
+- [ ] es-MX
+- [ ] es-AR
+- [ ] ...
 
-- Swedish
-  - [ ] sv-SE
+### Portuguese
 
-- Ukrainian
-  - [x] uk-UA
+- [x] pt-BR (@[KernelGM](https://github.com/KernelGM))
+
+### Swedish
+
+- [ ] sv-SE
+
+### Ukrainian
+
+- [ ] uk-UA
 
 {% include 'footer.md' %}
