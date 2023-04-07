@@ -54,7 +54,7 @@ By selecting multiple servers using the checkboxes and clicking the **`Edit`** b
 !!! warning inline end
     The exported data is stored in plain text, so please handle it with care.
 
-When multiple servers are selected, **`Export`** button can export selected items to json file which you can import it to another PC or simply make a backup. Please see the [Data synchronization](usage/database/data-synchronization.md) for further details.
+When some servers are selected, **`Export`** button can export selected items to json file which you can import it to another PC or simply make a backup. Please see the [Data synchronization](usage/database/data-synchronization.md) for further details.
 
 ### Data import
 
@@ -67,6 +67,19 @@ When multiple servers are selected, **`Export`** button can export selected item
 2. In 1Remote, click the **`+`** button in the upper-right corner of the main window, and choose "import mRemoteNG csv". Select the CSV file you just exported in the pop-up dialog, and click "Open" to complete the import.
 
 ![Importing from mRemoteNG](https://raw.githubusercontent.com/1Remote/PRemoteM/Doc/DocPic/Migrate.jpg)
+
+#### Importing from PRemoteM
+
+Since PRemoteM is our old name, you can also import data from PRemoteM.
+
+Our migration tool will auto detect your old data when your first start 1Remote.
+
+![prm](/usage/img/migrate-tools-for-prm.jpg)
+
+If the you miss the auto-migration, you can still import it manually:
+
+1. In PRemoteM export all data following the [Data export](#data-export) guide, you will get a *.prma file.
+2. In 1Remote click the **`+`** button in the upper-right corner then click the **`Import`** button, select the *.prma file you just exported in the pop-up dialog by select the file filter \*\.\*, and click "Open" to complete the import.
 
 #### Importing from RDP Files
 
