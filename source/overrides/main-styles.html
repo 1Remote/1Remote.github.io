@@ -250,18 +250,22 @@ body {
 .container-content-left h1{
     margin-top: 0;
 }
-
-
-
-
-
-
-
-
-
-
-
-
 </style>
+
+<script>
+// 如果 document.referrer 不是 来源于  "/zh-cn/" 则执行下面的代码
+if (document.referrer === ''){
+    var type = navigator.appName;
+    if (type == "Netscape") {
+        var lang = navigator.language.toLowerCase();
+    } else {
+        var lang = navigator.browserLanguage.toLowerCase();
+    }
+    var lang = lang.substr(0, 5);
+    if (lang === "zh-cn" && window.location.pathname === "/") {
+        window.location.href = "/zh-cn/"
+    }
+}
+</script>
 {% endblock %}
 
