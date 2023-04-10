@@ -1,5 +1,5 @@
 .md-typeset__table {
-    min-width: 100%;
+    min-width: 100% !important;
 }
 
 @media only screen and (min-width: 768px) {
@@ -9,22 +9,22 @@
 }
 
 * {
-    --md-primary-fg-color: #2875be;
-    --md-primary-fg-color--light: #1684eb;
-    --md-primary-fg-color--dark: #163d63;
+    --md-primary-fg-color: #2875be !important;
+    --md-primary-fg-color--light: #080808 !important;
+    --md-primary-fg-color--dark: #163d63 !important;
     --md-typeset-color: var(--md-default-fg-color);
-    --md-typeset-a-color: var(--md-primary-fg-color--light);
+    --md-typeset-a-color: var(--md-primary-fg-color);
 }
 
 :root {
-    --md-primary-fg-color: #1684eb;
-    --md-primary-fg-color--light: #77addf;
-    --md-primary-fg-color--dark: #163d63;
+    --md-primary-fg-color: #1684eb!important;
+    --md-primary-fg-color--light: #77addf!important;
+    --md-primary-fg-color--dark: #163d63!important;
 }
 
 :root>* {
     --md-typeset-color: var(--md-default-fg-color);
-    --md-typeset-a-color: var(--md-primary-fg-color--light);
+    --md-typeset-a-color: var(--md-primary-fg-color);
 }
 
 /*
@@ -32,7 +32,7 @@ markdown and image alignment
 ALT tag and a CSS selector on the alt tag
 */
 img[src*='#left'] {
-    float: left;
+    float: left
 }
 
 img[src*='#right'] {
@@ -48,11 +48,11 @@ img[src*='#center'] {
 Tables set to 100% width
 */
 .md-typeset__table {
-    min-width: 100%;
+    min-width: 100% !important;
 }
 
 .md-typeset table:not([class]) {
-    display: table;
+    display: table !important;
 }
 
 img {

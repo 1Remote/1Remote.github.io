@@ -20,13 +20,13 @@ Latest Version: 0.7.2.8
     - The exe version of 1Remote on GitHub is **completely free** for personal use.
     - For Microsoft Store build, you may need to pay for a lifetime license.
 
-| features       |                         EXE build                          |                           Microsoft Store build                           |                                 Preview build                                  |
-| :------------- | :--------------------------------------------------------: | :-----------------------------------------------------------------------: | :----------------------------------------------------------------------------: |
-| Auto update    |          ⛔  <br/> You have to update it manually           |              ✅ <br/>  You can update it from store or WinGet              |                                       ⛔                                        |
-| Other features |                             ✅                              |                                     ✅                                     |                                  ✅ + Preview💥                                  |
-| Price          |                            Free                            |                                About 💲1.99                                |                                      Free                                      |
-| Download       | [From GitHub](https://github.com/1Remote/1Remote/releases) | [Microsoft Store](https://www.microsoft.com/store/productId/9PNMNF92JNFP) | [From GitHub Nightly](https://github.com/1Remote/1Remote/releases/tag/Nightly) |
-| Installer      |                  `choco install premotem`                  |                       `winget install 9PNMNF92JNFP`                       |                                       ⛔                                        |
+|                |                          1Remote <br/> Preview build                           |            Old PRemoteM <br/> Stable EXE build             |                 Old PRemoteM <br/> Microsoft Store build                  |
+| :------------- | :----------------------------------------------------------------------------: | :--------------------------------------------------------: | :-----------------------------------------------------------------------: |
+| Auto update    |                                       ⛔                                        |          ⛔  <br/> You have to update it manually           |              ✅ <br/>  You can update it from store or WinGet              |
+| Other features |                               ✅ + 💥New Features                                |                             ✅                              |                                     ✅                                     |
+| Price          |                                      Free                                      |                            Free                            |                                About 💲1.99                                |
+| Download       | [From GitHub Nightly](https://github.com/1Remote/1Remote/releases/tag/Nightly) | [From GitHub](https://github.com/1Remote/1Remote/releases) | [Microsoft Store](https://www.microsoft.com/store/productId/9PNMNF92JNFP) |
+| Installer      |                                       ⛔                                        |                  `choco install premotem`                  |                       `winget install 9PNMNF92JNFP`                       |
 
 <!-- - Using [Winget](https://github.com/microsoft/winget-cli): `winget install premotem`
 - [Chocolatey](https://chocolatey.org/packages/premotem): `choco install premotem` -->

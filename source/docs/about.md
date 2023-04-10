@@ -1,4 +1,6 @@
-
+---
+hide: [navigation]
+---
 ## About me
 
 ![avatar](./img/author_avatar.jpg)

@@ -16,7 +16,7 @@ All features are available on all this versions. *Microsoft Store version may in
 | ----------------- | ---------------------------------- | ------------------------------- |
 | Update by one key | ⛔   You have to update it manually | ✅  You can update it from store |
 | Other features    | ✅                                  | ✅                               |
-| Price             | Free                               | About $1.99                     |
+| Price             | Free                               | About 💲1.99                     |
 
 
 If you are:
@@ -24,7 +24,7 @@ If you are:
 - our donator
 - contributor of 1Remote
 
-Please contact us at  [veckshawn@gmail.com](mailto:veckshawn@gmail.com), I will send you some free licenses💖.
+Please contact us at [veckshawn@gmail.com](mailto:veckshawn@gmail.com), I will send you some free licenses💖.
 
 Feel free to contact me if you have any questions for these [veckshawn@gmail.com](mailto:veckshawn@gmail.com).
 

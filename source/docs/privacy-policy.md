@@ -1,3 +1,6 @@
+---
+hide: [navigation]
+---
 # Privacy Policy
 
 [VShawn](https://github.com/VShawn) built this app as an Open Source app. This SERVICE is provided by VShawn at no cost with exe published and is intended for use as is.

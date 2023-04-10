@@ -19,7 +19,7 @@ theme:
   logo: img/logo.png
   features:
     # - navigation.expand
-    # - navigation.instant # now behaves like a Single Page Application
+    - navigation.instant # now behaves like a Single Page Application
     - navigation.top # Back-to-top button
     - navigation.indexes # documents can be directly attached to sections, which is particularly useful for providing overview pages: https://squidfunk.github.io/mkdocs-material/setup/setting-up-navigation/#with-section-index-pages
     - header.autohide
@@ -53,15 +53,15 @@ theme:
     #     name: Switch to light mode
 
 extra_css:
-  - _extra/css/extra.css
-  - _extra/css/pdf.css
+  - extra/css/extra.css
+  - extra/css/pdf.css
 
 extra_javascript:
-  - _extra/js/jquery-3.6.0.min.js
-  - _extra/js/mathjax.js
-  - _extra/js/tablesort.js
-  - _extra/js/click-image.js
-  - _extra/js/hide-something.js
+  - extra/js/jquery-3.6.0.min.js
+  - extra/js/mathjax.js
+  # - extra/js/tablesort.js # we don't need sorting for now
+  - extra/js/click-image.js
+  - extra/js/hide-something.js
   - https://polyfill.io/v3/polyfill.min.js?features=es6
   - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
   - https://unpkg.com/tablesort@5.3.0/dist/tablesort.min.js
@@ -77,13 +77,11 @@ extra:
   alternate:
     # Switch to English
     - name: English
-      #link: https://leverage.binbash.com.ar
       link: /
       lang: en
 
-    # Switch to Spanish
-    - name: 简体中文
-      #link: https://leverage.binbash.com.ar/es/
+    # Switch to Chinese Home page
+    - name: 简体中文主页
       link: /zh-cn
       lang: zh-cn
 
