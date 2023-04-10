@@ -1,9 +1,11 @@
-# {{name}} Quick Start
+# {{appname}} Quick Start
 
 ![logo](img/p2o.png)
 
-> {{name}} is the upgraded version of PRemoteM.
-> {{name}} is open source and free to use.
+!!! info "PRemoteM vs {{appname}}"
+    {{appname}} is the upgraded version of PRemoteM.
+
+    {{appname}} is open source and free to use.
 
 ## Installation
 

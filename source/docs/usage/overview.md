@@ -72,14 +72,14 @@ When some servers are selected, **`Export`** button can export selected items to
 
 Since PRemoteM is our old name, you can also import data from PRemoteM.
 
-Our migration tool will auto detect your old data when your first start 1Remote.
+Our migration tool will auto detect your old data when your first start {{appname}}.
 
 ![prm](/usage/img/migrate-tools-for-prm.jpg)
 
 If the you miss the auto-migration, you can still import it manually:
 
 1. In PRemoteM export all data following the [Data export](#data-export) guide, you will get a *.prma file.
-2. In 1Remote click the **`+`** button in the upper-right corner then click the **`Import`** button, select the *.prma file you just exported in the pop-up dialog by select the file filter \*\.\*, and click "Open" to complete the import.
+2. In {{appname}} click the **`+`** button in the upper-right corner then click the **`Import`** button, select the *.prma file you just exported in the pop-up dialog by select the file filter \*\.\*, and click "Open" to complete the import.
 
 #### Importing from RDP Files
 
@@ -87,7 +87,7 @@ If the you miss the auto-migration, you can still import it manually:
     We are not able to get password form RDP file, so you may have to enter password manually.
 
 1. In MSTSC.exe, click "Show Options" to expand the window, click the **`Save As...`** button under "Connection settings", and save as an RDP file.
-2. In 1Remote, click the **`+`** button in the upper-right corner of the main window, and choose "**import *.rdp**". Select the RDP file you just saved in the pop-up dialog, and click "Open" to complete the import.
+2. In {{appname}}, click the **`+`** button in the upper-right corner of the main window, and choose "**import *.rdp**". Select the RDP file you just saved in the pop-up dialog, and click "Open" to complete the import.
 
 ## Starting Remote Connections
 

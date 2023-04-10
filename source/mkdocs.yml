@@ -8,9 +8,6 @@ edit_uri: https://github.com/1Remote/1Remote.github.io/edit/main/source/docs
 
 dev_addr: 127.0.0.1:8000
 
-hide:
-  #   - navigation
-  - toc
 theme:
   custom_dir: overrides
   icon:
@@ -18,39 +15,24 @@ theme:
   favicon: img/logo.png
   logo: img/logo.png
   features:
-    # - navigation.expand
     - navigation.instant # now behaves like a Single Page Application
     - navigation.top # Back-to-top button
     - navigation.indexes # documents can be directly attached to sections, which is particularly useful for providing overview pages: https://squidfunk.github.io/mkdocs-material/setup/setting-up-navigation/#with-section-index-pages
     - header.autohide
     - navigation.tabs
-    # - navigation.tabs.sticky # tab will not auto hide
     - navigation.sections
     - navigation.tracking
+    - navigation.footer
   name: material
-  # palette:
-  #   - scheme: default
-  #     toggle:
-  #       icon: material/lightbulb-outline
-  #       name: Switch to dark mode
-  #   - scheme: slate
-  #     toggle:
-  #       icon: material/lightbulb
-  #       name: Switch to light mode
-
-  palette: # https://www.materialpalette.com/colors
+  palette:
     - scheme: default
-      #primary: "teal" # comment to replace by /docs/css/extra.css
-      accent: red
-    #   toggle:
-    #     icon: material/toggle-switch-off-outline
-    #     name: Switch to dark mode
-    # - scheme: slate
-    #   #primary: "teal" # comment to replace by /docs/assets/stylesheets
-    #   accent: teal
-    #   toggle:
-    #     icon: material/toggle-switch
-    #     name: Switch to light mode
+      toggle:
+        icon: material/lightbulb-outline
+        name: Switch to dark mode
+    - scheme: slate
+      toggle:
+        icon: material/lightbulb
+        name: Switch to light mode
 
 extra_css:
   - extra/css/extra.css
@@ -68,8 +50,9 @@ extra_javascript:
 
 extra:
   url_prefix: !ENV MM_DOCS_URL_PREFIX
-  name: 1Remote
+  appname: 1Remote
   shortname: 1RM
+  author:
   social:
     - icon: fontawesome/brands/github
       link: https://github.com/1Remote/
@@ -144,7 +127,9 @@ plugins:
   - macros:
       include_dir: inc
   - search:
-      language: en # https://squidfunk.github.io/mkdocs-material/usage/#language
+        separator: '[\s\-\.]+'
+        lang:
+            - en
   - tags:
       tags_file: tags.md
   - pdf-export:

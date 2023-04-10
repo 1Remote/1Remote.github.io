@@ -17,10 +17,10 @@ Latest Version: 0.7.2.8
 ## Installation
 
 !!! note
-    - The exe version of 1Remote on GitHub is **completely free** for personal use.
+    - The exe version of {{appname}} on GitHub is **completely free** for personal use.
     - For Microsoft Store build, you may need to pay for a lifetime license.
 
-|                |                          1Remote <br/> Preview build                           |            Old PRemoteM <br/> Stable EXE build             |                 Old PRemoteM <br/> Microsoft Store build                  |
+|                |                          {{appname}} <br/> Preview build                           |            Old PRemoteM <br/> Stable EXE build             |                 Old PRemoteM <br/> Microsoft Store build                  |
 | :------------- | :----------------------------------------------------------------------------: | :--------------------------------------------------------: | :-----------------------------------------------------------------------: |
 | Auto update    |                                       ⛔                                        |          ⛔  <br/> You have to update it manually           |              ✅ <br/>  You can update it from store or WinGet              |
 | Other features |                               ✅ + 💥New Features                                |                             ✅                              |                                     ✅                                     |

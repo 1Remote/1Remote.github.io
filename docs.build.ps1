@@ -3,7 +3,7 @@
 #>
 param (
     # Version/tag of the mm-docs image to use
-    [string] $aVersion   = (property MM_DOCS_VERSION '0.7.6'),
+    [string] $aVersion   = (property MM_DOCS_VERSION '0.8'),
 
     # Registry and name to use to get mm-docs image
     [string] $aImageName = (property MM_DOCS_IMAGE_NAME 'majkinetor/mm-docs'),
