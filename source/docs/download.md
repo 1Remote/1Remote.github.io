@@ -26,7 +26,7 @@ Latest Version: 0.7.2.8
 | Other features |                               ✅ + 💥New Features                                |                             ✅                              |                                     ✅                                     |
 | Price          |                                      Free                                      |                            Free                            |                                About 💲1.99                                |
 | Download       | [From GitHub Nightly](https://github.com/1Remote/1Remote/releases/tag/Nightly) | [From GitHub](https://github.com/1Remote/1Remote/releases) | [Microsoft Store](https://www.microsoft.com/store/productId/9PNMNF92JNFP) |
-| Installer      |                                       ⛔                                        |                  `choco install premotem`                  |                       `winget install 9PNMNF92JNFP`                       |
+| Installer      |                                       `choco install 1remote --version=0.4`                                        |                  `choco install premotem`                  |                       `winget install premotem`                       |
 
 <!-- - Using [Winget](https://github.com/microsoft/winget-cli): `winget install premotem`
 - [Chocolatey](https://chocolatey.org/packages/premotem): `choco install premotem` -->
