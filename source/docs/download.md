@@ -20,13 +20,13 @@ Latest Version: 0.7.2.8
     - The exe version of {{appname}} on GitHub is **completely free** for personal use.
     - For Microsoft Store build, you may need to pay for a lifetime license.
 
-|                |                          {{appname}} <br/> Preview build                           |            Old PRemoteM <br/> Stable EXE build             |                 Old PRemoteM <br/> Microsoft Store build                  |
+|                |                        {{appname}} <br/> Preview build                         |            Old PRemoteM <br/> Stable EXE build             |                 Old PRemoteM <br/> Microsoft Store build                  |
 | :------------- | :----------------------------------------------------------------------------: | :--------------------------------------------------------: | :-----------------------------------------------------------------------: |
 | Auto update    |                                       ⛔                                        |          ⛔  <br/> You have to update it manually           |              ✅ <br/>  You can update it from store or WinGet              |
 | Other features |                               ✅ + 💥New Features                                |                             ✅                              |                                     ✅                                     |
-| Price          |                                      Free                                      |                            Free                            |                                About 💲1.99                                |
+| Price          |                                      Free                                      |                            Free                            |                    About 💲1.99 (For store maintaining)                    |
 | Download       | [From GitHub Nightly](https://github.com/1Remote/1Remote/releases/tag/Nightly) | [From GitHub](https://github.com/1Remote/1Remote/releases) | [Microsoft Store](https://www.microsoft.com/store/productId/9PNMNF92JNFP) |
-| Installer      |                                       `choco install 1remote --version=0.4`                                        |                  `choco install premotem`                  |                       `winget install premotem`                       |
+| Installer      |                     `choco install 1remote --version=0.4`                      |                  `choco install premotem`                  |                         `winget install premotem`                         |
 
 <!-- - Using [Winget](https://github.com/microsoft/winget-cli): `winget install premotem`
 - [Chocolatey](https://chocolatey.org/packages/premotem): `choco install premotem` -->
