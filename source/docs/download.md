@@ -22,11 +22,11 @@ Latest Version: 0.7.2.8
 
 |                |                        {{appname}} <br/> Preview build                         |            Old PRemoteM <br/> Stable EXE build             |                 Old PRemoteM <br/> Microsoft Store build                  |
 | :------------- | :----------------------------------------------------------------------------: | :--------------------------------------------------------: | :-----------------------------------------------------------------------: |
-| Auto update    |                                       ⛔                                        |          ⛔  <br/> You have to update it manually           |              ✅ <br/>  You can update it from store or WinGet              |
-| Other features |                               ✅ + 💥New Features                                |                             ✅                              |                                     ✅                                     |
-| Price          |                                      Free                                      |                            Free                            |                    About 💲1.99 (For store maintaining)                    |
+| Auto update    |                                       ⛔                                       |          ⛔  <br/> You have to update it manually         |              ✅ <br/>  You can update it from store or WinGet             |
+| Other features |                               ✅ + 💥New Features                             |                             ✅                            |                                     ✅                                    |
+| Price          |                                      Free                                      |                            Free                            |                    About 💲1.99 (For store maintaining)                   |
 | Download       | [From GitHub Nightly](https://github.com/1Remote/1Remote/releases/tag/Nightly) | [From GitHub](https://github.com/1Remote/1Remote/releases) | [Microsoft Store](https://www.microsoft.com/store/productId/9PNMNF92JNFP) |
-| Installer      |                     `choco install 1remote --version=0.4`                      |                  `choco install premotem`                  |                         `winget install premotem`                         |
+| Installer      |                      `choco install 1remote`                                   |                  `choco install premotem`                  |                         `winget install premotem`                         |
 
 <!-- - Using [Winget](https://github.com/microsoft/winget-cli): `winget install premotem`
 - [Chocolatey](https://chocolatey.org/packages/premotem): `choco install premotem` -->
