@@ -15,14 +15,15 @@ theme:
   favicon: img/logo.png
   logo: img/logo.png
   features:
-    - navigation.instant # now behaves like a Single Page Application
-    - navigation.top # Back-to-top button
-    - navigation.indexes # documents can be directly attached to sections, which is particularly useful for providing overview pages: https://squidfunk.github.io/mkdocs-material/setup/setting-up-navigation/#with-section-index-pages
+    - navigation.instant
+    - navigation.top
+    - navigation.indexes
     - header.autohide
     - navigation.tabs
     - navigation.sections
     - navigation.tracking
     - navigation.footer
+    - content.action.edit
   name: material
   palette:
     - scheme: default
@@ -41,7 +42,6 @@ extra_css:
 extra_javascript:
   - extra/js/jquery-3.6.0.min.js
   - extra/js/mathjax.js
-  # - extra/js/tablesort.js # we don't need sorting for now
   - extra/js/click-image.js
   - extra/js/hide-something.js
   - https://polyfill.io/v3/polyfill.min.js?features=es6
