@@ -1,14 +1,14 @@
-It would be really awesome to offer **PRemoteM** in many different languages! So you're really Welcome to translate **PRemoteM** in your (native) language, but don't worry there are just a few strings.
+It would be really awesome to offer **1Remote** in many different languages! So you're really Welcome to translate **1Remote** in your (native) language, but don't worry there are just a few strings.
 
 ## How to
 
 1. fork and clone
 2. open file `glossary.csv` in `Ui\Resources\Languages` by Excel or something.
 3. Add a new cloumn for your new language & Fill in the blanks.
-4. Run the python script [run_google_translate.bat](https://github.com/1Remote/PRemoteM/blob/dev_net6/Ui/Resources/Languages/run_google_translate.bat), it will analysis the glossary you edited, and fill the blank in it (using Google translate). Then new `.xaml` and `LanguagesList.cs` will be generated.
+4. Run the python script `conver_glossary_to_xaml.bat`, it will analysis the glossary you edited, and fill the blank in it (using Google translate). Then new `.xaml` and `LanguagesList.cs` will be generated.
 
 !!! note
-  - You may have to edit or remove the proxy in the [script](https://github.com/1Remote/1Remote/blob/dev_net6/Ui/Resources/Languages/glossary_maker.py#L142-L144)
+  - You may have to edit or remove the proxy in `glossary_maker.py`
   - Do not edit any `.xaml` / `.cs` files directly, they are auto generated from glossary csv file.
 
       **See all this below were generated, do not edit any of them.**
