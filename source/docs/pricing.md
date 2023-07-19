@@ -12,11 +12,11 @@ hide: [toc, navigation]
 
 All features are available on all this versions. *Microsoft Store version may introduce some unique new features in the future.*
 
-| Features          | EXE build                          | Microsoft Store build               |
-| ----------------- | ---------------------------------- | ----------------------------------- |
-| Update by one key | ⛔   You have to update it manually | ✅  You can update it from store     |
-| Other features    | ✅                                  | ✅                                   |
-| Price             | Free                               | About 💲1.99 (For store maintaining) |
+| Features          | EXE build                          | Microsoft Store build                                                                                                                                             |
+| ----------------- | ---------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Update by one key | ⛔   You have to update it manually | ✅  You can update it from store                                                                                                                                   |
+| Other features    | ✅                                  | ✅                                                                                                                                                                 |
+| Price             | Free                               | ~~💲1.99~~ Free <br/>(As our previous income is now able to cover the recent maintenance costs(server\domain name\ etc.), this app will resume free downloads now) |
 
 
 If you are:
