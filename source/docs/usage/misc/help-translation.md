@@ -106,3 +106,7 @@ If you'd like to help out, please add your name and how we can contact you to th
 - [ ] uk-UA
 
 {% include 'footer.md' %}
+
+### Polish
+
+- [x] pl-Pl (@[Jokerowatowy](https://github.com/Jokerowatowy))
