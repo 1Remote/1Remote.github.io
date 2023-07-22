@@ -1,11 +1,13 @@
-
+---
+hide: [navigation]
+---
 ## About me
 
 ![avatar](./img/author_avatar.jpg)
 
 Hi there,
 
-I’m Shawn. the author of 1Remote. I’m a software developer from China, a big fan of remote desktop software, user of C++/C/C#/Python/Pytorch/Go/typescript. I’m also a big fan of open source software. I hope that 1Remote can help you manage your remote connections well and find this app useful.  If you would like to support my work, you can buy me a coffee or give a nice review. Thanks!
+I’m Shawn. the author of {{appname}}. I’m a software developer from China, a big fan of remote desktop software, user of C++/C/C#/Python/Pytorch/Go/typescript. I’m also a big fan of open source software. I hope that 1Remote can help you manage your remote connections well and find this app useful.  If you would like to support my work, you can buy me a coffee or give a nice review. Thanks!
 
 - [Buy a coffee](https://ko-fi.com/VShawn)
 - [Buy a copy on Microsoft Store](https://www.microsoft.com/store/productId/9PNMNF92JNFP)
@@ -13,8 +15,7 @@ I’m Shawn. the author of 1Remote. I’m a software developer from China, a big
 
 If you have any questions/suggestions please feel free to let me know. [veckshawn@gmail.com](mailto:veckshawn@gmail.com) is my email in case you want to contact me.
 
-
-## Make 1Remote Stronger
+## Make {{appname}} Stronger
 
 If you like this app, please help us make it stronger by doing any of the following:
 

@@ -8,9 +8,6 @@ edit_uri: https://github.com/1Remote/1Remote.github.io/edit/main/source/docs
 
 dev_addr: 127.0.0.1:8000
 
-hide:
-  #   - navigation
-  - toc
 theme:
   custom_dir: overrides
   icon:
@@ -18,60 +15,58 @@ theme:
   favicon: img/logo.png
   logo: img/logo.png
   features:
-    # - navigation.expand
-    - navigation.instant # now behaves like a Single Page Application
-    - navigation.top # Back-to-top button
-    - navigation.indexes # documents can be directly attached to sections, which is particularly useful for providing overview pages: https://squidfunk.github.io/mkdocs-material/setup/setting-up-navigation/#with-section-index-pages
+    - navigation.instant
+    - navigation.top
+    - navigation.indexes
     - header.autohide
     - navigation.tabs
-    # - navigation.tabs.sticky # tab will not auto hide
     - navigation.sections
     - navigation.tracking
+    - navigation.footer
+    - content.action.edit
   name: material
-  # palette:
-  #   - scheme: default
-  #     toggle:
-  #       icon: material/lightbulb-outline
-  #       name: Switch to dark mode
-  #   - scheme: slate
-  #     toggle:
-  #       icon: material/lightbulb
-  #       name: Switch to light mode
-
-  palette: # https://www.materialpalette.com/colors
+  palette:
     - scheme: default
-      #primary: "teal" # comment to replace by /docs/css/extra.css
-      accent: red
-    #   toggle:
-    #     icon: material/toggle-switch-off-outline
-    #     name: Switch to dark mode
-    # - scheme: slate
-    #   #primary: "teal" # comment to replace by /docs/assets/stylesheets
-    #   accent: teal
-    #   toggle:
-    #     icon: material/toggle-switch
-    #     name: Switch to light mode
+      toggle:
+        icon: material/lightbulb-outline
+        name: Switch to dark mode
+    - scheme: slate
+      toggle:
+        icon: material/lightbulb
+        name: Switch to light mode
 
 extra_css:
-  - _extra/css/extra.css
-  - _extra/css/pdf.css
+  - extra/css/extra.css
+  - extra/css/pdf.css
 
 extra_javascript:
-  - _extra/js/jquery-3.6.0.min.js
-  - _extra/js/mathjax.js
-  - _extra/js/tablesort.js
-  - _extra/js/click-image.js
+  - extra/js/jquery-3.6.0.min.js
+  - extra/js/mathjax.js
+  - extra/js/click-image.js
+  - extra/js/hide-something.js
   - https://polyfill.io/v3/polyfill.min.js?features=es6
   - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
   - https://unpkg.com/tablesort@5.3.0/dist/tablesort.min.js
 
 extra:
   url_prefix: !ENV MM_DOCS_URL_PREFIX
-  name: 1Remote
+  appname: 1Remote
   shortname: 1RM
+  author:
   social:
     - icon: fontawesome/brands/github
       link: https://github.com/1Remote/
+
+  alternate:
+    # Switch to English
+    - name: English
+      link: /
+      lang: en
+
+    # Switch to Chinese Home page
+    - name: 简体中文主页
+      link: /zh-cn
+      lang: zh-cn
 
   analytics:
     provider: google
@@ -132,7 +127,9 @@ plugins:
   - macros:
       include_dir: inc
   - search:
-      language: en # https://squidfunk.github.io/mkdocs-material/usage/#language
+        separator: '[\s\-\.]+'
+        lang:
+            - en
   - tags:
       tags_file: tags.md
   - pdf-export:
@@ -187,6 +184,7 @@ nav:
           - Streamline by pre/post connect script:
               - Overview: usage/misc/pre-post-script-control/overview.md
               - Pre-open a VPN: usage/misc/pre-post-script-control/open-a-vpn-before-connect.md
+          - CLI: usage/misc/cli.md
           - Note for servers: usage/misc/note-for-servers.md
           - Help translation: usage/misc/help-translation.md
             #   - Customized: usage/misc/customized.md
