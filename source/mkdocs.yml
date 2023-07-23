@@ -127,9 +127,9 @@ plugins:
   - macros:
       include_dir: inc
   - search:
-        separator: '[\s\-\.]+'
-        lang:
-            - en
+      separator: '[\s\-\.]+'
+      lang:
+        - en
   - tags:
       tags_file: tags.md
   - pdf-export:
@@ -184,8 +184,9 @@ nav:
           - Streamline by pre/post connect script:
               - Overview: usage/misc/pre-post-script-control/overview.md
               - Pre-open a VPN: usage/misc/pre-post-script-control/open-a-vpn-before-connect.md
-          - CLI: usage/misc/cli.md
           - Note for servers: usage/misc/note-for-servers.md
+          - CLI: usage/misc/cli.md
+          - Creating Desktop shortcut for connections: usage/misc/desktop-shortcut-for-connection.md
           - Help translation: usage/misc/help-translation.md
             #   - Customized: usage/misc/customized.md
   - Pricing: pricing.md
