@@ -8,3 +8,12 @@
 //         $(".md-header .md-select").show();
 //     }
 // });
+
+
+browserLang = navigator.language ? navigator.language : navigator.browserLanguage;
+lang = browserLang.toLowerCase();
+if (lang.substr(0, 2) === "zh") {
+    // 显示所有 class = "class-zh-cn" 的元素
+    $(".class-zh-cn").show();
+    $(".class-none-zh-cn").hide();
+}

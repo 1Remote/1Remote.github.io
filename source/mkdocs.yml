@@ -189,7 +189,7 @@ nav:
           - Creating Desktop shortcut for connections: usage/misc/desktop-shortcut-for-connection.md
           - Help translation: usage/misc/help-translation.md
             #   - Customized: usage/misc/customized.md
-  - Pricing: pricing.md
+  # - Pricing: pricing.md
   - Download: download.md
   - Privacy Policy: privacy-policy.md
   - About: about.md
