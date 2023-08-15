@@ -175,6 +175,7 @@ nav:
               - App: usage/protocol/especial/app.md
               - RemoteApp: usage/protocol/especial/remoteapp.md
               - Rdp in mstsc.exe mode: usage/protocol/especial/rdp-in-mstsc-mode.md
+              - SSH Tunnel: usage/protocol/especial/ssh-tunnel.md
           - Runner: usage/protocol/runner.md
       - Team (experimental):
           - Team sharing: usage/team/team-sharing.md
