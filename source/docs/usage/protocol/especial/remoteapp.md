@@ -22,8 +22,8 @@ Using a RemoteApp program is similar to using a local application. When you impl
 
 ## Step1 Another way
 
-1. install [RemoteApp Tool](http://www.kimknight.net/remoteapptool) on Server.
-2. Create a RemoteApp by [RemoteApp Tool](http://www.kimknight.net/remoteapptool)'s user guides, then [RemoteApp Tool](http://www.kimknight.net/remoteapptool) will help you do Step1. 1-9
+1. install [RemoteApp Tool](https://github.com/kimmknight/remoteapptool) on Server.
+2. Create a RemoteApp by [RemoteApp Tool](https://github.com/kimmknight/remoteapptool)'s user guides, then [RemoteApp Tool](https://github.com/kimmknight/remoteapptool) will help you do Step1. 1-9
 
 ### Step2
 
