@@ -29,7 +29,7 @@ hide: [toc, navigation]
         <li><a href="https://jq.qq.com/?_wv=1027&amp;k=iF8dguHU" rel="nofollow">加入 QQ 群讨论 (168542318)</a></li>
         <li>请我喝杯咖啡
             <p align="center">
-                <img style="max-width: 500px;" src="https://raw.githubusercontent.com/1Remote/PRemoteM/Doc/DocPic/others/donate.jpg" />
+                <img style="max-width: 500px;" src="./zh-cn/donate.jpg" />
             </p>
             <p style="opacity: 0.6;font: -webkit-mini-control;">（感谢大家慷慨捐赠，请恕我在此不列出捐赠者名单，捐赠将用于APP开发相关的指出。以下是一些典型用例：服务器、域名、测试用的Windows hello硬件、瑞幸咖啡、空调电费、夜宵外卖等😀）</p>
         </li>
@@ -69,8 +69,6 @@ Latest Version: 0.7.2.8
 - [x] [Servers sharing within team (e.g. share servers with your colleagues)](https://1remote.github.io/usage/team/team-sharing/)
 - [x] [Quick connect from launcher](https://1remote.org/usage/launcher/quick-connect/)
 - [x] [allow creating desktop shortcut for connections](https://1remote.org/usage/misc/desktop-shortcut-for-connection/#individual-servers)
-- [ ] Windows Hello verification before sensitive operations
-
-
+- [x] Windows Hello verification before sensitive operations
 
 {% include 'footer.md' %}

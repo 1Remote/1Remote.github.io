@@ -66,7 +66,7 @@ When some servers are selected, **`Export`** button can export selected items to
 1. In mRemoteNG, right-click on the server and choose "**Export to File...**". Set the "**File Format**" to "**mRemoteNG CSV**" in the pop-up window, and click the **`OK`** button in the lower-right corner to export.
 2. In 1Remote, click the **`+`** button in the upper-right corner of the main window, and choose "import mRemoteNG csv". Select the CSV file you just exported in the pop-up dialog, and click "Open" to complete the import.
 
-![Importing from mRemoteNG](https://raw.githubusercontent.com/1Remote/PRemoteM/Doc/DocPic/Migrate.jpg)
+![Importing from mRemoteNG](./img/migrate-tools-for-mRemoteNG.jpg)
 
 #### Importing from PRemoteM
 
@@ -74,7 +74,7 @@ Since PRemoteM is our old name, you can also import data from PRemoteM.
 
 Our migration tool will auto detect your old data when your first start {{appname}}.
 
-![prm](/usage/img/migrate-tools-for-prm.jpg)
+![prm](./img/migrate-tools-for-prm.jpg)
 
 If the you miss the auto-migration, you can still import it manually:
 
