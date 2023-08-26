@@ -12,11 +12,14 @@ hide: [toc, navigation]
         <li><a href="https://github.com/1Remote/1Remote">Simply star the repository</a></li>
         <li><a href="https://1remote.github.io/usage/misc/help-translation/">Help translation</a></li>
         <li><a href="https://github.com/1Remote/1Remote/blob/main/DEVELOP.md">Join DE</a></li>
-        <li><a href="https://ko-fi.com/VShawn">Buy me a coffee</a></li>
+        <li>
+            <p><a href="https://ko-fi.com/VShawn">Buy me a coffee</a></p>
+            <p style="opacity: 0.6;font: -webkit-mini-control;">（Thank you all for your generous donations. I apologize for not listing the names of the donors here. The donations will be used for various expenses related to app development, such as server costs, domain registration, Windows Hello hardware for testing, luckin coffee, electricity bills, late-night takeaway, etc. :)</p>
+        </li>
     </ol>
 </div>
 
-<div class="class-zh-cn" style="display: none">
+<div class="class-zh-cn">
     <h2 id="make-1remote-stronger">帮助改进项目</h2>
     <p>若你有意愿参与到 <b>1Remote</b>, 的改进，这些是你可以做的：</p>
     <ol>
@@ -28,6 +31,7 @@ hide: [toc, navigation]
             <p align="center">
                 <img style="max-width: 500px;" src="https://raw.githubusercontent.com/1Remote/PRemoteM/Doc/DocPic/others/donate.jpg" />
             </p>
+            <p style="opacity: 0.6;font: -webkit-mini-control;">（感谢大家慷慨捐赠，请恕我在此不列出捐赠者名单，捐赠将用于APP开发相关的指出。以下是一些典型用例：服务器、域名、测试用的Windows hello硬件、瑞幸咖啡、空调电费、夜宵外卖等😀）</p>
         </li>
     </ol>
 </div>
