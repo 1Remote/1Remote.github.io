@@ -35,7 +35,7 @@ recommended tools:
 
 ![MySQL](img/mysql.png)
 
-Using a MySQL database is a more professional way to synchronize data. When server info is edited on on device, other devices will update the modify in a few minutes. Go to `Options` -> `Database` -> `MySQL` to set up the database, check [Online database](usage/database/use-a-online-database.md) for more details.
+Using a MySQL database is a more professional way to synchronize data. When server info is edited on on device, other devices will update the modify in a few minutes. Go to `Options` -> `Database` -> `MySQL` to set up the database, check [Online database](./usage/database/use-a-online-database.md) for more details.
 
 ![MySQL](img/mysql-add.jpg)
 

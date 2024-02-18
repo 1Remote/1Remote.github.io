@@ -9,7 +9,7 @@ This is where configuring multiple databases becomes useful:
 
 - **At home**: Connect to the MySQL database on your NAS to manage your personal servers when you back home.
 - **On work**: Connect to both the MySQL on your home NAS and the MySQL on your company server to access the servers for work when you are in your office.
-- **For team**: With MySQL, you can share the server with your colleagues, make them connect to different MySQL database can make sure they can only see the servers they have permission to access, more detail: [Team sharing](usage/team/team-sharing.md)
+- **For team**: With MySQL, you can share the server with your colleagues, make them connect to different MySQL database can make sure they can only see the servers they have permission to access, more detail: [Team sharing](./usage/team/team-sharing.md)
 
 ## Use MySQL
 

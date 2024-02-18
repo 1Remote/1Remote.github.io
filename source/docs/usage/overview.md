@@ -15,7 +15,7 @@
 
     ![add-server](./img/add-server4.jpg)
 
-5. (Optional) Configure scripts for the server, such as opening VPN before starting remote desktop, or closing VPN after closing remote desktop. Scripts support cmd, PowerShell, and Python. Please see the [Open a VPN before connect](usage/misc/open-a-vpn-before-connect.md) for further details.
+5. (Optional) Configure scripts for the server, such as opening VPN before starting remote desktop, or closing VPN after closing remote desktop. Scripts support cmd, PowerShell, and Python. Please see the [Open a VPN before connect](./usage/misc/open-a-vpn-before-connect.md) for further details.
 
 6. Continue entering server **address**, **port**, **credentials** and other information, and select your desired connection settings.
 7. Click the **`Save`** button to complete adding the server and return to the homepage.
@@ -54,7 +54,7 @@ By selecting multiple servers using the checkboxes and clicking the **`Edit`** b
 !!! warning inline end
     The exported data is stored in plain text, so please handle it with care.
 
-When some servers are selected, **`Export`** button can export selected items to json file which you can import it to another PC or simply make a backup. Please see the [Data synchronization](usage/database/data-synchronization.md) for further details.
+When some servers are selected, **`Export`** button can export selected items to json file which you can import it to another PC or simply make a backup. Please see the [Data synchronization](./usage/database/data-synchronization.md) for further details.
 
 ### Data import
 
@@ -101,7 +101,7 @@ If the you miss the auto-migration, you can still import it manually:
 
 You can use the default shortcut ++alt++ + ++m++ call the launcher, then type some key words to search the server you want to connect, then press ++enter++ to start.
 
-For more details about the Launcher, please see the [Launcher](usage/launcher/basic.md).
+For more details about the Launcher, please see the [Launcher](./usage/launcher/basic.md).
 
 ## Session view
 
