@@ -38,15 +38,15 @@ hide: [toc, navigation]
 
 ## Installation
 
-Latest Version: 0.7.2.8
+Latest Version: 1.0.0
 
-|                |                        {{appname}} <br/> Preview build                         |            Old PRemoteM <br/> Stable EXE build             |                 Old PRemoteM <br/> Microsoft Store build                  |
+|                |                        {{appname}} <br/> Preview build                         |             {{appname}} <br/> Stable EXE build             |                  {{appname}}<br/> Microsoft Store build                   |
 | :------------- | :----------------------------------------------------------------------------: | :--------------------------------------------------------: | :-----------------------------------------------------------------------: |
 | Auto update    |                                       ⛔                                        |                             ⛔                              |                                     ✅                                     |
 | Other features |                               ✅ + 💥New Features                                |                             ✅                              |                                     ✅                                     |
 | Price          |                                      Free                                      |                            Free                            |                              ~~💲1.99~~ Free                               |
 | Download       | [From GitHub Nightly](https://github.com/1Remote/1Remote/releases/tag/Nightly) | [From GitHub](https://github.com/1Remote/1Remote/releases) | [Microsoft Store](https://www.microsoft.com/store/productId/9PNMNF92JNFP) |
-| Installer      |                            `choco install 1remote`                             |                  `choco install premotem`                  |                         `winget install premotem`                         |
+| Installer      |                            `choco install 1remote`                             |                  `choco install 1remote`                   |                         `winget install 1remote`                          |
 
 <!-- - Using [Winget](https://github.com/microsoft/winget-cli): `winget install premotem`
 - [Chocolatey](https://chocolatey.org/packages/premotem): `choco install premotem` -->
@@ -59,7 +59,7 @@ Latest Version: 0.7.2.8
     - The exe version of {{appname}} on GitHub is **completely free** for personal use.
     - ~~For Microsoft Store build, you may need to pay for a lifetime license.~~ (As our previous income is now able to cover the recent maintenance costs(server\domain name\ etc.), this app will resume free downloads now) -->
 
-💥New Features in Preview:
+💥New Features:
 
 - [x] [MySQL support](https://1remote.github.io/usage/database/data-synchronization/#by-using-mysql)
 - [x] [Custom servers order by drag](https://1remote.github.io/usage/overview/#sorting)

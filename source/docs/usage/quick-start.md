@@ -1,10 +1,5 @@
 # {{appname}} Quick Start
 
-![logo](img/p2o.png)
-
-!!! info "PRemoteM vs {{appname}}"
-    {{appname}} is the upgraded version of PRemoteM.
-
     {{appname}} is open source and free to use.
 
 ## Installation
@@ -27,6 +22,11 @@
 [Learn more](/usage/overview/#adding-server){ .md-button }
 
 #### Migrate from PRemoteM
+
+![logo](img/p2o.png)
+
+!!! info "PRemoteM vs {{appname}}"
+    {{appname}} is the upgraded version of PRemoteM.
 
 Since PRemoteM is our old name, our migration tool will auto detect your old data when your first start 1Remote.
 
