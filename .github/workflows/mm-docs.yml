@@ -11,12 +11,12 @@ jobs:
       - run: ./Invoke-Build.ps1 Build
       - run: ./Invoke-Build.ps1 Run, ExportPdf, Stop
       - name: Upload Artifact - PDF
-        uses: actions/upload-artifact@v2
+        uses: actions/upload-artifact@v4
         with:
           name: pdf
           path: ./source/pdf/docs.pdf
       - name: Upload Artifact - Site
-        uses: actions/upload-artifact@v2
+        uses: actions/upload-artifact@v4
         with:
           name: site
           path: ./source/site
