@@ -38,13 +38,13 @@ hide: [toc, navigation]
 
 ## Installation
 
-Latest Version: 1.0.0
+Latest Version: 1.1.0
 
 |                |                        {{appname}} <br/> Preview build                         |             {{appname}} <br/> Stable EXE build             |                  {{appname}}<br/> Microsoft Store build                   |
 | :------------- | :----------------------------------------------------------------------------: | :--------------------------------------------------------: | :-----------------------------------------------------------------------: |
 | Auto update    |                                       ⛔                                        |                             ⛔                              |                                     ✅                                     |
 | Other features |                               ✅ + 💥New Features                                |                             ✅                              |                                     ✅                                     |
-| Price          |                                      Free                                      |                            Free                            |                              ~~💲1.99~~ Free                               |
+| Price          |                                      Free                                      |                            Free                            |                                   Free                                    |
 | Download       | [From GitHub Nightly](https://github.com/1Remote/1Remote/releases/tag/Nightly) | [From GitHub](https://github.com/1Remote/1Remote/releases) | [Microsoft Store](https://www.microsoft.com/store/productId/9PNMNF92JNFP) |
 | Installer      |                            `choco install 1remote`                             |                  `choco install 1remote`                   |                         `winget install 1remote`                          |
 
