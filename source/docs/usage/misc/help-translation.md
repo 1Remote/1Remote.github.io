@@ -88,16 +88,24 @@ If you'd like to help out, please add your name and how we can contact you to th
 
 - [ ] ko-KR
 
+### Polish
+
+- [x] pl-Pl (@[Jokerowatowy](https://github.com/Jokerowatowy))
+
+### Portuguese
+
+- [x] pt-BR (@[KernelGM](https://github.com/KernelGM))
+
+### Russian
+
+- [x] ru-RU (@[DeXP](https://github.com/DeXP)) 
+
 ### Spanish
 
 - [ ] es-ES
 - [ ] es-MX
 - [ ] es-AR
 - [ ] ...
-
-### Portuguese
-
-- [x] pt-BR (@[KernelGM](https://github.com/KernelGM))
 
 ### Swedish
 
@@ -107,8 +115,5 @@ If you'd like to help out, please add your name and how we can contact you to th
 
 - [ ] uk-UA
 
+
 {% include 'footer.md' %}
-
-### Polish
-
-- [x] pl-Pl (@[Jokerowatowy](https://github.com/Jokerowatowy))
