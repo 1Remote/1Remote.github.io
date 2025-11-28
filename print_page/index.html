@@ -1,0 +1,2756 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="One Remote Access Manager to Rule Them All">
+      
+      
+        <meta name="author" content="1Remote Team">
+      
+      
+      
+      
+      <link rel="icon" href="../img/logo.png">
+      <meta name="generator" content="mkdocs-1.4.2, mkdocs-material-9.1.5">
+    
+    
+      
+        <title>Print Site - 1Remote</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.7a7fce14.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.a0c5b2b5.min.css">
+      
+      
+
+    
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../extra/css/extra.css">
+    
+      <link rel="stylesheet" href="../extra/css/pdf.css">
+    
+    <script>__md_scope=new URL("/",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+  
+
+
+  
+  
+
+
+  <script id="__analytics">function __md_analytics(){function n(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],n("js",new Date),n("config","G-3WQM1ZE8WM"),document.addEventListener("DOMContentLoaded",function(){document.forms.search&&document.forms.search.query.addEventListener("blur",function(){this.value&&n("event","search",{search_term:this.value})}),document$.subscribe(function(){var a=document.forms.feedback;if(void 0!==a)for(var e of a.querySelectorAll("[type=submit]"))e.addEventListener("click",function(e){e.preventDefault();var t=document.location.pathname,e=this.getAttribute("data-md-value");n("event","feedback",{page:t,data:e}),a.firstElementChild.disabled=!0;e=a.querySelector(".md-feedback__note [data-md-value='"+e+"']");e&&(e.hidden=!1)}),a.hidden=!1}),location$.subscribe(function(e){n("config","G-3WQM1ZE8WM",{page_path:e.pathname})})});var e=document.createElement("script");e.async=!0,e.src="https://www.googletagmanager.com/gtag/js?id=G-3WQM1ZE8WM",document.getElementById("__analytics").insertAdjacentElement("afterEnd",e)}</script>
+
+  
+    <script>"undefined"!=typeof __md_analytics&&__md_analytics()</script>
+  
+
+    
+    
+    
+  
+        <script type="text/javascript">
+        document.addEventListener('DOMContentLoaded', function () {
+            remove_material_navigation();remove_mkdocs_theme_navigation();
+        })
+        </script>
+        </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="" data-md-color-accent="">
+  
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&"object"==typeof palette.color)for(var key of Object.keys(palette.color))document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="1Remote" class="md-header__button md-logo" aria-label="1Remote" data-md-component="logo">
+      
+  <img src="../img/logo.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            1Remote
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Print Site
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      <form class="md-header__option" data-md-component="palette">
+        
+          
+          <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="" data-md-color-accent=""  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_1">
+          
+            <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_2" hidden>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2a7 7 0 0 1 7 7c0 2.38-1.19 4.47-3 5.74V17a1 1 0 0 1-1 1H9a1 1 0 0 1-1-1v-2.26C6.19 13.47 5 11.38 5 9a7 7 0 0 1 7-7M9 21v-1h6v1a1 1 0 0 1-1 1h-4a1 1 0 0 1-1-1m3-17a5 5 0 0 0-5 5c0 2.05 1.23 3.81 3 4.58V16h4v-2.42c1.77-.77 3-2.53 3-4.58a5 5 0 0 0-5-5Z"/></svg>
+            </label>
+          
+        
+          
+          <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="" data-md-color-accent=""  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_2">
+          
+            <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_1" hidden>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2a7 7 0 0 0-7 7c0 2.38 1.19 4.47 3 5.74V17a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1v-2.26c1.81-1.27 3-3.36 3-5.74a7 7 0 0 0-7-7M9 21a1 1 0 0 0 1 1h4a1 1 0 0 0 1-1v-1H9v1Z"/></svg>
+            </label>
+          
+        
+      </form>
+    
+    
+      <div class="md-header__option">
+        <div class="md-select">
+          
+          <button class="md-header__button md-icon" aria-label="Select language">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m12.87 15.07-2.54-2.51.03-.03A17.52 17.52 0 0 0 14.07 6H17V4h-7V2H8v2H1v2h11.17C11.5 7.92 10.44 9.75 9 11.35 8.07 10.32 7.3 9.19 6.69 8h-2c.73 1.63 1.73 3.17 2.98 4.56l-5.09 5.02L4 19l5-5 3.11 3.11.76-2.04M18.5 10h-2L12 22h2l1.12-3h4.75L21 22h2l-4.5-12m-2.62 7 1.62-4.33L19.12 17h-3.24Z"/></svg>
+          </button>
+          <div class="md-select__inner">
+            <ul class="md-select__list">
+              
+                <li class="md-select__item">
+                  <a href="/" hreflang="en" class="md-select__link">
+                    English
+                  </a>
+                </li>
+              
+                <li class="md-select__item">
+                  <a href="/zh-cn" hreflang="zh-cn" class="md-select__link">
+                    简体中文主页
+                  </a>
+                </li>
+              
+            </ul>
+          </div>
+        </div>
+      </div>
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/1Remote/1Remote" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.3.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+
+
+  <li class="md-tabs__item">
+    <a href=".." class="md-tabs__link">
+      Home
+    </a>
+  </li>
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../usage/quick-start/" class="md-tabs__link">
+        Usage
+      </a>
+    </li>
+  
+
+  
+
+      
+        
+  
+  
+
+
+  <li class="md-tabs__item">
+    <a href="../download/" class="md-tabs__link">
+      Download
+    </a>
+  </li>
+
+      
+        
+  
+  
+
+
+  <li class="md-tabs__item">
+    <a href="../privacy-policy/" class="md-tabs__link">
+      Privacy Policy
+    </a>
+  </li>
+
+      
+        
+  
+  
+
+
+  <li class="md-tabs__item">
+    <a href="../about/" class="md-tabs__link">
+      About
+    </a>
+  </li>
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="1Remote" class="md-nav__button md-logo" aria-label="1Remote" data-md-component="logo">
+      
+  <img src="../img/logo.png" alt="logo">
+
+    </a>
+    1Remote
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/1Remote/1Remote" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.3.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        Home
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+      
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+          Usage
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_2">
+          <span class="md-nav__icon md-icon"></span>
+          Usage
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_1" >
+      
+      
+        
+          
+        
+          
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_2_1" id="__nav_2_1_label" tabindex="0">
+          Basic
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_1_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_2_1">
+          <span class="md-nav__icon md-icon"></span>
+          Basic
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../usage/quick-start/" class="md-nav__link">
+        Quick Start
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../usage/overview/" class="md-nav__link">
+        Overview
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_1_3" >
+      
+      
+        
+          
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_2_1_3" id="__nav_2_1_3_label" tabindex="0">
+          Launcher
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_1_3_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_2_1_3">
+          <span class="md-nav__icon md-icon"></span>
+          Launcher
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../usage/launcher/basic/" class="md-nav__link">
+        Basic
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../usage/launcher/quick-connect/" class="md-nav__link">
+        Quick connect
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../usage/alternative-credential/" class="md-nav__link">
+        Alternative-Credential
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_3" >
+      
+      
+        
+          
+        
+          
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_2_3" id="__nav_2_3_label" tabindex="0">
+          Database & Security
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_3_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_2_3">
+          <span class="md-nav__icon md-icon"></span>
+          Database & Security
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../usage/database/security/" class="md-nav__link">
+        Security
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../usage/database/data-synchronization/" class="md-nav__link">
+        Data synchronization
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../usage/database/use-online-database/" class="md-nav__link">
+        Use online database
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_4" >
+      
+      
+        
+          
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_2_4" id="__nav_2_4_label" tabindex="0">
+          Protocol
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_4_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_2_4">
+          <span class="md-nav__icon md-icon"></span>
+          Protocol
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_4_1" >
+      
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_2_4_1" id="__nav_2_4_1_label" tabindex="0">
+          Especial
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_4_1_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_2_4_1">
+          <span class="md-nav__icon md-icon"></span>
+          Especial
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../usage/protocol/especial/app/" class="md-nav__link">
+        App
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../usage/protocol/especial/remoteapp/" class="md-nav__link">
+        RemoteApp
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../usage/protocol/especial/rdp-in-mstsc-mode/" class="md-nav__link">
+        Rdp in mstsc.exe mode
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../usage/protocol/especial/ssh-tunnel/" class="md-nav__link">
+        SSH Tunnel
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../usage/protocol/runner/" class="md-nav__link">
+        Runner
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_5" >
+      
+      
+        
+          
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_2_5" id="__nav_2_5_label" tabindex="0">
+          Team (experimental)
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_5_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_2_5">
+          <span class="md-nav__icon md-icon"></span>
+          Team (experimental)
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../usage/team/team-sharing/" class="md-nav__link">
+        Team sharing
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../usage/team/team-deploy/" class="md-nav__link">
+        Team deploy
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_6" >
+      
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_2_6" id="__nav_2_6_label" tabindex="0">
+          Misc
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_6_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_2_6">
+          <span class="md-nav__icon md-icon"></span>
+          Misc
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../usage/misc/highline-a-server/" class="md-nav__link">
+        Highline a server
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_6_2" >
+      
+      
+        
+          
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_2_6_2" id="__nav_2_6_2_label" tabindex="0">
+          Streamline by pre/post connect script
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_6_2_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_2_6_2">
+          <span class="md-nav__icon md-icon"></span>
+          Streamline by pre/post connect script
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../usage/misc/pre-post-script-control/overview/" class="md-nav__link">
+        Overview
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../usage/misc/pre-post-script-control/open-a-vpn-before-connect/" class="md-nav__link">
+        Pre-open a VPN
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../usage/misc/note-for-servers/" class="md-nav__link">
+        Note for servers
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../usage/misc/cli/" class="md-nav__link">
+        CLI
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../usage/misc/desktop-shortcut-for-connection/" class="md-nav__link">
+        Creating Desktop shortcut for connections
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../usage/misc/help-translation/" class="md-nav__link">
+        Help translation
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../download/" class="md-nav__link">
+        Download
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../privacy-policy/" class="md-nav__link">
+        Privacy Policy
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../about/" class="md-nav__link">
+        About
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#" class="md-nav__link">
+    Home
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#section-usage" class="md-nav__link">
+    Usage
+  </a>
+  
+    <nav class="md-nav" aria-label="Usage">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#usage-alternative-credential" class="md-nav__link">
+    Alternative-Credential
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#download" class="md-nav__link">
+    Download
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#privacy-policy" class="md-nav__link">
+    Privacy Policy
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#about" class="md-nav__link">
+    About
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+  
+                  
+  
+
+
+
+
+<div id="print-site-page" class="print-site-add-full-url print-site-enumerate-figures">
+        <section id="print-site-cover-page">
+            
+    <h1>1Remote</h1>
+
+<h2>Full documentation</h2>
+<h3>📖 <b>Publication Date </b>: 2025-11-28</h3>
+        </section>
+        
+        <div id="print-site-banner">
+            <p>
+    <em>This box will disappear when printing</em>
+    <span style="float: right"><a href="https://timvink.github.io/mkdocs-print-site-plugin/">mkdocs-print-site-plugin</a></span>
+</p>
+        </div>
+        
+                        <h1 class='nav-section-title' id='section-usage'>
+                            Usage <a class='headerlink' href='#section-usage' title='Permanent link'>↵</a>
+                        </h1>
+                        
+                        <h2 class='nav-section-title' id='section-basic'>
+                            Basic <a class='headerlink' href='#section-basic' title='Permanent link'>↵</a>
+                        </h2>
+                        <section class="print-page" id="usage-quick-start"><h1 id="usage-quick-start-1remote-quick-start">1Remote Quick Start</h1>
+<div class="codehilite"><pre><span></span><code><span class="mf">1</span><span class="c1">Remote is open source and free to use.</span>
+</code></pre></div>
+
+<h2 id="usage-quick-start-installation">Installation</h2>
+<p><a class="md-button" href="#download">Download</a></p>
+<h2 id="usage-quick-start-adding-servers">Adding Servers</h2>
+<h3 id="usage-quick-start-manually-adding-a-server">Manually Adding a Server</h3>
+<ol>
+<li>
+<p>Click the <strong><code>+</code></strong> button in the upper-right corner of the main window.</p>
+<p><img alt="add-server" src="../usage/img/add-server1.jpg" /></p>
+</li>
+<li>
+<p>Choose a protocol, such as RDP, SSH, or VNC, at the top of the pop-up window.
+    <img alt="add-server" src="../usage/img/add-server2.jpg" /></p>
+</li>
+<li>
+<p>Set the server's name, label, notes (supports Markdown), and other information and save.</p>
+</li>
+</ol>
+<p><a class="md-button" href="#usage-overview-adding-server">Learn more</a></p>
+<h4 id="usage-quick-start-migrate-from-premotem">Migrate from PRemoteM</h4>
+<p><img alt="logo" src="../usage/img/p2o.png" /></p>
+<div class="admonition info">
+<p class="admonition-title">PRemoteM vs 1Remote</p>
+<p>1Remote is the upgraded version of PRemoteM.</p>
+</div>
+<p>Since PRemoteM is our old name, our migration tool will auto detect your old data when your first start 1Remote.</p>
+<p><image src="/usage/img/migrate-tools-for-prm.jpg" width="400px"></image></p>
+<p>If the you miss the auto-migration, you can still import it manually:</p>
+<ol>
+<li>In PRemoteM export all data following the <a href="#usage-quick-start-usage-overview-data-export">Data export</a> guide, you will get a *.prma file.</li>
+<li>In 1Remote click the <strong><code>+</code></strong> button in the upper-right corner then click the <strong><code>Import</code></strong> button, select the *.prma file you just exported in the pop-up dialog by select the file filter *.*, and click "Open" to complete the import.</li>
+</ol>
+<h2 id="usage-quick-start-starting-remote-connections">Starting Remote Connections</h2>
+<h3 id="usage-quick-start-starting-from-the-main-window">Starting from the main window</h3>
+<p>Simply <code>double-click</code> a server to open the corresponding remote session.</p>
+<h3 id="usage-quick-start-starting-from-the-launcher">Starting from the Launcher</h3>
+<p>Press default shortcut <span class="keys"><kbd class="key-alt">Alt</kbd></span> + <span class="keys"><kbd class="key-m">M</kbd></span> to show the launcher, then:</p>
+<p><img alt="launcher-search-result" src="../usage/launcher/img/launcher-search-result.jpg" /></p>
+<ul>
+<li>type the keyword to select server you want then press <span class="keys"><kbd class="key-enter">Enter</kbd></span> to start.</li>
+<li><span class="keys"><kbd class="key-arrow-right">Right</kbd></span> to show menu for the selected server.</li>
+<li><span class="keys"><kbd class="key-tab">Tab</kbd></span> to show the <a href="#usage-launcher-quick-connect">Quick Connect view</a>.</li>
+</ul>
+<p><a class="md-button" href="#usage-launcher-basic">Learn more</a></p>
+<h2 id="usage-quick-start-customization">Customization</h2>
+<ul>
+<li>Change language: <strong><code>Setting</code></strong> -&gt; <strong><code>General</code></strong> -&gt; <strong><code>Language</code></strong></li>
+<li>Change theme: <strong><code>Setting</code></strong> -&gt; <strong><code>Theme</code></strong> -&gt; <strong><code>Theme</code></strong>. On this page, you can also customize your favorite color scheme.</li>
+<li>Change SSH color scheme: <strong><code>Setting</code></strong> -&gt; <strong><code>Protocol</code></strong> -&gt; <strong><code>SSH</code></strong> -&gt; <strong><code>KiTTY</code></strong> -&gt; <strong><code>Themes</code></strong></li>
+</ul>
+<p><a class="md-button" href="#usage-overview">Learn more from the <strong>Overview</strong></a></p>
+<!-- IT keywoards -->
+<div class="docinfo print-site-plugin-ignore" style="position:relative; margin-top:3em; padding-bottom: 3em; padding-top: 1em; font-size: smaller; border-top: 2px solid #cccccc">
+    <div style="float: left">
+        ✏️ <b>Last Change</b>: 2025-11-28 07:00
+    </div>
+    <div style="float: right">
+        📖 <b>Publication Date</b>: 2025-11-28 07:02
+    </div>
+</div>
+
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?915b78fdd0e2f52a5f6f6816de6cb939";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script></section><section class="print-page" id="usage-overview"><h2 id="usage-overview-managing-servers">Managing Servers</h2>
+<h3 id="usage-overview-adding-server">Adding Server</h3>
+<ol>
+<li>
+<p>Click the <strong><code>+</code></strong> button in the upper-right corner of the main window.</p>
+<p><img alt="add-server" src="../usage/img/add-server1.jpg" /></p>
+</li>
+<li>
+<p>Choose a protocol, such as RDP, SSH, or VNC, at the top of the pop-up window.</p>
+<p><img alt="add-server" src="../usage/img/add-server2.jpg" /></p>
+</li>
+<li>
+<p>Set the server's name, tags, notes (supports Markdown), and others.</p>
+</li>
+<li>
+<p>(Optional) Customize the server icon (system-built or manually uploaded) and highlight color (default is no highlight, setting a highlight color will highlight the server in the list and connection process).</p>
+<p><img alt="add-server" src="../usage/img/add-server4.jpg" /></p>
+</li>
+<li>
+<p>(Optional) Configure scripts for the server, such as opening VPN before starting remote desktop, or closing VPN after closing remote desktop. Scripts support cmd, PowerShell, and Python. Please see the <a href="#usage-overview-usage-misc-open-a-vpn-before-connect.md">Open a VPN before connect</a> for further details.</p>
+</li>
+<li>
+<p>Continue entering server <strong>address</strong>, <strong>port</strong>, <strong>credentials</strong> and other information, and select your desired connection settings.</p>
+</li>
+<li>Click the <strong><code>Save</code></strong> button to complete adding the server and return to the homepage.</li>
+</ol>
+<h3 id="usage-overview-style-switching">Style switching</h3>
+<p>Servers are displayed in the main window as cards or lists. You can click the <strong><code>Settings</code></strong> button in the upper-right corner of the interface to expand the menu and choose <strong><code>Toggle Cards/List</code></strong> to switch the display mode of servers.</p>
+<p><img alt="sorting" src="../usage/img/toggle-list-card.jpg" /></p>
+<h3 id="usage-overview-sorting">Sorting</h3>
+<ul>
+<li>In list mode, click on the header above the list to sort the servers.</li>
+<li>Or you can click the <strong><code>Settings</code></strong> button in the upper-right corner of the interface to expand the menu and choose "<strong>Sorting</strong>" to sort the servers.</li>
+<li>If <strong>Sort by drag</strong> is selected, you can drag the server to the desired position to sort the servers.</li>
+</ul>
+<p><img alt="sorting" src="../usage/img/sorting_by_drag.jpg" /></p>
+<h3 id="usage-overview-edit">Edit</h3>
+<p>When you move mouse over a server, the <strong><code>Settings</code></strong> button will be displayed. Clicking on this button will display a menu where you can connect to, edit, create a replica, delete, copy the server address and account password, etc. (Note: If you connect to a MySQL server with read-only permissions, you will not be able to edit, copy, or delete server information stored in that database.)</p>
+<p><img alt="edit-hover" src="../usage/img/edit-hover.jpg" /></p>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>You can also directly enter the edit interface by right-clicking on a server with your mouse.</p>
+</div>
+<h3 id="usage-overview-bulk-edit">Bulk edit</h3>
+<p>By selecting multiple servers using the checkboxes and clicking the <strong><code>Edit</code></strong> button at the bottom of the main window, you can enter the batch editing interface to perform uniform editing operations on multiple servers. With proper server labels, you can easily select all servers under a specific label and modify their addresses or account passwords in bulk.</p>
+<p><img alt="edit-multi-selected" src="../usage/img/edit-multi-selected.jpg" /></p>
+<h3 id="usage-overview-data-export">Data export</h3>
+<div class="admonition warning inline end">
+<p class="admonition-title">Warning</p>
+<p>The exported data is stored in plain text, so please handle it with care.</p>
+</div>
+<p>When some servers are selected, <strong><code>Export</code></strong> button can export selected items to json file which you can import it to another PC or simply make a backup. Please see the <a href="#usage-overview-usage-database-data-synchronization.md">Data synchronization</a> for further details.</p>
+<h3 id="usage-overview-data-import">Data import</h3>
+<ol>
+<li>Click the <strong><code>+</code></strong> button in the upper-right corner of the main window</li>
+<li>Click <strong><code>import json</code></strong> to import json file exported from 1Remote.</li>
+</ol>
+<h4 id="usage-overview-importing-from-mremoteng">Importing from mRemoteNG</h4>
+<ol>
+<li>In mRemoteNG, right-click on the server and choose "<strong>Export to File...</strong>". Set the "<strong>File Format</strong>" to "<strong>mRemoteNG <abbr title="Comma Separated Values">CSV</abbr></strong>" in the pop-up window, and click the <strong><code>OK</code></strong> button in the lower-right corner to export.</li>
+<li>In 1Remote, click the <strong><code>+</code></strong> button in the upper-right corner of the main window, and choose "import mRemoteNG csv". Select the <abbr title="Comma Separated Values">CSV</abbr> file you just exported in the pop-up dialog, and click "Open" to complete the import.</li>
+</ol>
+<p><img alt="Importing from mRemoteNG" src="../usage/img/migrate-tools-for-mRemoteNG.jpg" /></p>
+<h4 id="usage-overview-importing-from-premotem">Importing from PRemoteM</h4>
+<p>Since PRemoteM is our old name, you can also import data from PRemoteM.</p>
+<p>Our migration tool will auto detect your old data when your first start 1Remote.</p>
+<p><img alt="prm" src="../usage/img/migrate-tools-for-prm.jpg" /></p>
+<p>If the you miss the auto-migration, you can still import it manually:</p>
+<ol>
+<li>In PRemoteM export all data following the <a href="#usage-overview-data-export">Data export</a> guide, you will get a *.prma file.</li>
+<li>In 1Remote click the <strong><code>+</code></strong> button in the upper-right corner then click the <strong><code>Import</code></strong> button, select the *.prma file you just exported in the pop-up dialog by select the file filter *.*, and click "Open" to complete the import.</li>
+</ol>
+<h4 id="usage-overview-importing-from-rdp-files">Importing from RDP Files</h4>
+<div class="admonition warning inline end">
+<p class="admonition-title">Warning</p>
+<p>We are not able to get password form RDP file, so you may have to enter password manually.</p>
+</div>
+<ol>
+<li>In MSTSC.exe, click "Show Options" to expand the window, click the <strong><code>Save As...</code></strong> button under "Connection settings", and save as an RDP file.</li>
+<li>In 1Remote, click the <strong><code>+</code></strong> button in the upper-right corner of the main window, and choose "<strong>import *.rdp</strong>". Select the RDP file you just saved in the pop-up dialog, and click "Open" to complete the import.</li>
+</ol>
+<h2 id="usage-overview-starting-remote-connections">Starting Remote Connections</h2>
+<h3 id="usage-overview-starting-from-the-main-window">Starting from the main window</h3>
+<ol>
+<li>Servers are displayed in the main window as cards or lists. Double-click a server to open the corresponding remote session.</li>
+<li>You can also check the checkbox in front of each server, and then click the <strong><code>Connect</code></strong> button at the bottom of the main window to start multiple remote sessions at once.</li>
+<li>If you have labeled the servers, you can right-click the label in the label list above the main window, and click the <strong><code>Connect</code></strong> button to start multiple remote sessions at once.</li>
+</ol>
+<h3 id="usage-overview-starting-from-the-launcher">Starting from the Launcher</h3>
+<p>You can use the default shortcut <span class="keys"><kbd class="key-alt">Alt</kbd></span> + <span class="keys"><kbd class="key-m">M</kbd></span> call the launcher, then type some key words to search the server you want to connect, then press <span class="keys"><kbd class="key-enter">Enter</kbd></span> to start.</p>
+<p>For more details about the Launcher, please see the <a href="#usage-overview-usage-launcher-basic.md">Launcher</a>.</p>
+<h2 id="usage-overview-session-view">Session view</h2>
+<p>Remote session windows are displayed in the window as tabs. You can detach the tab to a new window by dragging the tab to the upper-left corner of the window.</p>
+<p><img alt="tab" src="../usage/img/tab.jpg" /></p>
+<h2 id="usage-overview-tag-management">Tag management</h2>
+<p>You can add multi-tag for each server, all your Tags will be shown on <strong>Tag page</strong>.</p>
+<p>A short cut of the tags selected in this page will be display on the top bar for quick access.</p>
+<blockquote>
+<p>I suggest making a tag name as short as you can to save space.</p>
+</blockquote>
+<p><img alt="tag-select" src="../usage/img/tag-select.jpg" /></p>
+<h3 id="usage-overview-rename-tag">Rename tag</h3>
+<p>Right-click on tag and you will find a <strong><code>Rename</code></strong> button.</p>
+<p><img alt="tag-rename" src="../usage/img/tag-rename.jpg" /></p>
+<h3 id="usage-overview-multiple-filter">Multiple filter</h3>
+<p>If you need a strong tag management, you can use multiple filter to find the server you want.</p>
+<p>By click / right-click / ctrl-click on the tag, you can include or exclude the tag</p>
+<p><img alt="tag-tip" src="../usage/img/tag-tooltip.jpg" /></p>
+<p>e.g. sometimes I wanna list all my servers in home but exclude RDP.</p>
+<p><img alt="tag-filter-demo" src="../usage/img/tag-filter-demo.jpg" /></p>
+<!-- IT keywoards -->
+<div class="docinfo print-site-plugin-ignore" style="position:relative; margin-top:3em; padding-bottom: 3em; padding-top: 1em; font-size: smaller; border-top: 2px solid #cccccc">
+    <div style="float: left">
+        ✏️ <b>Last Change</b>: 2025-11-28 07:00
+    </div>
+    <div style="float: right">
+        📖 <b>Publication Date</b>: 2025-11-28 07:02
+    </div>
+</div>
+
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?915b78fdd0e2f52a5f6f6816de6cb939";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script></section>
+                        <h3 class='nav-section-title' id='section-launcher'>
+                            Launcher <a class='headerlink' href='#section-launcher' title='Permanent link'>↵</a>
+                        </h3>
+                        <section class="print-page" id="usage-launcher-basic"><h1 id="usage-launcher-basic-launcher">Launcher</h1>
+<p>Launcher is a place where you can quickly start a remote session. You can use the default shortcut <span class="keys"><kbd class="key-alt">Alt</kbd></span> + <span class="keys"><kbd class="key-m">M</kbd></span> to open the quick start window of the server.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Launcher will be shown on the screen where your mouse is.</p>
+</div>
+<h2 id="usage-launcher-basic-select">Select</h2>
+<p>In launcher, items are ordering by recent use. Use the <span class="keys"><kbd class="key-arrow-up">Up</kbd></span> and <span class="keys"><kbd class="key-arrow-down">Down</kbd></span> arrow keys to select the desired server, or give some keywords to search for the desired server.</p>
+<p><img alt="launcher-search-result" src="../usage/launcher/img/launcher-search-result.jpg" /></p>
+<p><span class="keys"><kbd class="key-enter">Enter</kbd></span> key or mouse double click it to start the remote session.</p>
+<h2 id="usage-launcher-basic-options">Options</h2>
+<p>When you select a server, you can use the ++righ++ arrow key to open the options menu. There you can choose a credential to connect to the server.</p>
+<p><span class="keys"><kbd class="key-arrow-left">Left</kbd></span> arrow key to go back to the server list.</p>
+<p><img alt="launcher-show-options" src="../usage/launcher/img/launcher-show-options.gif" /></p>
+<h2 id="usage-launcher-basic-show-note">Show note</h2>
+<p>If you write a note for the server, you can use the <span class="keys"><kbd class="key-arrow-left">Left</kbd></span> arrow key to show the note.</p>
+<p>Or simply click the note icon.</p>
+<p><img alt="launcher-show-note" src="../usage/launcher/img/launcher-show-note.gif" /></p>
+<!-- IT keywoards -->
+<div class="docinfo print-site-plugin-ignore" style="position:relative; margin-top:3em; padding-bottom: 3em; padding-top: 1em; font-size: smaller; border-top: 2px solid #cccccc">
+    <div style="float: left">
+        ✏️ <b>Last Change</b>: 2025-11-28 07:00
+    </div>
+    <div style="float: right">
+        📖 <b>Publication Date</b>: 2025-11-28 07:02
+    </div>
+</div>
+
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?915b78fdd0e2f52a5f6f6816de6cb939";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script></section><section class="print-page" id="usage-launcher-quick-connect"><h1 id="usage-launcher-quick-connect-quick-connect">Quick connect</h1>
+<p>In launcher you can make a quick connect to a server without creating a server profile.</p>
+<p>After the launcher shows up, press the <span class="keys"><kbd class="key-tab">Tab</kbd></span> key to switch to the quick connect mode.</p>
+<p><img alt="launcher-quick-connect" src="../usage/launcher/img/launcher-quick-connect.jpg" /></p>
+<p>In this view you can select the protocol and fill the ip and port, then start the remote session.</p>
+<p><img alt="launcher-quick-connect" src="../usage/launcher/img/launcher-quick-connect2.jpg" /></p>
+<p>One you press <span class="keys"><kbd class="key-enter">Enter</kbd></span> key, a password acquire window will show up, you need to fill the password before continue.</p>
+<p><img alt="launcher-quick-connect" src="../usage/launcher/img/launcher-quick-connect-password.jpg" /></p>
+<p>1Remote will help you remember your quick connect history, so you don't have to type the ip and port next time.</p>
+<p><img alt="launcher-quick-connect" src="../usage/launcher/img/launcher-quick-connect-history.jpg" /></p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>We don't save the credential for security season, so you need to fill the password every time you start a quick connect session.</p>
+</div>
+<!-- IT keywoards -->
+<div class="docinfo print-site-plugin-ignore" style="position:relative; margin-top:3em; padding-bottom: 3em; padding-top: 1em; font-size: smaller; border-top: 2px solid #cccccc">
+    <div style="float: left">
+        ✏️ <b>Last Change</b>: 2025-11-28 07:00
+    </div>
+    <div style="float: right">
+        📖 <b>Publication Date</b>: 2025-11-28 07:02
+    </div>
+</div>
+
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?915b78fdd0e2f52a5f6f6816de6cb939";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script></section><h1 class='nav-section-title-end'>Ended: Launcher</h1><h1 class='nav-section-title-end'>Ended: Basic</h1><section class="print-page" id="usage-alternative-credential"><h1 id="usage-alternative-credential-alternative-credential">Alternative-credential</h1>
+<p>1Remote allow you add credentials for alternative use. You can switch between them manually or automatically when open connections.</p>
+<h2 id="usage-alternative-credential-why">Why</h2>
+<p>Sometimes you need to connect to the same server with different credentials or different host address. For example:</p>
+<ul>
+<li>Case1: You connect to a server with a normal account mostly, and connect to the same server with a root account when do some maintenance work.</li>
+<li>Case2: You connect to your NAS with LAN address at home, while connect to the same NAS with WAN address when you are outside.</li>
+</ul>
+<p><img alt="multi-credential-demo" src="../usage/img/multi-credential-demo.png" /></p>
+<h2 id="usage-alternative-credential-addedit">Add/Edit</h2>
+<p>In 1Remote "<strong>Alternative-credential</strong>" can help you smoothly switch between different address and account.</p>
+<p>In edit page, there's a session for alternative credentials. You can add a new credential by clicking the <strong><code>+</code></strong> button. Also you can edit or delete a credential by clicking the <strong><code>Edit</code></strong> button or <strong><code>Delete</code></strong> button.</p>
+<p><img alt="multi-credential-demo" src="../usage/img/multi-credential-add.jpg" /></p>
+<p>When you add a new credential, you need to fill the name, others are optional. The name is used to identify the credential, and it will be shown in the credential list.</p>
+<p><img alt="multi-credential-demo" src="../usage/img/multi-credential-edit.jpg" /></p>
+<h2 id="usage-alternative-credential-work-with-list">Work with List</h2>
+<p><img alt="List view" src="../usage/img/multi-credential-connect.jpg" /></p>
+<h2 id="usage-alternative-credential-work-with-launcherby-press-key-right">Work with Launcher(<strong>By press key <span class="keys"><kbd class="key-arrow-right">Right</kbd></span></strong>)</h2>
+<p><img alt="Launcher(By press key Right)" src="../usage/img/multi-credential-connect2.jpg" /></p>
+<h2 id="usage-alternative-credential-auto-switching-address">Auto switching address</h2>
+<p>If you got <strong><code>Automatic address switching</code></strong> enabled, 1Remote will automatically switch to the alternative address when you connect to the server(according to the ping result).</p>
+<p><img alt="multi-credential-demo" src="../usage/img/multi-credential-auto-switch.jpg" /></p>
+<p><img alt="multi-credential-detecting" src="../usage/img/multi-credential-detecting.jpg" /></p>
+<p>You <strong>have no need</strong> to switch the address to WLAN manually when you are outside:).</p>
+<!-- IT keywoards -->
+<div class="docinfo print-site-plugin-ignore" style="position:relative; margin-top:3em; padding-bottom: 3em; padding-top: 1em; font-size: smaller; border-top: 2px solid #cccccc">
+    <div style="float: left">
+        ✏️ <b>Last Change</b>: 2025-11-28 07:00
+    </div>
+    <div style="float: right">
+        📖 <b>Publication Date</b>: 2025-11-28 07:02
+    </div>
+</div>
+
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?915b78fdd0e2f52a5f6f6816de6cb939";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script></section>
+                        <h2 class='nav-section-title' id='section-database-security'>
+                            Database & Security <a class='headerlink' href='#section-database-security' title='Permanent link'>↵</a>
+                        </h2>
+                        <section class="print-page" id="usage-database-security"><blockquote>
+<p>A chain is only as strong as it's weakest link is a metaphor</p>
+</blockquote>
+<h2 id="usage-database-security-security">Security</h2>
+<p>Since 1Remote is designed for snappy and fast experience, it is not easy to make a balance between convenience and safety. Since users are probably <abbr title="Information Technology">IT</abbr> people with high security awareness, we decided to pay more attention to convenience, leaving security to the system, security software, and good user habits to protect. Therefore, we will only provide the most basic information security, and will not provide functions such as activation lock.</p>
+<h3 id="usage-database-security-why-1remote-doesnt-need-a-activation-password">Why 1Remote doesn't need a activation password</h3>
+<p>Since this program is a resident background app that starts a session through the launcher (Alt + M). If you have to enter a password every time you turn on the launcher, the experience will be greatly reduced. Or if the password is only required when the program is started, then the security cannot actually be properly guaranteed. Taking these into account, we believe that it is better for security guaranteed by the system, security software, and good user habits in long-term solution. As long as the user realizes that he should lock the system when he/she leaves the computer, 1Remote does not have to put add any activation protect.And if the user does not have such security awareness, then even if we adds the activation password, the information may still be leaked through other ways.</p>
+<h3 id="usage-database-security-what-we-provide">What we provide</h3>
+<p>For the data sync / sharing reason, 1Remote only provide a basic string encryption in database (account, password, etc.). So it is recommended to enable hard disk encryption (like <a href="https://docs.microsoft.com/en-us/windows/security/information-protection/">Bitlocker</a>) to ensure that event when the 1Remote database is leaked or the hard disk is cracked physically, the theft will get nothings.</p>
+<h2 id="usage-database-security-summary">Summary</h2>
+<ul>
+<li>Lock Windows when you left your computer.</li>
+<li>Backup your data frequently.</li>
+<li>(Recommended) Enabled bitLocker.</li>
+</ul>
+<!-- IT keywoards -->
+<div class="docinfo print-site-plugin-ignore" style="position:relative; margin-top:3em; padding-bottom: 3em; padding-top: 1em; font-size: smaller; border-top: 2px solid #cccccc">
+    <div style="float: left">
+        ✏️ <b>Last Change</b>: 2025-11-28 07:00
+    </div>
+    <div style="float: right">
+        📖 <b>Publication Date</b>: 2025-11-28 07:02
+    </div>
+</div>
+
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?915b78fdd0e2f52a5f6f6816de6cb939";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script></section><section class="print-page" id="usage-database-data-synchronization"><p>You may work with multiple devices to manage your servers. In this case, you can use the database synchronization settings to share server information across different devices.</p>
+<h2 id="usage-database-data-synchronization-by-export">By export</h2>
+<p>Nothing to talk about, export, copy to other device, import...over.</p>
+<h2 id="usage-database-data-synchronization-sqlite-synchronization">Sqlite Synchronization</h2>
+<p><img alt="sqlite" src="../usage/database/img/sqllite-sync.png" /></p>
+<ul>
+<li>Our main database is a un-occupied Sqlite database, so you can copy the database while 1Remote is still in used.</li>
+<li>We will check update and reload data every X minutes.</li>
+</ul>
+<p>This means you can copy the database to other device using sync tools, and 1Remote will automatically detect the change and run a data reload procedure.</p>
+<blockquote>
+<p>please do not remove the database file while 1Remote is still in used.</p>
+</blockquote>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>In <code>Options</code> -&gt; <code>Database</code> -&gt; <code>Local</code> -&gt; <code>Edit</code>, you can check up where your database file is.</p>
+<p>You can also change the db path there.</p>
+</div>
+<p><img alt="sqlite" src="../usage/database/img/sqlite-edit.jpg" /></p>
+<p>recommended tools:</p>
+<ul>
+<li>Synology NAS: <a href="https://www.synology.com/en-us/dsm/feature/cloud_station">Cloud Station</a></li>
+<li>Google Drive: <a href="https://www.google.com/drive/">Google Drive</a></li>
+<li>OneDrive: <a href="https://www.onedrive.com/">OneDrive</a></li>
+<li>Jianguoyun: <a href="https://www.jianguoyun.com/">Jianguoyun</a></li>
+</ul>
+<h2 id="usage-database-data-synchronization-by-using-mysql">By using MySQL</h2>
+<p><img alt="MySQL" src="../usage/database/img/mysql.png" /></p>
+<p>Using a MySQL database is a more professional way to synchronize data. When server info is edited on on device, other devices will update the modify in a few minutes. Go to <code>Options</code> -&gt; <code>Database</code> -&gt; <code>MySQL</code> to set up the database, check <a href="#usage-database-data-synchronization-usage-database-use-a-online-database.md">Online database</a> for more details.</p>
+<p><img alt="MySQL" src="../usage/database/img/mysql-add.jpg" /></p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>This app does not use concurrency locks on data editing, so if you modify the database on 2 devices at the same time, data loss may occur. Please try to avoid this situation.</p>
+</div>
+<!-- - Data export: By selecting multiple servers using the checkboxes and clicking the `Export` button at the bottom of the main window, you can export the server information to a JSON file. (Note that the exported data is stored in plain text, so please handle it with care.)
+- Database backup: Click the **`Settings`** button in the top right corner of the main window, expand the menu, select the **`Options`** button, and go to the Database tab. Find the database named "Local" and you can see its storage path. You can manually enter this path to backup the database.
+- Database synchronization: If you use multiple devices, you can back up the database to the cloud and set the synchronization path on each device, so that you can share server information across different devices.
+    1. First, move the "Local" database file to the sync folder. Synology NAS, OneDrive, Google Drive, and other cloud storage services can be used as sync service providers.
+    2. Click the **`Edit`** button to the right of the "Local" database in the **`Database`** tab, then click the **`Select`** button in the pop-up window and choose the database file you moved to the sync folder. Save the changes.
+    3. The app will check whether the database file has changed every once in a while. If changes are detected, the file will be automatically synchronized to the database.
+    4. (Note: This app does not use concurrency locks on the data, so if you modify the database on multiple devices at the same time, data loss may occur. Please try to avoid this situation.) -->
+
+<!-- IT keywoards -->
+<div class="docinfo print-site-plugin-ignore" style="position:relative; margin-top:3em; padding-bottom: 3em; padding-top: 1em; font-size: smaller; border-top: 2px solid #cccccc">
+    <div style="float: left">
+        ✏️ <b>Last Change</b>: 2025-11-28 07:00
+    </div>
+    <div style="float: right">
+        📖 <b>Publication Date</b>: 2025-11-28 07:02
+    </div>
+</div>
+
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?915b78fdd0e2f52a5f6f6816de6cb939";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script></section><section class="print-page" id="usage-database-use-online-database"><h1 id="usage-database-use-online-database-use-online-database">Use online database</h1>
+<p>1Remote supports various data sources such as local SQLite databases and online MySQL databases. You can connect to multiple databases at the same time. which allows you to store different server information in different databases and connect to different databases on different devices for flexible data management.</p>
+<p><img alt="multi-db" src="../usage/database/img/multi-db.png" /></p>
+<p>This is where configuring multiple databases becomes useful:</p>
+<ul>
+<li><strong>At home</strong>: Connect to the MySQL database on your NAS to manage your personal servers when you back home.</li>
+<li><strong>On work</strong>: Connect to both the MySQL on your home NAS and the MySQL on your company server to access the servers for work when you are in your office.</li>
+<li><strong>For team</strong>: With MySQL, you can share the server with your colleagues, make them connect to different MySQL database can make sure they can only see the servers they have permission to access, more detail: <a href="#usage-database-use-online-database-usage-team-team-sharing.md">Team sharing</a></li>
+</ul>
+<h2 id="usage-database-use-online-database-use-mysql">Use MySQL</h2>
+<p>Go to <code>Options</code> -&gt; <code>Database</code> -&gt; <code>MySQL</code> to set up the database</p>
+<p><img alt="MySQL" src="../usage/database/img/mysql-add.jpg" /></p>
+<p>Fill the database info, make sure your account have the permission to read &amp; write the database.</p>
+<p><img alt="MySQL" src="../usage/database/img/mysql-edit.jpg" /></p>
+<p>Press <strong>Save</strong> and your database will on the list. If connect failed, the database will be marked with a red cross.</p>
+<p><img alt="MySQL" src="../usage/database/img/mysql-list.jpg" /></p>
+<p>If there are multiple databases, you need select the database when you add a new server.</p>
+<p><img alt="MySQL" src="../usage/database/img/mysql-add-server.jpg" /></p>
+<p>After you add a new server, you will find the list is grouped by database.</p>
+<p><img alt="MySQL" src="../usage/database/img/mysql-add-server2.jpg" /></p>
+<!-- 
+
+- Your personal server information is stored in the default **`Local`** database, which only you can see and use.
+- The team's servers are stored in a MySQL database named **`Team.`** You and your boss can connect with an administrator account to add and modify servers, while other colleagues can only read the server list with a read-only account.
+Specifically:
+    1. Install MySQL. In this article, we use the Synology package to install and deploy MySQL.
+    2. Create a new database in MySQL. Here, we create a database named session_ai, which doesn't need to have any tables.
+    3. Create a new account named session_admin in MySQL and grant it all privileges to the session_ai database.
+    4. On the **`Database`** tab page in the **`Setting`** section of 1Remote, click the **`Add`** button in the upper right corner to add a new MySQL database.
+    5. Go back to the main page of 1Remote and click the **`+`** button in the upper right corner to add a new server configuration to the newly added database.
+    6. Create a new account named session_user in MySQL and only grant it select permission to the session_ai database. Distribute this account to your team members so that they can read the server configuration stored in the session_ai database but cannot view or modify their passwords.
+    7. Noted: 1Remote updates data by querying periodically. Therefore, when you modify server information, other users may need to wait for several seconds before they can get the latest data. -->
+
+<!-- IT keywoards -->
+<div class="docinfo print-site-plugin-ignore" style="position:relative; margin-top:3em; padding-bottom: 3em; padding-top: 1em; font-size: smaller; border-top: 2px solid #cccccc">
+    <div style="float: left">
+        ✏️ <b>Last Change</b>: 2025-11-28 07:00
+    </div>
+    <div style="float: right">
+        📖 <b>Publication Date</b>: 2025-11-28 07:02
+    </div>
+</div>
+
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?915b78fdd0e2f52a5f6f6816de6cb939";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script></section><h1 class='nav-section-title-end'>Ended: Database & Security</h1>
+                        <h2 class='nav-section-title' id='section-protocol'>
+                            Protocol <a class='headerlink' href='#section-protocol' title='Permanent link'>↵</a>
+                        </h2>
+                        
+                        <h3 class='nav-section-title' id='section-especial'>
+                            Especial <a class='headerlink' href='#section-especial' title='Permanent link'>↵</a>
+                        </h3>
+                        <section class="print-page" id="usage-protocol-especial-app"><p>The APP protocol allows you to start an external EXE program using 1Remote.</p>
+<p>By passing the parameters to the program, you can customize the startup configuration of the program.</p>
+<p>Then you can start the software you need from our launcher.</p>
+<h2 id="usage-protocol-especial-app-examples">Examples</h2>
+<p>Here are some examples of using the App protocol, you can also customize the required startup configuration according to your own needs.</p>
+<h3 id="usage-protocol-especial-app-open-bingcom-with-chrome">Open bing.com with Chrome</h3>
+<p><img alt="image" src="https://user-images.githubusercontent.com/10143738/141422024-0600d2ba-03e1-4633-acf6-e3777ca5ed27.png" /></p>
+<h3 id="usage-protocol-especial-app-cmake">Cmake</h3>
+<p><img alt="cmake" src="../usage/protocol/especial/img/cmake.jpg" /></p>
+<h3 id="usage-protocol-especial-app-open-nomachine-with-credential-testnxs">Open NoMachine with credential <code>Test.nxs</code></h3>
+<p><a href="#usage-protocol-especial-app-protocol:-app:-nomachine"><img alt="image" src="https://user-images.githubusercontent.com/10143738/141422142-f2762440-edca-4e01-bf5f-85bb454c263b.png" /></a></p>
+<h2 id="usage-protocol-especial-app-how-to-usenomachine-case">How to use(NoMachine case)</h2>
+<p>Since the latest version of NoMachine no longer provides a session starting method of the command line by password, in 1Remote we define the App protocol to indirectly implement the NoMachine session.</p>
+<ol>
+<li>
+<p>Make sure the target machine can be connected with NoMachine. Right click and export the <code>.nxs</code> file of target machine.</p>
+<p><img alt="" src="https://raw.githubusercontent.com/1Remote/1Remote/Doc/DocPic/NoMachine/1.jpg" /></p>
+</li>
+<li>
+<p>In 1Remote, add a new configuration of <code>APP</code> type.
+   - Fill the path of NXPlayer.exe into the EXE path field
+   - Fill the path of <code>.nxs</code> file into the parameter field
+   - Save</p>
+<p><img alt="" src="https://raw.githubusercontent.com/1Remote/1Remote/Doc/DocPic/NoMachine/2.jpg" /></p>
+</li>
+<li>
+<p>Then you can quickly start your NoMachine session from 1Remote.</p>
+<p><img alt="" src="https://raw.githubusercontent.com/1Remote/1Remote/Doc/DocPic/NoMachine/3.jpg" /></p>
+</li>
+</ol>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>This is also applicable to other command parameters supported session launcher, such as PUTTY, WinSCP, etc.</p>
+<p>Even you can use this method to add one other programs (such as Word, NotePad, etc.) to 1Remote for a quick start.</p>
+</div>
+<!-- IT keywoards -->
+<div class="docinfo print-site-plugin-ignore" style="position:relative; margin-top:3em; padding-bottom: 3em; padding-top: 1em; font-size: smaller; border-top: 2px solid #cccccc">
+    <div style="float: left">
+        ✏️ <b>Last Change</b>: 2025-11-28 07:00
+    </div>
+    <div style="float: right">
+        📖 <b>Publication Date</b>: 2025-11-28 07:02
+    </div>
+</div>
+
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?915b78fdd0e2f52a5f6f6816de6cb939";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script></section><section class="print-page" id="usage-protocol-especial-remoteapp"><p><code>A RemoteApp program is an application installed on an RD Session Host server. Remote Desktop Connection (RDC) and the RD Session Host use Remote Desktop Protocol (RDP) to redirect screen information for just the application instead of the full session-based virtual desktop.</code></p>
+<p><img alt="rdpapp" src="../usage/protocol/especial/img/remoteapp.jpg" /></p>
+<p>With RemoteApp programs, you can use RDS to make programs on a Remote Desktop Session Host (RD Session Host) server appear as if they are running on a user 's local computer. RemoteApp program windows are shown on and integrated with a client's Desktop instead of being presented as part of a session-based virtual desktop. A RemoteApp program open on a Desktop.</p>
+<p>Using a RemoteApp program is similar to using a local application. When you implement RDS to provide access to a few applications, RemoteApp programs generally are easier for users to understand and use than session-based virtual desktops. Users can become confused when there is a session-based virtual desktop and a local Desktop. This is particularly true if the session-based virtual desktop is used in full-screen mode.</p>
+<h2 id="usage-protocol-especial-remoteapp-how-to-use">How to use</h2>
+<h3 id="usage-protocol-especial-remoteapp-step1">Step1</h3>
+<ol>
+<li>Open Server Manager. Select Remote Desktop Services &gt; Collections.</li>
+<li>Select the collection needed to configure application launcher.</li>
+<li>Select RemoteApp Programs</li>
+<li>In the RemoteApp Programs area, select Tasks select &gt; Publish RemoteApp Programs.</li>
+<li>Click Add on the Publish RemoteApp programs dialog.</li>
+<li>Select <strong>EXE</strong> from the application launcher installation location on the server.</li>
+<li>Click Next.</li>
+<li>On the Confirmation page, click Publish.</li>
+<li>Finish other confirmations.</li>
+</ol>
+<h2 id="usage-protocol-especial-remoteapp-step1-another-way">Step1 Another way</h2>
+<ol>
+<li>install <a href="http://www.kimknight.net/remoteapptool">RemoteApp Tool</a> on Server.</li>
+<li>Create a RemoteApp by <a href="http://www.kimknight.net/remoteapptool">RemoteApp Tool</a>'s user guides, then <a href="http://www.kimknight.net/remoteapptool">RemoteApp Tool</a> will help you do Step1. 1-9</li>
+</ol>
+<h3 id="usage-protocol-especial-remoteapp-step2">Step2</h3>
+<p>Add a RemoteApp config in 1Remote.</p>
+<p><img alt="run-edge-within-rdpapp" src="../usage/protocol/especial/img/run-edge-within-rdpapp.jpg" /></p>
+<p>Here I run QQ.exe and Edge.exe via RemoteApp:</p>
+<p><img alt="run-qq-within-rdpapp" src="../usage/protocol/especial/img/run-qq-within-rdpapp.jpg" /></p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>The following RemoteApp program are not in the list of authorized programs</p>
+<p>check list:</p>
+<ul>
+<li><a href="http://sbsfaq.com/the-following-remoteapp-program-is-not-in-the-list-of-authorized-programs-on-windows-essential-server/">http://sbsfaq.com/the-following-remoteapp-program-is-not-in-the-list-of-authorized-programs-on-windows-essential-server/</a></li>
+<li><a href="https://www.beyondtrust.com/docs/privileged-identity/app-launcher-and-recording/installation/set-up-rds.htm">https://www.beyondtrust.com/docs/privileged-identity/app-launcher-and-recording/installation/set-up-rds.htm</a></li>
+</ul>
+</div>
+<!-- IT keywoards -->
+<div class="docinfo print-site-plugin-ignore" style="position:relative; margin-top:3em; padding-bottom: 3em; padding-top: 1em; font-size: smaller; border-top: 2px solid #cccccc">
+    <div style="float: left">
+        ✏️ <b>Last Change</b>: 2025-11-28 07:00
+    </div>
+    <div style="float: right">
+        📖 <b>Publication Date</b>: 2025-11-28 07:02
+    </div>
+</div>
+
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?915b78fdd0e2f52a5f6f6816de6cb939";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script></section><section class="print-page" id="usage-protocol-especial-rdp-in-mstsc-mode"><h2 id="usage-protocol-especial-rdp-in-mstsc-mode-what-is-mstscexe-mode">What is "mstsc.exe mode"</h2>
+<p>In this mode, rdp session will be start by run command <code>mstsc.exe xxxx.rdp</code> in cmd.</p>
+<h2 id="usage-protocol-especial-rdp-in-mstsc-mode-why-mstscexe-mode">Why "mstsc.exe mode"</h2>
+<p>When our user using 2 monitors with different scale ratios and wants to go to full-all-screens, we didn't find a solution to handle this 2 different scale ratios on <a href="https://docs.microsoft.com/en-us/windows/win32/termserv/remote-desktop-activex-control">Remote Desktop ActiveX control</a>.</p>
+<p><img alt="image" src="https://user-images.githubusercontent.com/10143738/141026263-f92a6fab-cf0e-456a-82a8-58482e338446.png" /></p>
+<p>Then we make 1Remote check user's monitor resolution and scale ratios before a multi-monitors full-screen rdp session start. If we found 2 monitors with different scale ratios, a temp file 'xxxx.rdp' will be created and 1Remote will call cmd command <code>mstsc.exe xxxx.rdp</code> to start the session.</p>
+<h2 id="usage-protocol-especial-rdp-in-mstsc-mode-additional-settings">Additional settings</h2>
+<p>In the process of development, we found it in the <code>.rdp</code> file there are many settings that <a href="https://docs.microsoft.com/en-us/windows/win32/termserv/remote-desktop-activex-control">Remote Desktop ActiveX control</a> can't access.</p>
+<p>such as:</p>
+<table>
+<thead>
+<tr>
+<th>setting</th>
+<th>description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>selectedmonitors:s:0,2</td>
+<td>When you connect 3 monitors, this setting allow you only uses the NO.0 &amp; NO.2 display to display the remote desktop. The NO.1 display will continue to display your local desktop. Using cmd <code>mstsc /l</code> can see the number of the monitors</td>
+</tr>
+<tr>
+<td>redirectcomports:i:1</td>
+<td>Redirect the COM port of the local machine to the remote session.</td>
+</tr>
+<tr>
+<td>desktopwidth:i:800</td>
+<td>Specifies the resolution width (in pixels) of the remote session to 800pix.</td>
+</tr>
+<tr>
+<td>desktopheight:i:600</td>
+<td>Specifies the resolution height (in pixels) of the remote session to 600pix.</td>
+</tr>
+</tbody>
+</table>
+<p>For example, I have 3 monitors, and I want to use the NO.1 &amp; NO.2 display for remote desktop, and keep NO.0 as my local desktop:</p>
+<p><img alt="mstsc-use-monitors" src="../usage/protocol/especial/img/mstsc-use-monitors.jpg" /></p>
+<p>more settings：</p>
+<ul>
+<li><a href="https://docs.microsoft.com/en-us/windows-server/remote/remote-desktop-services/clients/rdp-files">Microsoft</a></li>
+<li><a href="https://docs.microsoft.com/en-us/troubleshoot/windows-server/remote/remote-desktop-protocol-settings">2003/XP</a></li>
+</ul>
+<!-- IT keywoards -->
+<div class="docinfo print-site-plugin-ignore" style="position:relative; margin-top:3em; padding-bottom: 3em; padding-top: 1em; font-size: smaller; border-top: 2px solid #cccccc">
+    <div style="float: left">
+        ✏️ <b>Last Change</b>: 2025-11-28 07:00
+    </div>
+    <div style="float: right">
+        📖 <b>Publication Date</b>: 2025-11-28 07:02
+    </div>
+</div>
+
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?915b78fdd0e2f52a5f6f6816de6cb939";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script></section><section class="print-page" id="usage-protocol-especial-ssh-tunnel"><p>You can set up a SSH tunnel by:</p>
+<ol>
+<li>download and start Kitty portable</li>
+<li>enter a hostname and a name in "Saved Sessions/New Folder"</li>
+<li>click "Connection" -&gt; "SSH" -&gt; "Tunnels"</li>
+<li>enter a source port, for example 777</li>
+<li>enter a destination, for example "192.168.1.2:80" - a web interface that is reachable from the host we connect to</li>
+<li>click "Add"</li>
+<li>
+<p>go back to "Session" and click "Save (d)"</p>
+<p>Now there is a new file in <code>..\kitty-portable-win32-0.74.4.13-36\data\config\Sessions\</code></p>
+</li>
+<li>
+<p>Open 1Remote and add a SSH server with the hostname and name you entered in step 2, in <code>KiTTY Session</code> field, select the file you created in step 7.</p>
+</li>
+</ol>
+<p>Thanks to @BurtGummer from: <a href="https://github.com/1Remote/1Remote/issues/483">https://github.com/1Remote/1Remote/issues/483</a> for providing the solution.</p></section><h1 class='nav-section-title-end'>Ended: Especial</h1><section class="print-page" id="usage-protocol-runner"><p><img alt="image" src="https://user-images.githubusercontent.com/10143738/143996440-1ca72471-278d-44b4-8b99-cbcc7b54da58.png" /></p>
+<h2 id="usage-protocol-runner-what-is-protocol-runner">What is Protocol Runner</h2>
+<p><strong><code>Protocol Runner</code></strong> Runner is the program that 1Remote uses to open the remote session.</p>
+<p>Currently, 1Remote offering some built-in runner for all of the supported protocols:</p>
+<ul>
+<li>RDP Runner based on <a href="https://docs.microsoft.com/en-us/windows/win32/termserv/remote-desktop-activex-control">Remote Desktop ActiveX control</a></li>
+<li>SSH Runner is <a href="http://www.9bis.net/kitty/#!index.md">KiTTY</a>,</li>
+<li>
+<p>VNC Runner based on <a href="https://github.com/humphd/VncSharp">VNCSharp</a></p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>VncSharp has been archived for long, and it is not maintained anymore, so it may not work well. I strongly suggest you use <strong><a href="https://www.tightvnc.com/">TightVNC</a></strong> as our VNC runner.</p>
+</div>
+</li>
+<li>
+<p>SFTP Runner based on <a href="https://github.com/sshnet/SSH.NET">SSH.NET</a></p>
+</li>
+<li>FTP Runner based on <a href="https://github.com/robinrodricks/FluentFTP">FluentFTP</a></li>
+</ul>
+<p>And you can customize the runners for some of the protocols</p>
+<h2 id="usage-protocol-runner-customize-your-runner">Customize your runner</h2>
+<p>1Remote supports custom external <code>Runner</code>, as long as the external program supports run passing startup parameters through command line or environment variables.</p>
+<p>Here are some available <abbr title="Command Line Interface">CLI</abbr> tools:</p>
+<table>
+<thead>
+<tr>
+<th>APP</th>
+<th>Type</th>
+<th>Arguments</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>WinSCP</td>
+<td>SFTP</td>
+<td>sftp://%USERNAME%:%PASSWORD%@%HOSTNAME%:%PORT%</td>
+</tr>
+<tr>
+<td>FileZilla FTP</td>
+<td>SFTP</td>
+<td>sftp://%USERNAME%:%PASSWORD%@%HOSTNAME%</td>
+</tr>
+<tr>
+<td>FileZilla FTP</td>
+<td>FTP</td>
+<td>ftp://%USERNAME%:%PASSWORD%@%HOSTNAME%</td>
+</tr>
+<tr>
+<td>Kitty</td>
+<td>SSH</td>
+<td>-ssh %HOSTNAME% -P %PORT% -l %USERNAME% -pw %PASSWORD% -%SSH_VERSION% -cmd ""%STARTUP_AUTO_COMMAND%""</td>
+</tr>
+<tr>
+<td>TightVNC</td>
+<td>VNC</td>
+<td>%HOSTNAME%::%PORT% -password=%PASSWORD% -scale=auto</td>
+</tr>
+<tr>
+<td>UltraVNC</td>
+<td>VNC</td>
+<td>%HOSTNAME%:%PORT% -password %PASSWORD%</td>
+</tr>
+</tbody>
+</table>
+<h3 id="usage-protocol-runner-how-to-create-a-new-runnerexample-by-winscp">How to create a new Runner(example by WinSCP)</h3>
+<p>To demonstrate, here we add WinSCP as a SFTP runner.</p>
+<div class="admonition example">
+<p class="admonition-title">Example</p>
+<p>WinSCP is a free SFTP, SCP, Amazon S3, WebDAV, and FTP client for Windows, it can open new session through command line.</p>
+<div class="highlight"><pre><span></span><code>winscp.exe sftp://username:password@example.com:22/
+winscp.exe ftps://username:password@ftp.example.com/
+</code></pre></div>
+</div>
+<ol>
+<li>
+<p>First you have to install WinSCP on your computer;</p>
+</li>
+<li>
+<p>In the setting page of 1Remote，click <code>Protocol</code> -&gt; <code>SFTP</code> -&gt; <code>＋</code>, and set the name of the new Runner;</p>
+<p><img alt="image" src="../usage/protocol/img/winscp-add1.jpg" /></p>
+</li>
+<li>
+<p>Click <code>select</code> button, select WinSCP.exe path</p>
+</li>
+<li>
+<p>Click <code>i</code> button, the Macros will be prompted.</p>
+<p><img alt="image" src="../usage/protocol/img/winscp-add2.jpg" /></p>
+</li>
+<li>
+<p>Set CMD parameter</p>
+<p>since the demo is <code>sftp://username:password@example.com:22/</code></p>
+<p>then we set parameter to <code>sftp://%USERNAME%:%PASSWORD%@%HOSTNAME%:%PORT%</code></p>
+</li>
+<li>
+<p>Change the default Runner to WinSCP</p>
+<p><img alt="image" src="../usage/protocol/img/winscp-end.jpg" /></p>
+</li>
+<li>
+<p>Then all the SFTP session will be opened by WinSCP</p>
+<p><img alt="image" src="../usage/protocol/img/winscp-run.jpg" /></p>
+</li>
+</ol>
+<!-- IT keywoards -->
+<div class="docinfo print-site-plugin-ignore" style="position:relative; margin-top:3em; padding-bottom: 3em; padding-top: 1em; font-size: smaller; border-top: 2px solid #cccccc">
+    <div style="float: left">
+        ✏️ <b>Last Change</b>: 2025-11-28 07:00
+    </div>
+    <div style="float: right">
+        📖 <b>Publication Date</b>: 2025-11-28 07:02
+    </div>
+</div>
+
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?915b78fdd0e2f52a5f6f6816de6cb939";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script></section><h1 class='nav-section-title-end'>Ended: Protocol</h1>
+                        <h2 class='nav-section-title' id='section-team-experimental-'>
+                            Team (experimental) <a class='headerlink' href='#section-team-experimental-' title='Permanent link'>↵</a>
+                        </h2>
+                        <section class="print-page" id="usage-team-team-sharing"><h2 id="usage-team-team-sharing-why">Why</h2>
+<p>Assuming you are the team leader. In your company, you may have several servers to manage, AI Servers are for the AI team, while Web Servers are for the Web team.</p>
+<p>A typical use case is:</p>
+<ul>
+<li>Only you and your boss have the permission to add and modify servers, while other colleagues can only view the servers listed, they are not able to edit them or see the password.</li>
+<li>AI team member can only access the AI servers, while Web team member can only access the Web servers.</li>
+</ul>
+<p><img alt="team" src="../usage/team/img/team-demo.png" /></p>
+<p>1Remote can help you manage these servers flexibly with <code>Team sharing</code> feature.</p>
+<p>In this feature, you can create two accounts in MySQL, giving them different permissions:</p>
+<table>
+<thead>
+<tr>
+<th>Account</th>
+<th>Connect</th>
+<th>View address</th>
+<th>Edit</th>
+<th>Delete</th>
+<th>View password</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Select permission only</td>
+<td>✅</td>
+<td>✅</td>
+<td>❌</td>
+<td>❌</td>
+<td>❌</td>
+</tr>
+<tr>
+<td>Full permission</td>
+<td>✅</td>
+<td>✅</td>
+<td>✅</td>
+<td>✅</td>
+<td>✅</td>
+</tr>
+</tbody>
+</table>
+<p>Your team members can connect to the same database with read-only permission, they can only view the servers, but they are not able to edit them.</p>
+<p>You can connect to the same database with full permission, you can add, edit and delete servers.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Please note that the Team sharing feature offers only very basic access control, and is not designed to provide individualized access control for each team member.</p>
+</div>
+<h2 id="usage-team-team-sharing-how">How</h2>
+<ol>
+<li>
+<p>Create two accounts in MySQL, giving them different permissions:</p>
+<p><img alt="create accounts" src="../usage/team/img/team-sharing-create-account.jpg" /></p>
+<p>In database "test", account 'writable' can insert and update data, while account 'readonly' can only select data.</p>
+</li>
+<li>
+<p>You can connect to <code>test</code> database with account <code>writable</code>, and import servers into the database.</p>
+</li>
+<li>
+<p>Your team member connect to <code>test</code> database with account <code>readonly</code>, they will not able to edit the servers, but they can view the servers and connect to them.</p>
+<p>Connection shows <code>Readonly</code>:</p>
+<p><img alt="readonly-connected" src="../usage/team/img/readonly-connected.jpg" /></p>
+<p>Edit button of team member is disabled:</p>
+<p><img alt="readonly-connected-server" src="../usage/team/img/readonly-connected-server-list.jpg" /></p>
+</li>
+<li>
+<p>Once you edit the servers, the team member will see the changes in a few seconds.</p>
+</li>
+</ol>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>This app does not use concurrency locks on data editing, so if you modify the database on 2 devices at the same time, data loss may occur. Please try to avoid this situation.</p>
+</div>
+<!-- IT keywoards -->
+<div class="docinfo print-site-plugin-ignore" style="position:relative; margin-top:3em; padding-bottom: 3em; padding-top: 1em; font-size: smaller; border-top: 2px solid #cccccc">
+    <div style="float: left">
+        ✏️ <b>Last Change</b>: 2025-11-28 07:00
+    </div>
+    <div style="float: right">
+        📖 <b>Publication Date</b>: 2025-11-28 07:02
+    </div>
+</div>
+
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?915b78fdd0e2f52a5f6f6816de6cb939";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script></section><section class="print-page" id="usage-team-team-deploy"><div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>Before deploy this app to your team, you need to set up a MySQL database for your team and create some user for your team members.</p>
+</div>
+<p>Assuming you are the <abbr title="Information Technology">IT</abbr> administrator and you have already import servers into MySQL database, you can follow the steps below to deploy this app to your team.</p>
+<ol>
+<li>
+<p>Exit your MySQL admin account and login as a normal user in 1Remote. Make sure the database is <code>Readonly</code>:</p>
+<p><img alt="readonly" src="../usage/team/img/readonly-connected.jpg" /></p>
+</li>
+<li>
+<p>Open explorer and navigate to the folder where you have installed 1Remote. Here is how the folder looks like:</p>
+<p><img alt="folder" src="../usage/team/img/folder.jpg" /></p>
+</li>
+<li>
+<p><strong><code>1Remote.DataSources.json</code></strong> is where we keep MySQL connection string, share this file with your team members, placed it in the same folder with <code>1Remote.db</code>.</p>
+</li>
+</ol>
+<!-- IT keywoards -->
+<div class="docinfo print-site-plugin-ignore" style="position:relative; margin-top:3em; padding-bottom: 3em; padding-top: 1em; font-size: smaller; border-top: 2px solid #cccccc">
+    <div style="float: left">
+        ✏️ <b>Last Change</b>: 2025-11-28 07:00
+    </div>
+    <div style="float: right">
+        📖 <b>Publication Date</b>: 2025-11-28 07:02
+    </div>
+</div>
+
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?915b78fdd0e2f52a5f6f6816de6cb939";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script></section><h1 class='nav-section-title-end'>Ended: Team (experimental)</h1>
+                        <h2 class='nav-section-title' id='section-misc'>
+                            Misc <a class='headerlink' href='#section-misc' title='Permanent link'>↵</a>
+                        </h2>
+                        <section class="print-page" id="usage-misc-highline-a-server"><p>Highline A Server can makes it easy to find your "VIP" servers.</p>
+<p>All you need to do is set the color next to Logo:</p>
+<p><img alt="image" src="../usage/misc/img/highline-a-server1.jpg" /></p>
+<p>Then your "VIP" servers will be highlighted:</p>
+<p><img alt="image" src="../usage/misc/img/highline-a-server2.jpg" /></p>
+<p><img alt="image" src="../usage/misc/img/highline-a-server3.jpg" /></p>
+<!-- IT keywoards -->
+<div class="docinfo print-site-plugin-ignore" style="position:relative; margin-top:3em; padding-bottom: 3em; padding-top: 1em; font-size: smaller; border-top: 2px solid #cccccc">
+    <div style="float: left">
+        ✏️ <b>Last Change</b>: 2025-11-28 07:00
+    </div>
+    <div style="float: right">
+        📖 <b>Publication Date</b>: 2025-11-28 07:02
+    </div>
+</div>
+
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?915b78fdd0e2f52a5f6f6816de6cb939";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script></section>
+                        <h3 class='nav-section-title' id='section-streamline-by-pre-post-connect-script'>
+                            Streamline by pre/post connect script <a class='headerlink' href='#section-streamline-by-pre-post-connect-script' title='Permanent link'>↵</a>
+                        </h3>
+                        <section class="print-page" id="usage-misc-pre-post-script-control-overview"><h1 id="usage-misc-pre-post-script-control-overview-using-pre-and-post-connection-scripts-in-1remote">Using Pre- and Post-Connection Scripts in 1Remote</h1>
+<p>1Remote is a remote access application that allows users to establish connections to remote computers. One of its features is the ability to run pre- and post-connection scripts. These scripts can be written in cmd(<em>.bat), PowerShell(</em>.ps1) or Python(*.py) and can be used to perform various tasks before a connection is established or after it disconnected.</p>
+<p><img src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXMtYXNjaWkiIHN0YW5kYWxvbmU9Im5vIj8+PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiBjb250ZW50U3R5bGVUeXBlPSJ0ZXh0L2NzcyIgaGVpZ2h0PSI1NzhweCIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSIgc3R5bGU9IndpZHRoOjIxN3B4O2hlaWdodDo1NzhweDtiYWNrZ3JvdW5kOiNGRkZGRkY7IiB2ZXJzaW9uPSIxLjEiIHZpZXdCb3g9IjAgMCAyMTcgNTc4IiB3aWR0aD0iMjE3cHgiIHpvb21BbmRQYW49Im1hZ25pZnkiPjxkZWZzLz48Zz48ZWxsaXBzZSBjeD0iOTciIGN5PSIyMCIgZmlsbD0iI0YxRjFGMSIgcng9IjEwIiByeT0iMTAiIHN0eWxlPSJzdHJva2U6IzE4MTgxODtzdHJva2Utd2lkdGg6MC41OyIvPjxwYXRoIGQ9Ik05OS40ODQ0LDIwLjc2NTYgTDk5LjE0MDYsMjEuMzc1IEw5Ny4zOTA2LDIwLjI2NTYgTDk3LjQ4NDQsMjIuMzI4MSBMOTYuNzgxMywyMi4zMjgxIEw5Ni44NTk0LDIwLjI2NTYgTDk1LjA5MzgsMjEuMzc1IEw5NC43MTg4LDIwLjc2NTYgTDk2LjU2MjUsMTkuNzk2OSBMOTQuNzE4OCwxOC44NDM4IEw5NS4wOTM4LDE4LjIxODggTDk2Ljg1OTQsMTkuMzI4MSBMOTYuNzgxMywxNy4yNjU2IEw5Ny40ODQ0LDE3LjI2NTYgTDk3LjM5MDYsMTkuMzI4MSBMOTkuMTQwNiwxOC4yMTg4IEw5OS40ODQ0LDE4Ljg0MzggTDk3LjYwOTQsMTkuNzk2OSBMOTkuNDg0NCwyMC43NjU2IFogIiBmaWxsPSIjMDAwMDAwIi8+PHJlY3QgZmlsbD0iI0YxRjFGMSIgaGVpZ2h0PSIzNi4xOTUzIiByeD0iMTIuNSIgcnk9IjEyLjUiIHN0eWxlPSJzdHJva2U6IzE4MTgxODtzdHJva2Utd2lkdGg6MC41OyIgd2lkdGg9IjEzMCIgeD0iMzIiIHk9IjE0OC44NDU3Ii8+PHRleHQgZmlsbD0iIzAwMDAwMCIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTIiIGxlbmd0aEFkanVzdD0ic3BhY2luZyIgdGV4dExlbmd0aD0iMTEwIiB4PSI0MiIgeT0iMTcxLjQ3ODUiPlRlcm1pbmF0ZSBjb25uZWN0aW9uPC90ZXh0PjxlbGxpcHNlIGN4PSI5NyIgY3k9IjIyMy40NDM0IiBmaWxsPSJub25lIiByeD0iMTEiIHJ5PSIxMSIgc3R5bGU9InN0cm9rZTojMjIyMjIyO3N0cm9rZS13aWR0aDoxLjA7Ii8+PGVsbGlwc2UgY3g9Ijk3IiBjeT0iMjIzLjQ0MzQiIGZpbGw9IiMyMjIyMjIiIHJ4PSI2IiByeT0iNiIgc3R5bGU9InN0cm9rZTojMTExMTExO3N0cm9rZS13aWR0aDoxLjA7Ii8+PHBvbHlnb24gZmlsbD0iI0YxRjFGMSIgcG9pbnRzPSI0NSw5OS40MjI5LDE0OSw5OS40MjI5LDE2MSwxMTEuNDIyOSwxNDksMTIzLjQyMjksNDUsMTIzLjQyMjksMzMsMTExLjQyMjksNDUsOTkuNDIyOSIgc3R5bGU9InN0cm9rZTojMTgxODE4O3N0cm9rZS13aWR0aDowLjU7Ii8+PHRleHQgZmlsbD0iIzAwMDAwMCIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTEiIGxlbmd0aEFkanVzdD0ic3BhY2luZyIgdGV4dExlbmd0aD0iMTIiIHg9IjEwMSIgeT0iMTM1LjAwMjkiPm5vPC90ZXh0Pjx0ZXh0IGZpbGw9IiMwMDAwMDAiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjExIiBsZW5ndGhBZGp1c3Q9InNwYWNpbmciIHRleHRMZW5ndGg9IjEwNCIgeD0iNDUiIHk9IjExNS41ODAxIj5TY3JpcHQgZXhpdCBjb2RlIGlzIDA/PC90ZXh0Pjxwb2x5Z29uIGZpbGw9IiNGMUYxRjEiIHBvaW50cz0iMzIsNTAsMTYyLDUwLDE3NCw2MiwxNjIsNzQsMzIsNzQsMjAsNjIsMzIsNTAiIHN0eWxlPSJzdHJva2U6IzE4MTgxODtzdHJva2Utd2lkdGg6MC41OyIvPjx0ZXh0IGZpbGw9IiMwMDAwMDAiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjExIiBsZW5ndGhBZGp1c3Q9InNwYWNpbmciIHRleHRMZW5ndGg9IjE3IiB4PSIxMDEiIHk9Ijg1LjU4MDEiPnllczwvdGV4dD48dGV4dCBmaWxsPSIjMDAwMDAwIiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMSIgbGVuZ3RoQWRqdXN0PSJzcGFjaW5nIiB0ZXh0TGVuZ3RoPSIxMzAiIHg9IjMyIiB5PSI2Ni4xNTcyIj5SdW4gc2NyaXB0IGJlZm9yIGNvbm5jZWN0PzwvdGV4dD48cG9seWdvbiBmaWxsPSIjRjFGMUYxIiBwb2ludHM9Ijk3LDI3Ni40NDM0LDEwOSwyODguNDQzNCw5NywzMDAuNDQzNCw4NSwyODguNDQzNCw5NywyNzYuNDQzNCIgc3R5bGU9InN0cm9rZTojMTgxODE4O3N0cm9rZS13aWR0aDowLjU7Ii8+PHJlY3QgZmlsbD0iI0YxRjFGMSIgaGVpZ2h0PSIzNi4xOTUzIiByeD0iMTIuNSIgcnk9IjEyLjUiIHN0eWxlPSJzdHJva2U6IzE4MTgxODtzdHJva2Utd2lkdGg6MC41OyIgd2lkdGg9IjEwNSIgeD0iNDQuNSIgeT0iMzIwLjQ0MzQiLz48dGV4dCBmaWxsPSIjMDAwMDAwIiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMiIgbGVuZ3RoQWRqdXN0PSJzcGFjaW5nIiB0ZXh0TGVuZ3RoPSI4NSIgeD0iNTQuNSIgeT0iMzQzLjA3NjIiPk9wZW4gY29ubmVjdGlvbjwvdGV4dD48cmVjdCBmaWxsPSIjRjFGMUYxIiBoZWlnaHQ9IjM2LjE5NTMiIHJ4PSIxMi41IiByeT0iMTIuNSIgc3R5bGU9InN0cm9rZTojMTgxODE4O3N0cm9rZS13aWR0aDowLjU7IiB3aWR0aD0iMTUwIiB4PSIyMiIgeT0iMzc2LjYzODciLz48dGV4dCBmaWxsPSIjMDAwMDAwIiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMiIgbGVuZ3RoQWRqdXN0PSJzcGFjaW5nIiB0ZXh0TGVuZ3RoPSIxMzAiIHg9IjMyIiB5PSIzOTkuMjcxNSI+SGF2ZSBmdW4gd2l0aCB5b3VyIHNlcnZlcjwvdGV4dD48cmVjdCBmaWxsPSIjRjFGMUYxIiBoZWlnaHQ9IjM2LjE5NTMiIHJ4PSIxMi41IiByeT0iMTIuNSIgc3R5bGU9InN0cm9rZTojMTgxODE4O3N0cm9rZS13aWR0aDowLjU7IiB3aWR0aD0iODkiIHg9IjUyLjUiIHk9IjQzMi44MzQiLz48dGV4dCBmaWxsPSIjMDAwMDAwIiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMiIgbGVuZ3RoQWRqdXN0PSJzcGFjaW5nIiB0ZXh0TGVuZ3RoPSI2OSIgeD0iNjIuNSIgeT0iNDU1LjQ2NjgiPkRpc2Nvbm5lY3RlZDwvdGV4dD48cmVjdCBmaWxsPSIjRjFGMUYxIiBoZWlnaHQ9IjM2LjE5NTMiIHJ4PSIxMi41IiByeT0iMTIuNSIgc3R5bGU9InN0cm9rZTojMTgxODE4O3N0cm9rZS13aWR0aDowLjU7IiB3aWR0aD0iMTQzIiB4PSIyNS41IiB5PSI0ODkuMDI5MyIvPjx0ZXh0IGZpbGw9IiMwMDAwMDAiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjEyIiBsZW5ndGhBZGp1c3Q9InNwYWNpbmciIHRleHRMZW5ndGg9IjEyMyIgeD0iMzUuNSIgeT0iNTExLjY2MjEiPlJ1biBzY3JpcHQgZGlzY29ubmVjdGVkPC90ZXh0PjxlbGxpcHNlIGN4PSI5NyIgY3k9IjU1Ni4yMjQ2IiBmaWxsPSJub25lIiByeD0iMTEiIHJ5PSIxMSIgc3R5bGU9InN0cm9rZTojMjIyMjIyO3N0cm9rZS13aWR0aDoxLjA7Ii8+PGVsbGlwc2UgY3g9Ijk3IiBjeT0iNTU2LjIyNDYiIGZpbGw9IiMyMjIyMjIiIHJ4PSI2IiByeT0iNiIgc3R5bGU9InN0cm9rZTojMTExMTExO3N0cm9rZS13aWR0aDoxLjA7Ii8+PGxpbmUgc3R5bGU9InN0cm9rZTojMTgxODE4O3N0cm9rZS13aWR0aDoxLjA7IiB4MT0iOTciIHgyPSI5NyIgeTE9IjE4NS4wNDEiIHkyPSIyMTIuNDQzNCIvPjxwb2x5Z29uIGZpbGw9IiMxODE4MTgiIHBvaW50cz0iOTMsMjAyLjQ0MzQsOTcsMjEyLjQ0MzQsMTAxLDIwMi40NDM0LDk3LDIwNi40NDM0IiBzdHlsZT0ic3Ryb2tlOiMxODE4MTg7c3Ryb2tlLXdpZHRoOjEuMDsiLz48bGluZSBzdHlsZT0ic3Ryb2tlOiMxODE4MTg7c3Ryb2tlLXdpZHRoOjEuMDsiIHgxPSI5NyIgeDI9Ijk3IiB5MT0iMTIzLjQyMjkiIHkyPSIxNDguODQ1NyIvPjxwb2x5Z29uIGZpbGw9IiMxODE4MTgiIHBvaW50cz0iOTMsMTM4Ljg0NTcsOTcsMTQ4Ljg0NTcsMTAxLDEzOC44NDU3LDk3LDE0Mi44NDU3IiBzdHlsZT0ic3Ryb2tlOiMxODE4MTg7c3Ryb2tlLXdpZHRoOjEuMDsiLz48bGluZSBzdHlsZT0ic3Ryb2tlOiMxODE4MTg7c3Ryb2tlLXdpZHRoOjEuMDsiIHgxPSIxNjEiIHgyPSIxNzMiIHkxPSIxMTEuNDIyOSIgeTI9IjExMS40MjI5Ii8+PHBvbHlnb24gZmlsbD0iIzE4MTgxOCIgcG9pbnRzPSIxNjksMTgyLjQ0MzQsMTczLDE5Mi40NDM0LDE3NywxODIuNDQzNCwxNzMsMTg2LjQ0MzQiIHN0eWxlPSJzdHJva2U6IzE4MTgxODtzdHJva2Utd2lkdGg6MS4wOyIvPjxsaW5lIHN0eWxlPSJzdHJva2U6IzE4MTgxODtzdHJva2Utd2lkdGg6MS4wOyIgeDE9IjE3MyIgeDI9IjE3MyIgeTE9IjExMS40MjI5IiB5Mj0iMjU2LjQ0MzQiLz48bGluZSBzdHlsZT0ic3Ryb2tlOiMxODE4MTg7c3Ryb2tlLXdpZHRoOjEuMDsiIHgxPSIxNzMiIHgyPSI5NyIgeTE9IjI1Ni40NDM0IiB5Mj0iMjU2LjQ0MzQiLz48bGluZSBzdHlsZT0ic3Ryb2tlOiMxODE4MTg7c3Ryb2tlLXdpZHRoOjEuMDsiIHgxPSI5NyIgeDI9Ijk3IiB5MT0iMjU2LjQ0MzQiIHkyPSIyNzYuNDQzNCIvPjxwb2x5Z29uIGZpbGw9IiMxODE4MTgiIHBvaW50cz0iOTMsMjY2LjQ0MzQsOTcsMjc2LjQ0MzQsMTAxLDI2Ni40NDM0LDk3LDI3MC40NDM0IiBzdHlsZT0ic3Ryb2tlOiMxODE4MTg7c3Ryb2tlLXdpZHRoOjEuMDsiLz48bGluZSBzdHlsZT0ic3Ryb2tlOiMxODE4MTg7c3Ryb2tlLXdpZHRoOjEuMDsiIHgxPSI5NyIgeDI9Ijk3IiB5MT0iNzQiIHkyPSI5OS40MjI5Ii8+PHBvbHlnb24gZmlsbD0iIzE4MTgxOCIgcG9pbnRzPSI5Myw4OS40MjI5LDk3LDk5LjQyMjksMTAxLDg5LjQyMjksOTcsOTMuNDIyOSIgc3R5bGU9InN0cm9rZTojMTgxODE4O3N0cm9rZS13aWR0aDoxLjA7Ii8+PGxpbmUgc3R5bGU9InN0cm9rZTojMTgxODE4O3N0cm9rZS13aWR0aDoxLjA7IiB4MT0iMTc0IiB4Mj0iMTkxIiB5MT0iNjIiIHkyPSI2MiIvPjxwb2x5Z29uIGZpbGw9IiMxODE4MTgiIHBvaW50cz0iMTg3LDE3Ni40NDM0LDE5MSwxODYuNDQzNCwxOTUsMTc2LjQ0MzQsMTkxLDE4MC40NDM0IiBzdHlsZT0ic3Ryb2tlOiMxODE4MTg7c3Ryb2tlLXdpZHRoOjEuMDsiLz48bGluZSBzdHlsZT0ic3Ryb2tlOiMxODE4MTg7c3Ryb2tlLXdpZHRoOjEuMDsiIHgxPSIxOTEiIHgyPSIxOTEiIHkxPSI2MiIgeTI9IjI4OC40NDM0Ii8+PGxpbmUgc3R5bGU9InN0cm9rZTojMTgxODE4O3N0cm9rZS13aWR0aDoxLjA7IiB4MT0iMTkxIiB4Mj0iMTA5IiB5MT0iMjg4LjQ0MzQiIHkyPSIyODguNDQzNCIvPjxwb2x5Z29uIGZpbGw9IiMxODE4MTgiIHBvaW50cz0iMTE5LDI4NC40NDM0LDEwOSwyODguNDQzNCwxMTksMjkyLjQ0MzQsMTE1LDI4OC40NDM0IiBzdHlsZT0ic3Ryb2tlOiMxODE4MTg7c3Ryb2tlLXdpZHRoOjEuMDsiLz48bGluZSBzdHlsZT0ic3Ryb2tlOiMxODE4MTg7c3Ryb2tlLXdpZHRoOjEuMDsiIHgxPSI5NyIgeDI9Ijk3IiB5MT0iMzAiIHkyPSI1MCIvPjxwb2x5Z29uIGZpbGw9IiMxODE4MTgiIHBvaW50cz0iOTMsNDAsOTcsNTAsMTAxLDQwLDk3LDQ0IiBzdHlsZT0ic3Ryb2tlOiMxODE4MTg7c3Ryb2tlLXdpZHRoOjEuMDsiLz48bGluZSBzdHlsZT0ic3Ryb2tlOiMxODE4MTg7c3Ryb2tlLXdpZHRoOjEuMDsiIHgxPSI5NyIgeDI9Ijk3IiB5MT0iMzAwLjQ0MzQiIHkyPSIzMjAuNDQzNCIvPjxwb2x5Z29uIGZpbGw9IiMxODE4MTgiIHBvaW50cz0iOTMsMzEwLjQ0MzQsOTcsMzIwLjQ0MzQsMTAxLDMxMC40NDM0LDk3LDMxNC40NDM0IiBzdHlsZT0ic3Ryb2tlOiMxODE4MTg7c3Ryb2tlLXdpZHRoOjEuMDsiLz48bGluZSBzdHlsZT0ic3Ryb2tlOiMxODE4MTg7c3Ryb2tlLXdpZHRoOjEuMDsiIHgxPSI5NyIgeDI9Ijk3IiB5MT0iMzU2LjYzODciIHkyPSIzNzYuNjM4NyIvPjxwb2x5Z29uIGZpbGw9IiMxODE4MTgiIHBvaW50cz0iOTMsMzY2LjYzODcsOTcsMzc2LjYzODcsMTAxLDM2Ni42Mzg3LDk3LDM3MC42Mzg3IiBzdHlsZT0ic3Ryb2tlOiMxODE4MTg7c3Ryb2tlLXdpZHRoOjEuMDsiLz48bGluZSBzdHlsZT0ic3Ryb2tlOiMxODE4MTg7c3Ryb2tlLXdpZHRoOjEuMDsiIHgxPSI5NyIgeDI9Ijk3IiB5MT0iNDEyLjgzNCIgeTI9IjQzMi44MzQiLz48cG9seWdvbiBmaWxsPSIjMTgxODE4IiBwb2ludHM9IjkzLDQyMi44MzQsOTcsNDMyLjgzNCwxMDEsNDIyLjgzNCw5Nyw0MjYuODM0IiBzdHlsZT0ic3Ryb2tlOiMxODE4MTg7c3Ryb2tlLXdpZHRoOjEuMDsiLz48bGluZSBzdHlsZT0ic3Ryb2tlOiMxODE4MTg7c3Ryb2tlLXdpZHRoOjEuMDsiIHgxPSI5NyIgeDI9Ijk3IiB5MT0iNDY5LjAyOTMiIHkyPSI0ODkuMDI5MyIvPjxwb2x5Z29uIGZpbGw9IiMxODE4MTgiIHBvaW50cz0iOTMsNDc5LjAyOTMsOTcsNDg5LjAyOTMsMTAxLDQ3OS4wMjkzLDk3LDQ4My4wMjkzIiBzdHlsZT0ic3Ryb2tlOiMxODE4MTg7c3Ryb2tlLXdpZHRoOjEuMDsiLz48bGluZSBzdHlsZT0ic3Ryb2tlOiMxODE4MTg7c3Ryb2tlLXdpZHRoOjEuMDsiIHgxPSI5NyIgeDI9Ijk3IiB5MT0iNTI1LjIyNDYiIHkyPSI1NDUuMjI0NiIvPjxwb2x5Z29uIGZpbGw9IiMxODE4MTgiIHBvaW50cz0iOTMsNTM1LjIyNDYsOTcsNTQ1LjIyNDYsMTAxLDUzNS4yMjQ2LDk3LDUzOS4yMjQ2IiBzdHlsZT0ic3Ryb2tlOiMxODE4MTg7c3Ryb2tlLXdpZHRoOjEuMDsiLz48IS0tU1JDPVtKU3VuM2k4bTMwTkdGUVZ1T3VpS1lIYTY1V09zOUVXNUlrQWU3ZDJnbjJ0cXpnR2pXWXdNOUpfUmx6aExYV0Vnc28zOEJkNmxVNTI4Mkl3QUU3OXdnZzRUMlFnOVNjczA2VHpOSTZfTXVabzFDX09fQTc1c21BNlh6NkhmYlBQWnZIUDdFSXdaaEI0bDNPZGRPRFBnaHRyUF9hRFpCLXI4MjJOTll4TjM1OFU0SjZjYVBFb1B5clVJRHRRSnRNeTd5dlNGXS0tPjwvZz48L3N2Zz4=" class="uml" alt="uml diagram" title="" /></p>
+<p>To facilitate the script in identify each sessions, 1Remote will start the script with <strong><code>SESSION_ID</code></strong>, <strong><code>SERVER_ID</code></strong>, <strong><code>SERVER_NAME</code></strong>, and <strong><code>SERVER_HOST</code></strong> as environment variables.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Noted：For the same server, the <strong>SESSION_ID</strong> for each session is different, while <strong>SERVER_ID</strong>, <strong>SERVER_NAME</strong>, and <strong>SERVER_HOST</strong> remain the same.</p>
+</div>
+<h2 id="usage-misc-pre-post-script-control-overview-setting-up-scripts">Setting Up Scripts</h2>
+<p>To set up a script in 1Remote:</p>
+<ol>
+<li>Find a place to keep your script files, and create scripts there.</li>
+<li>Navigate to the <code>Edit</code> page of your server in 1Remote.</li>
+<li>
+<p>Click the <code>Select</code> button and select the script file you want.</p>
+<p><img alt="steps" src="../usage/misc/pre-post-script-control/img/step1.jpg" /></p>
+</li>
+<li>
+<p>Click <code>Test</code> button to test the script, the debug info will popup.</p>
+<p><img alt="steps" src="../usage/misc/pre-post-script-control/img/step2.jpg" /></p>
+</li>
+<li>
+<p>If it is all green, click <code>Save</code> button to save.</p>
+</li>
+<li>Then your script will be run every time you start this server.</li>
+</ol>
+<h2 id="usage-misc-pre-post-script-control-overview-example-pre-connection-script">Example Pre-Connection Script</h2>
+<p>Here is an example of a script. The script will be executed in the directory where the script file is.</p>
+<div class="highlight"><pre><span></span><code><span class="nv">$sessionID</span> <span class="p">=</span> <span class="nv">$env:SESSION_ID</span>
+<span class="nv">$serverID</span> <span class="p">=</span> <span class="nv">$env:SERVER_ID</span>
+<span class="nv">$serverName</span> <span class="p">=</span> <span class="nv">$env:SERVER_NAME</span>
+<span class="nv">$serverHost</span> <span class="p">=</span> <span class="nv">$env:SERVER_HOST</span>
+<span class="nv">$serverTags</span> <span class="p">=</span> <span class="nv">$env:SERVER_TAGS</span>
+
+<span class="nb">echo </span><span class="s2">&quot;SESSION_ID: $sessionID&quot;</span>
+<span class="nb">echo </span><span class="s2">&quot;SERVER_ID: $serverID&quot;</span>
+<span class="nb">echo </span><span class="s2">&quot;SERVER_NAME: $serverName&quot;</span>
+<span class="nb">echo </span><span class="s2">&quot;SERVER_HOST: $serverHost&quot;</span>
+<span class="nb">echo </span><span class="s2">&quot;SERVER_TAGS: $serverTags&quot;</span>
+
+
+<span class="nb">Set-Content</span> <span class="n">-Path</span> <span class="s2">&quot;temp.txt&quot;</span> <span class="n">-Value</span> <span class="s2">&quot;SESSION_ID: $sessionID</span><span class="se">`r`n</span><span class="s2">SERVER_ID: $serverID</span><span class="se">`r`n</span><span class="s2">SERVER_NAME: $serverName</span><span class="se">`r`n</span><span class="s2">SERVER_HOST: $serverHost</span><span class="se">`r</span><span class="s2">`SERVER_TAGS: $serverTags&quot;</span>
+
+<span class="c"># in the script before connect:</span>
+<span class="c"># TODO: save $sessionID into file in pre-connect script</span>
+<span class="c"># TODO: if $serverTags contains &quot;HOME&quot; then open VPN1</span>
+<span class="c"># TODO: if $serverTags contains &quot;WORK&quot; then open VPN2</span>
+
+
+<span class="c"># in the script after disconnected:</span>
+<span class="c"># TODO: read $sessionID from file in post-connect script</span>
+<span class="c"># TODO: if $sessionID == &quot;12345&quot; then close VPN1</span>
+<span class="c"># TODO: if $sessionID == &quot;ABCDE&quot; then close VPN2</span>
+
+
+<span class="c"># do some long time jobs, like opening a VPN</span>
+<span class="nb">sleep </span><span class="n">3</span>
+
+<span class="c"># exit with non-zero will terminate your connection request.</span>
+<span class="n">exit</span> <span class="n">0</span>
+</code></pre></div>
+<p>A typical application is to open a VPN before establishing a remote connection, and automatically close the VPN after terminating the remote connection.</p>
+<p><a class="md-button" href="#usage-misc-pre-post-script-control-open-a-vpn-before-connect">Learn more</a></p>
+<!-- IT keywoards -->
+<div class="docinfo print-site-plugin-ignore" style="position:relative; margin-top:3em; padding-bottom: 3em; padding-top: 1em; font-size: smaller; border-top: 2px solid #cccccc">
+    <div style="float: left">
+        ✏️ <b>Last Change</b>: 2025-11-28 07:00
+    </div>
+    <div style="float: right">
+        📖 <b>Publication Date</b>: 2025-11-28 07:02
+    </div>
+</div>
+
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?915b78fdd0e2f52a5f6f6816de6cb939";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script></section><section class="print-page" id="usage-misc-pre-post-script-control-open-a-vpn-before-connect"><p>Maybe your server needs a VPN connection before you can connect to it. 1Remote can help you open a VPN connection before connecting to the server.</p>
+<blockquote>
+<p>One of my windows servers is behind VPN. So I have to connect the VPN tunnel first, wait until it's connected, then run the RDP connection. I'm trying to automate this with 1Remote using OpenVPN 2.5.8.</p>
+</blockquote>
+<p>You can open vpn in <code>Script before connect</code>
+and close it in <code>Script after disconnected</code></p>
+<p><img alt="image" src="../usage/misc/pre-post-script-control/img/vpn-scripts.jpg" /></p>
+<p>open-vpn.ps1:</p>
+<div class="highlight"><pre><span></span><code><span class="s2">&quot;C:\Program Files\OpenVPN\bin\openvpn-gui.exe&quot;</span><span class="w"> </span>--command<span class="w"> </span>myconnection.ovpn
+
+Write-Host<span class="w"> </span><span class="s2">&quot;Checking VPN connection&quot;</span><span class="w"> </span>-NoNewLine
+<span class="nv">$i</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">0</span>
+<span class="k">while</span><span class="o">(</span><span class="m">1</span><span class="o">)</span><span class="w"> </span><span class="o">{</span>
+<span class="w">  </span>Write-Host<span class="w"> </span>-NoNewLine<span class="w"> </span><span class="s1">&#39; .&#39;</span>
+<span class="w">  </span><span class="nv">$portOpened</span><span class="w"> </span><span class="o">=</span><span class="w"> </span>Test-Port<span class="w"> </span><span class="nv">$Env</span>:PRM_HOST<span class="w"> </span><span class="nv">$Env</span>:PRM_PORT<span class="w"> </span><span class="p">|</span><span class="w"> </span>?<span class="w"> </span><span class="o">{</span><span class="w"> </span><span class="nv">$_</span>.PortOpened<span class="w"> </span><span class="o">}</span>
+<span class="w">  </span><span class="k">if</span><span class="w"> </span><span class="o">(</span><span class="nv">$portOpened</span><span class="w"> </span>-or<span class="w"> </span><span class="nv">$i</span><span class="w"> </span>-gt<span class="w"> </span><span class="m">60</span><span class="o">)</span><span class="w"> </span><span class="o">{</span><span class="w"> </span><span class="nb">break</span><span class="w"> </span><span class="o">}</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="o">{</span><span class="w"> </span>Start-Sleep<span class="w"> </span><span class="m">1</span><span class="p">;</span><span class="w"> </span><span class="nv">$i</span>++<span class="o">}</span>
+<span class="o">}</span>
+<span class="k">if</span><span class="w"> </span><span class="o">(</span><span class="nv">$i</span><span class="w"> </span>-gt<span class="w"> </span><span class="m">60</span><span class="o">)</span><span class="w"> </span><span class="o">{</span><span class="w"> </span>Write-Error<span class="w"> </span><span class="s1">&#39;timeout&#39;</span><span class="w"> </span><span class="o">}</span>
+</code></pre></div>
+<p>close-vpn.ps1:</p>
+<div class="highlight"><pre><span></span><code><span class="s2">&quot;C:\Program Files\OpenVPN\bin\openvpn-gui.exe&quot;</span><span class="w"> </span>--command<span class="w"> </span>disconnect<span class="w"> </span>myconnection.ovpn
+</code></pre></div>
+<!-- IT keywoards -->
+<div class="docinfo print-site-plugin-ignore" style="position:relative; margin-top:3em; padding-bottom: 3em; padding-top: 1em; font-size: smaller; border-top: 2px solid #cccccc">
+    <div style="float: left">
+        ✏️ <b>Last Change</b>: 2025-11-28 07:00
+    </div>
+    <div style="float: right">
+        📖 <b>Publication Date</b>: 2025-11-28 07:02
+    </div>
+</div>
+
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?915b78fdd0e2f52a5f6f6816de6cb939";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script></section><h1 class='nav-section-title-end'>Ended: Streamline by pre/post connect script</h1><section class="print-page" id="usage-misc-note-for-servers"><p>We support markdown note to help you remember some important information. The note will be displayed in the connection list and the connection detail page.</p>
+<p><img alt="image" src="../usage/misc/img/note-1.jpg" /></p>
+<p><img alt="image" src="../usage/misc/img/note-2.jpg" /></p>
+<p>You can edit the note in the edit page or click the edit button on top-right of the note.</p>
+<p>We support link, image and others markdown syntax.</p>
+<p><img alt="image" src="../usage/misc/img/note-3.jpg" /></p>
+<!-- IT keywoards -->
+<div class="docinfo print-site-plugin-ignore" style="position:relative; margin-top:3em; padding-bottom: 3em; padding-top: 1em; font-size: smaller; border-top: 2px solid #cccccc">
+    <div style="float: left">
+        ✏️ <b>Last Change</b>: 2025-11-28 07:00
+    </div>
+    <div style="float: right">
+        📖 <b>Publication Date</b>: 2025-11-28 07:02
+    </div>
+</div>
+
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?915b78fdd0e2f52a5f6f6816de6cb939";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script></section><section class="print-page" id="usage-misc-cli"><h1 id="usage-misc-cli-cli-usage">CLI Usage</h1>
+<p>The 1Remote also supports CLI commands. This documentation provides an overview of the available CLI commands and their usage.</p>
+<h2 id="usage-misc-cli-installation-and-uninstallation">Installation and Uninstallation</h2>
+<p>To install or uninstall the 1Remote tool, use the following commands:</p>
+<ul>
+<li><code>--install</code>: Performs the installation of the 1Remote tool.</li>
+<li><code>--uninstall</code>: Removes the 1Remote tool and its associated files.</li>
+</ul>
+<h2 id="usage-misc-cli-desktop-shortcut-management">Desktop Shortcut Management</h2>
+<p>You can manage the desktop shortcut for the 1Remote tool using the following commands:</p>
+<ul>
+<li><code>--install-desktop-shortcut</code>: Installs the desktop shortcut for quick access to the 1Remote tool.</li>
+<li><code>--uninstall-desktop-shortcut</code>: Removes the desktop shortcut.</li>
+</ul>
+<h2 id="usage-misc-cli-startup-entry-management">Startup Entry Management</h2>
+<p>The CLI provides commands to manage the registry startup entry for the 1Remote tool:</p>
+<ul>
+<li><code>--install-startup</code>: Sets the 1Remote tool to start automatically on system boot by adding a registry startup entry.</li>
+<li><code>--uninstall-startup</code>: Removes the registry startup entry for the 1Remote tool.</li>
+</ul>
+<h2 id="usage-misc-cli-running-the-app-minimized">Running the App Minimized</h2>
+<p>If you want to run the 1Remote app in a minimized state, use the following command:</p>
+<ul>
+<li><code>--start-minimized</code>: Launches the 1Remote app minimized.</li>
+</ul>
+<h2 id="usage-misc-cli-executing-connections-or-focusing-tags">Executing Connections or Focusing Tags</h2>
+<p>You can execute specific connections or focus on tags using the following command formats:</p>
+<ul>
+<li><code>ULID:&lt;connection-id&gt;</code>: Runs the 1Remote app and immediately executes and/or focuses on the connection with the specified ID.</li>
+<li><code>&lt;connection-name&gt;</code>: Runs the 1Remote app and immediately executes and/or focuses on the connection with the specified name.</li>
+<li><code>#&lt;tag-name&gt;</code>: Runs the 1Remote app and immediately start the connections associated with the specified tag.</li>
+</ul>
+<p>You can also create shortcuts for ULID, connection name, and tags by right-clicking on a connection in the GUI interface.</p></section><section class="print-page" id="usage-misc-desktop-shortcut-for-connection"><h1 id="usage-misc-desktop-shortcut-for-connection-creating-desktop-shortcut-for-connections">Creating Desktop shortcut for connections</h1>
+<p>Thanks to our <a href="#usage-misc-cli">CLI feature</a>, 1Remote finally supports adding desktop shortcuts for sessions.</p>
+<p>You can create desktop shortcuts for <strong>individual servers</strong>, <strong>multiple servers</strong>, or all servers under a specific <strong>Tag</strong>. Simply right-click on the corresponding item and select "Create Desktop Shortcut."</p>
+<h2 id="usage-misc-desktop-shortcut-for-connection-individual-servers">individual servers</h2>
+<p><img alt="individual servers" src="../usage/misc/img/desktop-shortcut-for-connection1.jpg" /></p>
+<h2 id="usage-misc-desktop-shortcut-for-connection-multiple-servers">multiple servers</h2>
+<p><img alt="multiple servers" src="../usage/misc/img/desktop-shortcut-for-connection2.jpg" /></p>
+<h2 id="usage-misc-desktop-shortcut-for-connection-tag">Tag</h2>
+<p><img alt="tag" src="../usage/misc/img/desktop-shortcut-for-connection3.jpg" /></p>
+<h2 id="usage-misc-desktop-shortcut-for-connection-shortcut-demonstration">Shortcut demonstration</h2>
+<p><img alt="demo" src="../usage/misc/img/desktop-shortcut-for-connection4.jpg" /></p></section><section class="print-page" id="usage-misc-help-translation"><p>It would be really awesome to offer <strong>1Remote</strong> in many different languages! So you're really Welcome to translate <strong>1Remote</strong> in your (native) language, but don't worry there are just a few strings.</p>
+<h2 id="usage-misc-help-translation-how-to-translate">How to translate</h2>
+<ol>
+<li>fork and clone</li>
+<li>open file <code>readme.md</code> in <code>Ui\Resources\Languages</code> and follow the instructions to create a new glossary file for your language.</li>
+</ol>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+</div>
+<ul>
+<li>You may have to edit or remove the proxy in <code>glossary_maker.py</code></li>
+<li>
+<p>Do not edit any <code>.xaml</code> / <code>.cs</code> files directly, they are auto generated from glossary csv file.</p>
+<p><strong>See all this below were generated, do not edit any of them.</strong></p>
+<p><img alt="image" src="https://user-images.githubusercontent.com/10143738/179880239-400b87b0-deed-4ab9-b73d-df34994d41c6.png" /></p>
+</li>
+</ul>
+<ol start="5">
+<li>
+<p>push the glossary file back:</p>
+</li>
+<li>
+<p>send the new file to me(<a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#118;&#101;&#99;&#107;&#115;&#104;&#97;&#119;&#110;&#64;&#103;&#109;&#97;&#105;&#108;&#46;&#99;&#111;&#109;">&#118;&#101;&#99;&#107;&#115;&#104;&#97;&#119;&#110;&#64;&#103;&#109;&#97;&#105;&#108;&#46;&#99;&#111;&#109;</a>)</p>
+</li>
+<li>
+<p>(recommend) Start a new pull requests.</p>
+</li>
+<li>
+<p>Edit this page, add your name :)</p>
+</li>
+</ol>
+<p>See also <a href="https://github.com/1Remote/1Remote/blob/main/Ui/Resources/Languages/readme.md">Readme.md</a></p>
+<h2 id="usage-misc-help-translation-current-contributors">Current contributors</h2>
+<p>If you'd like to help out, please add your name and how we can contact you to this list. And thank you!</p>
+<h3 id="usage-misc-help-translation-arabic">Arabic</h3>
+<ul class="task-list">
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> ar-DZ</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> ar-SA</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> ...</li>
+</ul>
+<h3 id="usage-misc-help-translation-bangla">Bangla</h3>
+<ul class="task-list">
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> bn-BD</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> bn-IN</li>
+</ul>
+<h3 id="usage-misc-help-translation-chinese">Chinese</h3>
+<ul class="task-list">
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> zh-CN (@<a href="https://github.com/VShawn">Shawn</a>)</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> zh-TW (@<a href="https://github.com/yrctw">yrctw</a>)</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> zh-HK</li>
+</ul>
+<h3 id="usage-misc-help-translation-czech">Czech</h3>
+<ul class="task-list">
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> cs-CZ (@<a href="https://github.com/p-bo">p-bo</a>)</li>
+</ul>
+<h3 id="usage-misc-help-translation-dutch">Dutch</h3>
+<ul class="task-list">
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> nl-BE</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> nl-NL</li>
+</ul>
+<h3 id="usage-misc-help-translation-english">English</h3>
+<ul class="task-list">
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> en-US (@<a href="https://github.com/VShawn">Shawn</a> @<a href="https://github.com/majkinetor">majkinetor</a> @<a href="https://github.com/luki1412">luki1412</a>)</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> ...</li>
+</ul>
+<h3 id="usage-misc-help-translation-french">French</h3>
+<ul class="task-list">
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> fr-FR(@Vincent)</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> ...</li>
+</ul>
+<h3 id="usage-misc-help-translation-galego">Galego</h3>
+<ul class="task-list">
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> gl-ES (Hugo Alexandre Perez)</li>
+</ul>
+<h3 id="usage-misc-help-translation-german">German</h3>
+<ul class="task-list">
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> de-DE (@<a href="https://github.com/NAV-Management">NAV-Management</a>)</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> ...</li>
+</ul>
+<h3 id="usage-misc-help-translation-italian">Italian</h3>
+<ul class="task-list">
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> it-<abbr title="Information Technology">IT</abbr></li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> ...</li>
+</ul>
+<h3 id="usage-misc-help-translation-japanese">Japanese</h3>
+<ul class="task-list">
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> ja-JP (@<a href="https://github.com/itagagaki">Itagaki</a>)</li>
+</ul>
+<h3 id="usage-misc-help-translation-korean">Korean</h3>
+<ul class="task-list">
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> ko-KR</li>
+</ul>
+<h3 id="usage-misc-help-translation-spanish">Spanish</h3>
+<ul class="task-list">
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> es-ES</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> es-MX</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> es-AR (@<a href="https://github.com/adssi-local">adssi-local</a>)</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> ...</li>
+</ul>
+<h3 id="usage-misc-help-translation-portuguese">Portuguese</h3>
+<ul class="task-list">
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> pt-BR (@<a href="https://github.com/KernelGM">KernelGM</a>)</li>
+</ul>
+<h3 id="usage-misc-help-translation-swedish">Swedish</h3>
+<ul class="task-list">
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> sv-SE</li>
+</ul>
+<h3 id="usage-misc-help-translation-ukrainian">Ukrainian</h3>
+<ul class="task-list">
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> uk-UA</li>
+</ul>
+<!-- IT keywoards -->
+<div class="docinfo print-site-plugin-ignore" style="position:relative; margin-top:3em; padding-bottom: 3em; padding-top: 1em; font-size: smaller; border-top: 2px solid #cccccc">
+    <div style="float: left">
+        ✏️ <b>Last Change</b>: 2025-11-28 07:00
+    </div>
+    <div style="float: right">
+        📖 <b>Publication Date</b>: 2025-11-28 07:02
+    </div>
+</div>
+
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?915b78fdd0e2f52a5f6f6816de6cb939";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+<h3 id="usage-misc-help-translation-polish">Polish</h3>
+<ul class="task-list">
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> pl-Pl (@<a href="https://github.com/Jokerowatowy">Jokerowatowy</a>)</li>
+</ul></section><h1 class='nav-section-title-end'>Ended: Misc</h1><h1 class='nav-section-title-end'>Ended: Usage</h1><section class="print-page" id="download"><h1 id="download-download">Download</h1>
+<div class="class-none-zh-cn">
+    <h2 id="download-make-1remote-stronger">Make 1Remote Stronger</h2>
+    <p>If you like <b>1Remote</b>, help us make it stronger by doing any of the following:</p>
+    <ol>
+        <li><a href="https://github.com/1Remote/1Remote">Simply star the repository</a></li>
+        <li><a href="https://1remote.github.io/usage/misc/help-translation/">Help translation</a></li>
+        <li><a href="https://github.com/1Remote/1Remote/blob/main/DEVELOP.md">Join DE</a></li>
+        <li>
+            <p><a href="https://ko-fi.com/VShawn">Buy me a coffee</a></p>
+            <p style="opacity: 0.6;font: -webkit-mini-control;">（Thank you all for your generous donations. I apologize for not listing the names of the donors here. The donations will be used for various expenses related to app development, such as server costs, domain registration, Windows Hello hardware for testing, luckin coffee, electricity bills, late-night takeaway, etc. :)</p>
+        </li>
+    </ol>
+</div>
+
+<div class="class-zh-cn">
+    <h2 id="download-make-1remote-stronger">帮助改进项目</h2>
+    <p>若你有意愿参与到 <b>1Remote</b>, 的改进，这些是你可以做的：</p>
+    <ol>
+        <li><a href="https://github.com/1Remote/1Remote">给个 star 让更多人看到这个项目</a></li>
+        <li><a href="https://1remote.github.io/usage/misc/help-translation/">帮助翻译</a></li>
+        <li><a href="https://github.com/1Remote/1Remote/blob/main/DEVELOP.md">参与开发</a></li>
+        <li><a href="https://jq.qq.com/?_wv=1027&amp;k=iF8dguHU" rel="nofollow">加入 QQ 群讨论 (168542318)</a></li>
+        <li>请我喝杯咖啡
+            <p align="center">
+                <img style="max-width: 500px;" src="https://raw.githubusercontent.com/1Remote/PRemoteM/Doc/DocPic/others/donate.jpg" />
+            </p>
+            <p style="opacity: 0.6;font: -webkit-mini-control;">（感谢大家慷慨捐赠，请恕我在此不列出捐赠者名单，捐赠将用于APP开发相关的指出。以下是一些典型用例：服务器、域名、测试用的Windows hello硬件、瑞幸咖啡、空调电费、夜宵外卖等😀）</p>
+        </li>
+    </ol>
+</div>
+
+<h2 id="download-installation">Installation</h2>
+<p>Latest Version: 1.1.0</p>
+<table>
+<thead>
+<tr>
+<th align="left"></th>
+<th align="center">1Remote <br/> Preview build</th>
+<th align="center">1Remote <br/> Stable EXE build</th>
+<th align="center">1Remote<br/> Microsoft Store build</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">Auto update</td>
+<td align="center">⛔</td>
+<td align="center">⛔</td>
+<td align="center">✅</td>
+</tr>
+<tr>
+<td align="left">Other features</td>
+<td align="center">✅ + 💥New Features</td>
+<td align="center">✅</td>
+<td align="center">✅</td>
+</tr>
+<tr>
+<td align="left">Price</td>
+<td align="center">Free</td>
+<td align="center">Free</td>
+<td align="center">Free</td>
+</tr>
+<tr>
+<td align="left">Download</td>
+<td align="center"><a href="https://github.com/1Remote/1Remote/releases/tag/Nightly">From GitHub Nightly</a></td>
+<td align="center"><a href="https://github.com/1Remote/1Remote/releases">From GitHub</a></td>
+<td align="center"><a href="https://www.microsoft.com/store/productId/9PNMNF92JNFP">Microsoft Store</a></td>
+</tr>
+<tr>
+<td align="left">Installer</td>
+<td align="center"><code>choco install 1remote</code></td>
+<td align="center"><code>choco install 1remote</code></td>
+<td align="center"><code>winget install 1remote</code></td>
+</tr>
+</tbody>
+</table>
+<!-- - Using [Winget](https://github.com/microsoft/winget-cli): `winget install premotem`
+- [Chocolatey](https://chocolatey.org/packages/premotem): `choco install premotem` -->
+
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<ul>
+<li>Require Windows10 17763 and above to run this app.</li>
+<li>Windows7, Windows8, Windows Server 2008 and Windows Server 2012 are not supported to run this app.</li>
+</ul>
+</div>
+<!-- !!! note
+    - The exe version of 1Remote on GitHub is **completely free** for personal use.
+    - ~~For Microsoft Store build, you may need to pay for a lifetime license.~~ (As our previous income is now able to cover the recent maintenance costs(server\domain name\ etc.), this app will resume free downloads now) -->
+
+<!-- IT keywoards -->
+<div class="docinfo print-site-plugin-ignore" style="position:relative; margin-top:3em; padding-bottom: 3em; padding-top: 1em; font-size: smaller; border-top: 2px solid #cccccc">
+    <div style="float: left">
+        ✏️ <b>Last Change</b>: 2025-11-28 07:00
+    </div>
+    <div style="float: right">
+        📖 <b>Publication Date</b>: 2025-11-28 07:02
+    </div>
+</div>
+
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?915b78fdd0e2f52a5f6f6816de6cb939";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script></section><section class="print-page" id="privacy-policy"><h1 id="privacy-policy-privacy-policy">Privacy Policy</h1>
+<p><a href="https://github.com/VShawn">VShawn</a> built this app as an Open Source app. This SERVICE is provided by VShawn at no cost with exe published and is intended for use as is.</p>
+<p>This page is used to inform visitors regarding my policies with the collection, use, and disclosure of Personal Information if anyone decided to use my Service.</p>
+<p>If you choose to use my Service, then you agree to the collection and use of information in relation to this policy. The Personal Information that I collect is used for providing and improving the Service. I will not use or share your information with anyone except as described in this Privacy Policy.</p>
+<p>The terms used in this Privacy Policy have the same meanings as in our Terms and Conditions, which is accessible at 1Remote unless otherwise defined in this Privacy Policy.</p>
+<h2 id="privacy-policy-information-collection-and-use">Information Collection and Use</h2>
+<p>This service will not require any of your personal information.</p>
+<h2 id="privacy-policy-log-data">Log Data</h2>
+<p>I want to inform you that whenever you use my Service, in a case of an error in the app I collect data and information (through third party products) on your device called Log Data. This Log Data may include information such as your device Internet Protocol (“IP”) address, device name, operating system version, the configuration of the app when utilizing my Service, the time and date of your use of the Service, and other statistics.</p>
+<h2 id="privacy-policy-cookies">Cookies</h2>
+<p>Cookies are files with a small amount of data that are commonly used as anonymous unique identifiers. These are sent to your browser from the websites that you visit and are stored on your device's internal memory.</p>
+<p>This Service does not use “cookies” explicitly. However, the app may use third party code and libraries that use “cookies” to collect information and improve their services. You have the option to either accept or refuse these cookies and know when a cookie is being sent to your device. If you choose to refuse our cookies, you may not be able to use some portions of this Service.</p>
+<h2 id="privacy-policy-service-providers">Service Providers</h2>
+<p>I may employ third-party companies and individuals due to the following reasons:</p>
+<p>To facilitate our Service;
+To provide the Service on our behalf;
+To perform Service-related services; or
+To assist us in analyzing how our Service is used.
+I want to inform users of this Service that these third parties have access to your Personal Information. The reason is to perform the tasks assigned to them on our behalf. However, they are obligated not to disclose or use the information for any other purpose.</p>
+<h2 id="privacy-policy-security">Security</h2>
+<p>I value your trust in providing us your Personal Information, thus we are striving to use commercially acceptable means of protecting it. But remember that no method of transmission over the internet, or method of electronic storage is 100% secure and reliable, and I cannot guarantee its absolute security.</p>
+<h2 id="privacy-policy-links-to-other-sites">Links to Other Sites</h2>
+<p>This Service may contain links to other sites. If you click on a third-party link, you will be directed to that site. Note that these external sites are not operated by me. Therefore, I strongly advise you to review the Privacy Policy of these websites. I have no control over and assume no responsibility for the content, privacy policies, or practices of any third-party sites or services.</p>
+<h2 id="privacy-policy-childrens-privacy">Children’s Privacy</h2>
+<p>These Services do not address anyone under the age of 13. I do not knowingly collect personally identifiable information from children under 13. In the case I discover that a child under 13 has provided me with personal information, I immediately delete this from our servers. If you are a parent or guardian and you are aware that your child has provided us with personal information, please contact me so that I will be able to do necessary actions.</p>
+<h2 id="privacy-policy-changes-to-this-privacy-policy">Changes to This Privacy Policy</h2>
+<p>I may update our Privacy Policy from time to time. Thus, you are advised to review this page periodically for any changes. I will notify you of any changes by posting the new Privacy Policy on this page.</p>
+<p>This policy is effective as of 2020-11-30</p>
+<h2 id="privacy-policy-contact-us">Contact Us</h2>
+<p>If you have any questions or suggestions about my Privacy Policy, do not hesitate to contact me at <a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#118;&#101;&#99;&#107;&#115;&#104;&#97;&#119;&#110;&#64;&#103;&#109;&#97;&#105;&#108;&#46;&#99;&#111;&#109;">&#118;&#101;&#99;&#107;&#115;&#104;&#97;&#119;&#110;&#64;&#103;&#109;&#97;&#105;&#108;&#46;&#99;&#111;&#109;</a>.</p>
+<!-- IT keywoards -->
+<div class="docinfo print-site-plugin-ignore" style="position:relative; margin-top:3em; padding-bottom: 3em; padding-top: 1em; font-size: smaller; border-top: 2px solid #cccccc">
+    <div style="float: left">
+        ✏️ <b>Last Change</b>: 2025-11-28 07:00
+    </div>
+    <div style="float: right">
+        📖 <b>Publication Date</b>: 2025-11-28 07:02
+    </div>
+</div>
+
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?915b78fdd0e2f52a5f6f6816de6cb939";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script></section><section class="print-page" id="about"><h2 id="about-about-me">About me</h2>
+<p><img alt="avatar" src="../img/author_avatar.jpg" /></p>
+<p>Hi there,</p>
+<p>I’m Shawn. the author of 1Remote. I’m a software developer from China, a big fan of remote desktop software, user of C++/C/C#/Python/Pytorch/Go/typescript. I’m also a big fan of open source software. I hope that 1Remote can help you manage your remote connections well and find this app useful.  If you would like to support my work, you can buy me a coffee or give a nice review. Thanks!</p>
+<ul>
+<li><a href="https://ko-fi.com/VShawn">Buy a coffee</a></li>
+<li><a href="https://raw.githubusercontent.com/1Remote/PRemoteM/Doc/DocPic/others/donate.jpg">请杯咖啡</a></li>
+</ul>
+<p>If you have any questions/suggestions please feel free to let me know. <a href="mailto:veckshawn@gmail.com">veckshawn@gmail.com</a> is my email in case you want to contact me.</p>
+<h2 id="about-make-1remote-stronger">Make 1Remote Stronger</h2>
+<p>If you like this app, please help us make it stronger by doing any of the following:</p>
+<ol>
+<li><a href="https://github.com/1Remote/1Remote/">Simply star it on github</a></li>
+<li><a href="#about-usage-msic-help-translation.md">Help translation</a></li>
+<li><a href="https://ko-fi.com/VShawn">Buy a coffee</a></li>
+<li><a href="https://github.com/1Remote/1Remote/blob/1Remote_dev/DEVELOP.md">Join DEV</a></li>
+</ol>
+<!-- IT keywoards -->
+<div class="docinfo print-site-plugin-ignore" style="position:relative; margin-top:3em; padding-bottom: 3em; padding-top: 1em; font-size: smaller; border-top: 2px solid #cccccc">
+    <div style="float: left">
+        ✏️ <b>Last Change</b>: 2025-11-28 07:00
+    </div>
+    <div style="float: right">
+        📖 <b>Publication Date</b>: 2025-11-28 07:02
+    </div>
+</div>
+
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?915b78fdd0e2f52a5f6f6816de6cb939";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script></section></div>
+
+
+  
+
+
+
+
+                
+
+              </article>
+            </div>
+          
+          
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12Z"/></svg>
+            Back to top
+          </button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      © 1Remote Team 2023
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+        <span style="font-size:smaller; padding-right:2em; padding-top:.8em;color:lightgray">Built with <a href="https://github.com/majkinetor/mm-docs">mm-docs</a></span>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    <script id="__config" type="application/json">{"base": "/", "features": ["navigation.instant", "navigation.top", "navigation.indexes", "header.autohide", "navigation.tabs", "navigation.sections", "navigation.tracking", "navigation.footer", "content.action.edit"], "search": "../assets/javascripts/workers/search.208ed371.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.407015b8.min.js"></script>
+      
+        <script src="../js/print-site.js"></script>
+      
+        <script src="../extra/js/jquery-3.6.0.min.js"></script>
+      
+        <script src="../extra/js/mathjax.js"></script>
+      
+        <script src="../extra/js/click-image.js"></script>
+      
+        <script src="../extra/js/hide-something.js"></script>
+      
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+        <script src="https://unpkg.com/tablesort@5.3.0/dist/tablesort.min.js"></script>
+      
+    
+  </body>
+</html>
