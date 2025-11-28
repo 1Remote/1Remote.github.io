@@ -59,16 +59,4 @@ Latest Version: 1.1.0
     - The exe version of {{appname}} on GitHub is **completely free** for personal use.
     - ~~For Microsoft Store build, you may need to pay for a lifetime license.~~ (As our previous income is now able to cover the recent maintenance costs(server\domain name\ etc.), this app will resume free downloads now) -->
 
-💥New Features:
-
-- [x] [MySQL support](https://1remote.github.io/usage/database/data-synchronization/#by-using-mysql)
-- [x] [Custom servers order by drag](https://1remote.github.io/usage/overview/#sorting)
-- [x] [Multi-Credentials for RDP\VNC\SHH...(e.g. keep root and normal-user credentials in one server)](https://1remote.github.io/usage/alternative-credential/#addedit)
-- [x] Multi-Address for RDP\VNC\SHH... (e.g. 192.168.0.100 for LAN, and xxx.xx.xxx.xx for WAN)
-- [x] [Auto switching between multi-addresses (you don't have to select the address manually)](https://1remote.github.io/usage/alternative-credential/#auto-switching-address)
-- [x] [Servers sharing within team (e.g. share servers with your colleagues)](https://1remote.github.io/usage/team/team-sharing/)
-- [x] [Quick connect from launcher](https://1remote.org/usage/launcher/quick-connect/)
-- [x] [allow creating desktop shortcut for connections](https://1remote.org/usage/misc/desktop-shortcut-for-connection/#individual-servers)
-- [x] Windows Hello verification before sensitive operations
-
 {% include 'footer.md' %}

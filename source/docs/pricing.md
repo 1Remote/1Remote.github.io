@@ -6,11 +6,10 @@ hide: [toc, navigation]
 
 !!! note
     - The exe version of {{appname}} on GitHub is **completely free** for personal use.
-    - For Microsoft Store build, you may need to pay for a lifetime license.
-    - We will give away free lifetime license for some special events.
+    - For Microsoft Store build, ~you may need to pay for a lifetime license.~ It is now **free**.
     - For commercial use, I am not currently considering charging for commercial licensing of {{appname}}, so you can use it in your company, but I will not provide any support for commercial use.
 
-All features are available on all this versions. *Microsoft Store version may introduce some unique new features in the future.*
+All features are available on all this versions.
 
 | Features          | EXE build                          | Microsoft Store build                                                                                                                                             |
 | ----------------- | ---------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------- |
