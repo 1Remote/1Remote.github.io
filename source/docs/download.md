@@ -31,7 +31,7 @@ hide: [toc, navigation]
             <p align="center">
                 <img style="max-width: 500px;" src="https://raw.githubusercontent.com/1Remote/PRemoteM/Doc/DocPic/others/donate.jpg" />
             </p>
-            <p style="opacity: 0.6;font: -webkit-mini-control;">（感谢大家慷慨捐赠，请恕我在此不列出捐赠者名单，捐赠将用于APP开发相关的指出。以下是一些典型用例：服务器、域名、测试用的Windows hello硬件、瑞幸咖啡、空调电费、夜宵外卖等😀）</p>
+            <p style="opacity: 0.6;font: -webkit-mini-control;">（感谢大家慷慨捐赠，请恕我在此不列出捐赠者名单，捐赠将用于APP开发相关的支出。以下是一些典型用例：服务器、域名、测试用的Windows hello硬件、瑞幸咖啡、空调电费、夜宵外卖等😀）</p>
         </li>
     </ol>
 </div>
