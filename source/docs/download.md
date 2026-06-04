@@ -45,7 +45,7 @@ Latest Version: 1.1.0
 | Auto update    |                                       ⛔                                        |                             ⛔                              |                                     ✅                                     |
 | Other features |                               ✅ + 💥New Features                                |                             ✅                              |                                     ✅                                     |
 | Price          |                                      Free                                      |                            Free                            |                                   Free                                    |
-| Download       | [From GitHub Nightly](https://github.com/1Remote/1Remote/releases/tag/Nightly) | [From GitHub](https://github.com/1Remote/1Remote/releases) | [Microsoft Store](https://www.microsoft.com/store/productId/9PNMNF92JNFP) |
+| Download       | [From GitHub Nightly](https://github.com/1Remote/1Remote/releases/tag/Nightly) | [From GitHub](https://github.com/1Remote/1Remote/releases) | [Microsoft Store](https://apps.microsoft.com/detail/9pnmnf92jnfp) |
 | Installer      |                            `choco install 1remote`                             |                  `choco install 1remote`                   |                         `winget install 1remote`                          |
 
 <!-- - Using [Winget](https://github.com/microsoft/winget-cli): `winget install premotem`
