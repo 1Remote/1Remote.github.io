@@ -100,6 +100,10 @@ If you'd like to help out, please add your name and how we can contact you to th
 
 - [ ] sv-SE
 
+### Turkish
+
+- [x] tr-TR (@[vturkman](https://github.com/vturkman))
+
 ### Ukrainian
 
 - [ ] uk-UA
