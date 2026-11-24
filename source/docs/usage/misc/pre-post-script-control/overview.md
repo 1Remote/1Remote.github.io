@@ -1,88 +1,96 @@
+# Scripts before connect and after disconnect
 
-# Using Pre- and Post-Connection Scripts in 1Remote
-
-1Remote is a remote access application that allows users to establish connections to remote computers. One of its features is the ability to run pre- and post-connection scripts. These scripts can be written in cmd(*.bat), PowerShell(*.ps1) or Python(*.py) and can be used to perform various tasks before a connection is established or after it disconnected.
+For every server you can set two scripts: one that runs **before** {{appname}} connects, and one that runs after the session was **disconnected**. A script is a `.bat` or `.cmd` file, a `.ps1` PowerShell script or a `.py` Python script. The usual case is to open a VPN before the connection and to close it after the session, see [Open a VPN before connect](open-a-vpn-before-connect.md).
 
 ```plantuml format="svg"
 @startuml
 (*)
-if (Run script befor conncect?) then (yes)
-  if (Script exit code is 0?) then (no)
-    :Terminate connection;
+if (Is a script set for "before connect"?) then (yes)
+  :Run the script and wait for it;
+  if (Exit code is 0?) then (no)
+    :Show "Script ExitCode = <code>, connection abort!";
     stop
   endif
 endif
--Open connection
--Have fun with your server
--Disconnected
--Run script disconnected
+-Open the session
+-Work in the session
+-Session is disconnected
+-Run the script for "after disconnected"
 stop
 @enduml
 ```
 
-To facilitate the script in identify each sessions, 1Remote will start the script with **`SESSION_ID`**, **`SERVER_ID`**, **`SERVER_NAME`**, and **`SERVER_HOST`** as environment variables.
+## Set up the scripts
 
-!!! note
-    Noted：For the same server, the **SESSION_ID** for each session is different, while **SERVER_ID**, **SERVER_NAME**, and **SERVER_HOST** remain the same.
+1. Open the server in the editor (**`Edit`**).
+2. In **`Script before connect`** type the path of the script, or click **`Select`** to pick the file. Arguments may follow the path, for example `D:\scripts\before.ps1 -Vpn home`.
+3. Click **`Test`**: {{appname}} tells you what it is going to run, runs the script and shows its exit code.
 
-## Setting Up Scripts
+    ![Select and test a script](img/step1.jpg)
 
-To set up a script in 1Remote:
+    ![Test output](img/step2.jpg)
 
-1. Find a place to keep your script files, and create scripts there.
-2. Navigate to the `Edit` page of your server in 1Remote.
-3. Click the `Select` button and select the script file you want.
+4. Do the same for **`Script after disconnected`**.
+5. Click **`Save`**. From now on the scripts run every time you connect to this server.
 
-    ![steps](img/step1.jpg)
+## How the scripts are run
 
-4. Click `Test` button to test the script, the debug info will popup.
+- The working directory of a script is the folder the script file is in.
+- A `.ps1` file is started with `powershell.exe -File`, a `.py` file with `python` (so Python has to be in the `PATH`), a `.bat` or `.cmd` file directly.
+- **`Script before connect`**: {{appname}} waits until the script has ended. Exit code `0` means "go on and connect"; any other code stops with the message `Script ExitCode = <code>, connection abort!`. Tick **`Hide script window(not recommended for script take long time)`** to run the script without a window; the tooltip warns you because you would not see a script that hangs. The **`Test`** run always shows the window.
+- **`Script after disconnected`**: runs when the session ends, that is when you close its tab (or, for a program that runs unhosted in its own window, when that program has exited). {{appname}} does not wait for it and ignores its exit code. Its window is hidden; only the **`Test`** run shows it.
 
-    ![steps](img/step2.jpg)
+!!! tip
+    If Windows refuses to run your `.ps1` file with a message about the *execution policy*, run this once in a PowerShell window:
 
-5. If it is all green, click `Save` button to save.
-6. Then your script will be run every time you start this server.
+    ```powershell
+    Set-ExecutionPolicy -Scope CurrentUser RemoteSigned
+    ```
 
-## Example Pre-Connection Script
+## Environment variables
 
-Here is an example of a script. The script will be executed in the directory where the script file is.
+Every script gets these variables, so it knows which server and which session it is about:
 
-``` powershell
-$sessionID = $env:SESSION_ID
-$serverID = $env:SERVER_ID
+| Variable      | Content                                                                     | Example                       |
+| ------------- | --------------------------------------------------------------------------- | ----------------------------- |
+| `SESSION_ID`  | A number that identifies the session. It is the same in the before and the after script of one session, and different in the next session. | `16312252`  |
+| `SERVER_ID`   | The internal id of the server. It stays the same when the server is renamed. | `01GWJXAXUOBERQPARPSGKYKWBWQ` |
+| `SERVER_NAME` | The name of the server as shown in the list.                                | `NAS`                         |
+| `SERVER_HOST` | Address and port of the server, separated by a colon.                       | `192.168.0.130:22`            |
+| `SERVER_TAGS` | The tags of the server, separated by commas.                                | `home,nas`                    |
+
+In PowerShell you read them as `$env:SERVER_NAME`, in a batch file as `%SERVER_NAME%`.
+
+## Example script
+
+The following PowerShell script shows all variables, writes them to a file and ends with exit code `0`, so the connection goes on:
+
+```powershell
+$sessionID  = $env:SESSION_ID
+$serverID   = $env:SERVER_ID
 $serverName = $env:SERVER_NAME
 $serverHost = $env:SERVER_HOST
 $serverTags = $env:SERVER_TAGS
 
-echo "SESSION_ID: $sessionID"
-echo "SERVER_ID: $serverID"
-echo "SERVER_NAME: $serverName"
-echo "SERVER_HOST: $serverHost"
-echo "SERVER_TAGS: $serverTags"
+Write-Host "SESSION_ID: $sessionID"
+Write-Host "SERVER_ID: $serverID"
+Write-Host "SERVER_NAME: $serverName"
+Write-Host "SERVER_HOST: $serverHost"
+Write-Host "SERVER_TAGS: $serverTags"
 
+Set-Content -Path "temp.txt" -Value "SESSION_ID: $sessionID`r`nSERVER_ID: $serverID`r`nSERVER_NAME: $serverName`r`nSERVER_HOST: $serverHost`r`nSERVER_TAGS: $serverTags"
 
-Set-Content -Path "temp.txt" -Value "SESSION_ID: $sessionID`r`nSERVER_ID: $serverID`r`nSERVER_NAME: $serverName`r`nSERVER_HOST: $serverHost`r`SERVER_TAGS: $serverTags"
+# Things you may want to do:
+# if ($serverTags -like '*HOME*') { <# open VPN 1 #> }
+# if ($serverTags -like '*WORK*') { <# open VPN 2 #> }
 
-# in the script before connect:
-# TODO: save $sessionID into file in pre-connect script
-# TODO: if $serverTags contains "HOME" then open VPN1
-# TODO: if $serverTags contains "WORK" then open VPN2
+# do something that takes time, like opening a VPN
+Start-Sleep -Seconds 3
 
-
-# in the script after disconnected:
-# TODO: read $sessionID from file in post-connect script
-# TODO: if $sessionID == "12345" then close VPN1
-# TODO: if $sessionID == "ABCDE" then close VPN2
-
-
-# do some long time jobs, like opening a VPN
-sleep 3
-
-# exit with non-zero will terminate your connection request.
+# a non-zero exit code stops the connection
 exit 0
 ```
 
-A typical application is to open a VPN before establishing a remote connection, and automatically close the VPN after terminating the remote connection.
-
-[Learn more](/usage/misc/pre-post-script-control/open-a-vpn-before-connect){ .md-button }
+[Open a VPN before connect](open-a-vpn-before-connect.md){ .md-button }
 
 {% include 'footer.md' %}

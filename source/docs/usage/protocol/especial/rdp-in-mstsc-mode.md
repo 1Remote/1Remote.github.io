@@ -1,34 +1,36 @@
-## What is "mstsc.exe mode"
-In this mode, rdp session will be start by run command `mstsc.exe xxxx.rdp` in cmd.
+# RDP in mstsc.exe mode
 
-## Why "mstsc.exe mode"
+Normally {{appname}} shows an RDP session inside its own window, using the Remote Desktop ActiveX control of Windows. In **mstsc.exe mode** it writes a temporary `.rdp` file instead and starts the session with `mstsc.exe <file>.rdp`. `mstsc.exe` is the Remote Desktop Connection program of Windows, so the session then opens in a window of its own, and you can put any setting into the `.rdp` file that `mstsc.exe` understands.
 
-When our user using 2 monitors with different scale ratios and wants to go to full-all-screens, we didn't find a solution to handle this 2 different scale ratios on [Remote Desktop ActiveX control](https://docs.microsoft.com/en-us/windows/win32/termserv/remote-desktop-activex-control).
+## When to use it
 
-![image](https://user-images.githubusercontent.com/10143738/141026263-f92a6fab-cf0e-456a-82a8-58482e338446.png)
+- Your PC has two or more monitors with **different scale factors** (for example 100 % and 150 %), and you want the session on **all screens**. The ActiveX control can not handle mixed scale factors; `mstsc.exe` can. {{appname}} switches to mstsc.exe mode by itself in this case, you do not have to do anything.
+- You need a setting that the ActiveX control does not offer, for example the choice of the monitors (`selectedmonitors`), or the resolution of the session (`desktopwidth`, `desktopheight`).
 
-Then we make 1Remote check user's monitor resolution and scale ratios before a multi-monitors full-screen rdp session start. If we found 2 monitors with different scale ratios, a temp file 'xxxx.rdp' will be created and 1Remote will call cmd command `mstsc.exe xxxx.rdp` to start the session.
+## Turn it on
+
+Open the RDP server with **`Edit`** and tick **`Enabled`** under **`mstsc.exe mode`**. The session then always starts with `mstsc.exe`, whatever your monitors are.
 
 ## Additional settings
 
-In the process of development, we found it in the `.rdp` file there are many settings that [Remote Desktop ActiveX control](https://docs.microsoft.com/en-us/windows/win32/termserv/remote-desktop-activex-control) can't access.
+The text box **`Additional settings`** holds the lines to add to the `.rdp` file, one setting per line in the usual `.rdp` form `name:type:value`. Leave it empty to get the same session as the built-in runner.
 
-such as:
+| Setting                    | Effect                                                                                                                                                                                          |
+| -------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `selectedmonitors:s:0,2`   | Use only the monitors number 0 and 2 for the remote desktop; monitor number 1 keeps showing your local desktop. Click **`Check monitor number`** to see which number each monitor has (it runs `mstsc /l`). |
+| `redirectcomports:i:1`     | Redirect the COM ports of your PC to the session.                                                                                                                                               |
+| `desktopwidth:i:800`       | Width of the remote session in pixels.                                                                                                                                                          |
+| `desktopheight:i:600`      | Height of the remote session in pixels.                                                                                                                                                         |
 
-| setting                | description                                                                                                                                                                                                                                |
-| ---------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| selectedmonitors:s:0,2 | When you connect 3 monitors, this setting allow you only uses the NO.0 & NO.2 display to display the remote desktop. The NO.1 display will continue to display your local desktop. Using cmd `mstsc /l` can see the number of the monitors |
-| redirectcomports:i:1   | Redirect the COM port of the local machine to the remote session.                                                                                                                                                                          |
-| desktopwidth:i:800     | Specifies the resolution width (in pixels) of the remote session to 800pix.                                                                                                                                                                |
-| desktopheight:i:600    | Specifies the resolution height (in pixels) of the remote session to 600pix.                                                                                                                                                               |
-
-For example, I have 3 monitors, and I want to use the NO.1 & NO.2 display for remote desktop, and keep NO.0 as my local desktop:
+Example: three monitors, the session shall cover number 1 and 2, and number 0 shall stay local:
 
 ![mstsc-use-monitors](./img/mstsc-use-monitors.jpg)
 
-more settings：
+Click **`Preview rdp file`** to see the complete file {{appname}} is going to write, with your lines at the end. The temporary file is deleted about 30 seconds after the session started.
 
-- [Microsoft](https://docs.microsoft.com/en-us/windows-server/remote/remote-desktop-services/clients/rdp-files)
-- [2003/XP](https://docs.microsoft.com/en-us/troubleshoot/windows-server/remote/remote-desktop-protocol-settings)
+More settings:
+
+- [Remote Desktop Protocol files](https://learn.microsoft.com/en-us/windows-server/remote/remote-desktop-services/clients/rdp-files) in the Microsoft documentation
+- [RDP settings for older Windows versions](https://learn.microsoft.com/en-us/troubleshoot/windows-server/remote/remote-desktop-protocol-settings)
 
 {% include 'footer.md' %}

@@ -1,46 +1,52 @@
-```A RemoteApp program is an application installed on an RD Session Host server. Remote Desktop Connection (RDC) and the RD Session Host use Remote Desktop Protocol (RDP) to redirect screen information for just the application instead of the full session-based virtual desktop.```
+# RemoteApp
 
-![rdpapp](./img/remoteapp.jpg)
+A **RemoteApp** is a single program that runs on a Windows server with Remote Desktop Services, while its window appears on your own desktop as if the program were installed locally. You do not see the desktop of the server, only the program. Windows calls this *RemoteApp*; the session uses the Remote Desktop Protocol (RDP).
 
-With RemoteApp programs, you can use RDS to make programs on a Remote Desktop Session Host (RD Session Host) server appear as if they are running on a user 's local computer. RemoteApp program windows are shown on and integrated with a client's Desktop instead of being presented as part of a session-based virtual desktop. A RemoteApp program open on a Desktop.
+![RemoteApp windows on the local desktop](./img/remoteapp.jpg)
 
-Using a RemoteApp program is similar to using a local application. When you implement RDS to provide access to a few applications, RemoteApp programs generally are easier for users to understand and use than session-based virtual desktops. Users can become confused when there is a session-based virtual desktop and a local Desktop. This is particularly true if the session-based virtual desktop is used in full-screen mode.
+Two steps are needed: the program has to be published as a RemoteApp on the server, and {{appname}} needs an entry that starts it.
 
-## How to use
+## Step 1: publish the program on the server
 
-### Step1
+Pick the way that fits your server:
 
-1. Open Server Manager. Select Remote Desktop Services > Collections.
-2. Select the collection needed to configure application launcher.
-3. Select RemoteApp Programs
-4. In the RemoteApp Programs area, select Tasks select > Publish RemoteApp Programs.
-5. Click Add on the Publish RemoteApp programs dialog.
-6. Select **EXE** from the application launcher installation location on the server.
-7. Click Next.
-8. On the Confirmation page, click Publish.
-9. Finish other confirmations.
+**With Server Manager** (a Windows Server with Remote Desktop Services):
 
-## Step1 Another way
+1. Open **Server Manager**, choose **Remote Desktop Services** -> **Collections** and open the collection.
+2. Click **RemoteApp Programs** -> **Tasks** -> **Publish RemoteApp Programs**.
+3. Click **Add**, pick the **EXE** of the program on the server, click **Next**, then **Publish**.
 
-1. install [RemoteApp Tool](http://www.kimknight.net/remoteapptool) on Server.
-2. Create a RemoteApp by [RemoteApp Tool](http://www.kimknight.net/remoteapptool)'s user guides, then [RemoteApp Tool](http://www.kimknight.net/remoteapptool) will help you do Step1. 1-9
+**With RemoteApp Tool** (also works on a PC that is not a Windows Server, but not on Home editions of Windows):
 
-### Step2
-
-Add a RemoteApp config in 1Remote.
-
-![run-edge-within-rdpapp](./img/run-edge-within-rdpapp.jpg)
-
-Here I run QQ.exe and Edge.exe via RemoteApp:
-
-![run-qq-within-rdpapp](./img/run-qq-within-rdpapp.jpg)
+1. Install [RemoteApp Tool](https://github.com/kimmknight/remoteapptool) on the server or PC.
+2. Create a RemoteApp with it, following [its guide](https://github.com/kimmknight/remoteapptool/wiki). It also sets the server so that programs outside the official list are allowed.
 
 !!! warning
-    The following RemoteApp program are not in the list of authorized programs
+    Without one of these steps the connection fails with `The following RemoteApp program is not in the list of authorized programs`. On a PC that is not a Windows Server, the RemoteApp Tool is the way to go.
 
-    check list:
+## Step 2: add the RemoteApp in {{appname}}
 
-    - http://sbsfaq.com/the-following-remoteapp-program-is-not-in-the-list-of-authorized-programs-on-windows-essential-server/
-    - https://www.beyondtrust.com/docs/privileged-identity/app-launcher-and-recording/installation/set-up-rds.htm
+1. Click the **`+`** button in the upper-right corner of the main window and choose **`RemoteApp`**.
+2. Fill in **`Hostname`**, **`Port`** (3389), **`User`** and **`Password`** of an account on the server.
+3. **`App Name`**: a name for the program, for example `Edge`.
+4. **`App Path`**: the full path of the exe on the server, for example `C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe`. This must be the path the server has published.
+5. Click **`Save`** and connect. The program window opens on your desktop.
+
+![The RemoteApp editor](./img/run-edge-within-rdpapp.jpg)
+
+Here Edge and QQ (a Chinese chat program) run as RemoteApps on one desktop:
+
+![Two RemoteApp programs](./img/run-qq-within-rdpapp.jpg)
+
+## Options of the entry
+
+| Field                                              | Meaning                                                                                                   |
+| -------------------------------------------------- | --------------------------------------------------------------------------------------------------------- |
+| **`Ask for password when open connect`**           | Ask for the password on every connection instead of using the saved one.                                  |
+| **`Sounds`** / **`Sound Quality`**                 | Where the sound of the program plays (local, on the server, off) and its quality.                         |
+| **`Additional settings`**                          | Lines to add to the `.rdp` file {{appname}} writes for the session, see [RDP in mstsc.exe mode](rdp-in-mstsc-mode.md). |
+| **`Preview rdp file`**                             | Shows the complete `.rdp` file.                                                                           |
+
+{{appname}} starts a RemoteApp with `mstsc.exe` and a temporary `.rdp` file; the session opens in a window of its own, not inside the {{appname}} window.
 
 {% include 'footer.md' %}

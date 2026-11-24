@@ -1,54 +1,55 @@
 
 ## Why
 
-Assuming you are the team leader. In your company, you may have several servers to manage, AI Servers are for the AI team, while Web Servers are for the Web team.
+Suppose you are the team leader and your company has several servers to manage: the AI servers are for the AI team, the web servers are for the web team.
 
 A typical use case is:
 
-- Only you and your boss have the permission to add and modify servers, while other colleagues can only view the servers listed, they are not able to edit them or see the password.
-- AI team member can only access the AI servers, while Web team member can only access the Web servers.
+- Only you and your boss may add and modify servers. The other colleagues can only see the servers in the list; they can not edit them or see the password.
+- The AI team works with the AI servers, the web team with the web servers.
 
 ![team](./img/team-demo.png)
 
-1Remote can help you manage these servers flexibly with `Team sharing` feature.
+1Remote can help you manage these servers with the `Team sharing` feature: the team connects to the same database with two kinds of account.
 
-In this feature, you can create two accounts in MySQL, giving them different permissions:
+| Account                                                 | Connect | View address | Edit | Delete | View password |
+| ------------------------------------------------------- | ------- | ------------ | ---- | ------ | ------------- |
+| Read-only account (`Select` only)                       | ✅       | ✅            | ❌    | ❌      | ❌             |
+| Read-and-write account                                  | ✅       | ✅            | ✅    | ✅      | ✅             |
 
-| Account                | Connect | View address | Edit | Delete | View password |
-| ---------------------- | ------- | ------------ | ---- | ------ | ------------- |
-| Select permission only | ✅       | ✅            | ❌    | ❌      | ❌             |
-| Full permission        | ✅       | ✅            | ✅    | ✅      | ✅             |
+Your team members connect to the same database with a read-only account: they can only see the servers and connect to them.
 
-Your team members can connect to the same database with read-only permission, they can only view the servers, but they are not able to edit them.
-
-You can connect to the same database with full permission, you can add, edit and delete servers.
+You connect with the read-and-write account and can add, edit and delete servers.
 
 !!! note
-    Please note that the Team sharing feature offers only very basic access control, and is not designed to provide individualized access control for each team member.
+    The Team sharing feature offers only very basic access control, and is not designed to give each team member an individual set of servers. "View password" means inside {{appname}} only, see the warning below. To keep the servers of two teams apart, use two databases.
 
 ## How
 
-1. Create two accounts in MySQL, giving them different permissions:
+1. Create two accounts in MySQL or PostgreSQL with different permissions:
 
     ![create accounts](img/team-sharing-create-account.jpg)
 
-    In database "test", account 'writable' can insert and update data, while account 'readonly' can only select data.
+    In database `test`, account `writable` may select, insert, update and delete data, while account `readonly` may only select data. {{appname}} treats an account as read-only unless all three of delete, insert and update work (see [Permissions](/usage/database/use-online-database/#permissions)).
 
-2. You can connect to `test` database with account `writable`, and import servers into the database.
-3. Your team member connect to `test` database with account `readonly`, they will not able to edit the servers, but they can view the servers and connect to them.
+2. Connect to the `test` database with account `writable` first, as described in [Use online database](/usage/database/use-online-database/): {{appname}} creates its tables during this first connection. Add the servers of the team while you are connected with this account (choose the `test` database for each new server, see [Choose the database of a new server](/usage/database/use-online-database/#choose-the-database-of-a-new-server)).
+3. Your team members connect to the `test` database with account `readonly`. They will not be able to edit the servers, but they can view the servers and connect to them.
 
-    Connection shows `Readonly`:
+    The database carries the addition `(Readonly)` in the list of **Options -> Database**:
 
     ![readonly-connected](img/readonly-connected.jpg)
 
-    Edit button of team member is disabled:
+    The server menu of a team member has no `Edit`, `Duplicate` or `Delete` entries:
 
     ![readonly-connected-server](img/readonly-connected-server-list.jpg)
 
-4. Once you edit the servers, the team member will see the changes in a few seconds.
+4. Once you edit the servers, the team members will see the changes within about 10 seconds.
 
 !!! warning
-    This app does not use concurrency locks on data editing, so if you modify the database on 2 devices at the same time, data loss may occur. Please try to avoid this situation.
+    A read-only account can still read the passwords from the database itself, because they are only obfuscated, not encrypted (see [Security](/usage/database/security/#obfuscation-in-the-database)). Hand the read-only account only to people who may see them.
+
+!!! warning
+    {{appname}} does not use concurrency locks on data editing, so if you modify the database on two devices at the same time, data loss may occur. Please try to avoid this situation.
 
 
 {% include 'footer.md' %}

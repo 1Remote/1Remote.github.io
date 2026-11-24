@@ -1,7 +1,7 @@
 ﻿site_name: 1Remote
 site_description: One Remote Access Manager to Rule Them All
 site_author: 1Remote Team
-copyright: © 1Remote Team 2023
+copyright: © 1Remote Team 2026
 
 repo_url: https://github.com/1Remote/1Remote
 edit_uri: https://github.com/1Remote/1Remote.github.io/edit/main/source/docs
@@ -164,7 +164,7 @@ nav:
           - Launcher:
               - Basic: usage/launcher/basic.md
               - Quick connect: usage/launcher/quick-connect.md
-      - Alternative-Credential: usage/alternative-credential.md
+      - Alternative credentials: usage/alternative-credential.md
       - Database & Security:
           - Security: usage/database/security.md
           - Data synchronization: usage/database/data-synchronization.md
@@ -173,18 +173,18 @@ nav:
           - Especial:
               - App: usage/protocol/especial/app.md
               - RemoteApp: usage/protocol/especial/remoteapp.md
-              - Rdp in mstsc.exe mode: usage/protocol/especial/rdp-in-mstsc-mode.md
+              - RDP in mstsc.exe mode: usage/protocol/especial/rdp-in-mstsc-mode.md
               - SSH Tunnel: usage/protocol/especial/ssh-tunnel.md
           - Runner: usage/protocol/runner.md
       - Team (experimental):
           - Team sharing: usage/team/team-sharing.md
           - Team deploy: usage/team/team-deploy.md
       - Misc:
-          - Highline a server: usage/misc/highline-a-server.md
+          - Highlight a server: usage/misc/highlight-a-server.md
           - Streamline by pre/post connect script:
               - Overview: usage/misc/pre-post-script-control/overview.md
               - Pre-open a VPN: usage/misc/pre-post-script-control/open-a-vpn-before-connect.md
-          - Note for servers: usage/misc/note-for-servers.md
+          - Note for a server: usage/misc/note-for-servers.md
           - CLI: usage/misc/cli.md
           - Creating Desktop shortcut for connections: usage/misc/desktop-shortcut-for-connection.md
           - Help translation: usage/misc/help-translation.md

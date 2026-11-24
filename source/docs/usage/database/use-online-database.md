@@ -1,52 +1,78 @@
-
 # Use online database
 
-1Remote supports various data sources such as local SQLite databases and online MySQL databases. You can connect to multiple databases at the same time. which allows you to store different server information in different databases and connect to different databases on different devices for flexible data management.
+Besides the local SQLite database `Local`, {{appname}} can keep servers in a **MySQL** or a **PostgreSQL** database. You can connect to several databases at the same time, and every server belongs to one of them.
 
 ![multi-db](./img/multi-db.png)
 
-This is where configuring multiple databases becomes useful:
+This is where more than one database becomes useful:
 
-- **At home**: Connect to the MySQL database on your NAS to manage your personal servers when you back home.
-- **On work**: Connect to both the MySQL on your home NAS and the MySQL on your company server to access the servers for work when you are in your office.
-- **For team**: With MySQL, you can share the server with your colleagues, make them connect to different MySQL database can make sure they can only see the servers they have permission to access, more detail: [Team sharing](./usage/team/team-sharing.md)
+- **At home**: connect to the PostgreSQL database on your NAS to manage your personal servers.
+- **At work**: connect to the database on your home NAS *and* to the MySQL database on the company server, so you can reach your private servers and the servers for work in one list.
+- **For a team**: all colleagues connect to the same database. Those with a read-only account can see and connect to the servers but can not change them, see [Team sharing](/usage/team/team-sharing/).
 
-## Use MySQL
+## Add a database
 
-Go to `Options` -> `Database` -> `MySQL` to set up the database
+1. Click **`Options`** in the main window and open the **`Database`** page.
+2. Click **`Add`** and choose **`MySQL`** or **`PostgreSQL`**.
 
-![MySQL](img/mysql-add.jpg)
+    ![Add a database](img/mysql-add.jpg)
 
-Fill the database info, make sure your account have the permission to read & write the database.
+3. Fill in the form and click **`Test connection`**: a message box tells you whether the account can reach the database.
+4. Click **`Save`**.
 
-![MySQL](img/mysql-edit.jpg)
+| Field            | What to enter                                                                                                    |
+| ---------------- | ---------------------------------------------------------------------------------------------------------------- |
+| Data Source name | The name {{appname}} shows for this database, for example `Home NAS`. Any name is fine.                          |
+| Hostname         | The address of the database server, for example `192.168.1.10` or `nas.local`.                                  |
+| Port             | `3306` for MySQL, `5432` for PostgreSQL. Both are filled in for you.                                            |
+| Database         | The name of an existing database on the server, `1Remote` is filled in as a suggestion. {{appname}} creates its tables in it on the first connection; the database itself has to exist. |
+| User, Password   | An account of the database server. See [Permissions](#permissions) for what the account must be allowed to do.    |
 
-Press **Save** and your database will on the list. If connect failed, the database will be marked with a red cross.
+![Edit a database](img/mysql-edit.jpg)
 
-![MySQL](img/mysql-list.jpg)
+{{appname}} creates three tables in the database by itself: `Configs`, `Servers` and `Credentials` (the [Credentials Vault](/usage/database/security/#credentials-vault)). You only have to create the database; the tables are made during the first connection with a read-and-write account.
 
-If there are multiple databases, you need select the database when you add a new server.
+## The database list
 
-![MySQL](img/mysql-add-server.jpg)
+After **`Save`** the database shows up in the list on the **`Database`** page, with an icon that shows its state:
 
-After you add a new server, you will find the list is grouped by database.
+| Icon                 | Meaning                                                                                                                       |
+| -------------------- | ----------------------------------------------------------------------------------------------------------------------------- |
+| red icon             | {{appname}} can not connect, for example a wrong password or the server is unreachable. Move the mouse over the icon to see the reason, click it to try again. |
+| green icon           | Connected, and the account may read and write.                                                                                |
+| green icon with lock | Connected, but the account may only read. The name gets the addition ` (Readonly)`, see [Permissions](#permissions).      |
 
-![MySQL](img/mysql-add-server2.jpg)
+![Database list](img/mysql-list.jpg)
 
+!!! note
+    The screenshots on this page are from an older version of {{appname}}; the names of the fields and buttons are still the same.
 
+## Choose the database of a new server
 
-<!-- 
+When more than one database is connected, {{appname}} asks **`Please select a Data Source`** when you add a server. Read-only databases are in the list too, but their **`Select`** button stays disabled: a new server needs a database you may write to.
 
-- Your personal server information is stored in the default **`Local`** database, which only you can see and use.
-- The team's servers are stored in a MySQL database named **`Team.`** You and your boss can connect with an administrator account to add and modify servers, while other colleagues can only read the server list with a read-only account.
-Specifically:
-    1. Install MySQL. In this article, we use the Synology package to install and deploy MySQL.
-    2. Create a new database in MySQL. Here, we create a database named session_ai, which doesn't need to have any tables.
-    3. Create a new account named session_admin in MySQL and grant it all privileges to the session_ai database.
-    4. On the **`Database`** tab page in the **`Setting`** section of 1Remote, click the **`Add`** button in the upper right corner to add a new MySQL database.
-    5. Go back to the main page of 1Remote and click the **`+`** button in the upper right corner to add a new server configuration to the newly added database.
-    6. Create a new account named session_user in MySQL and only grant it select permission to the session_ai database. Distribute this account to your team members so that they can read the server configuration stored in the session_ai database but cannot view or modify their passwords.
-    7. Noted: 1Remote updates data by querying periodically. Therefore, when you modify server information, other users may need to wait for several seconds before they can get the latest data. -->
+![Select data source](img/mysql-add-server.jpg)
+
+In the `List` view the servers are grouped by database, so you can see at a glance where a server is stored:
+
+![Grouped list](img/mysql-add-server2.jpg)
+
+## Changes show up within about 10 seconds
+
+Every 10 seconds {{appname}} asks each connected database whether something changed, and reloads the servers of that database if so. When a colleague adds a server, it shows up on your screen within about 10 seconds without doing anything. The same check is used for the local SQLite file, see [Data synchronization](/usage/database/data-synchronization/).
+
+## Permissions
+
+What an account can do inside {{appname}} follows what the account may do in the database:
+
+- **Read and write account**: can do everything. The *first* connection to a new database must be made with such an account, because {{appname}} creates its tables then. The account needs `Create`, `Select`, `Insert`, `Update` and `Delete` on the database.
+- **Read-only account** (`Select` only): inside {{appname}} it can see the servers and connect to them, nothing more. For servers in such a database the menu of a server offers no **`Edit`**, **`Duplicate`**, **`Delete`**, **`Copy username to clipboard`** or **`Copy password to clipboard`**, the **`Edit`** and **`Delete`** buttons at the bottom of the main window stay disabled, and the database carries the addition ` (Readonly)` in the database list.
+
+{{appname}} finds out which kind of account it is on every connection: it tries to delete, insert and update a test entry (`permission_check`) in the `Configs` table. If one of these fails, the database is treated as read-only.
+
+!!! warning
+    Read-only is not a password protection. A read-only account can still read the whole `Servers` table, and the passwords in it are only obfuscated, not encrypted (see [Security](/usage/database/security/)). Hand out the read-only account only to people who may see those passwords.
+
+    {{appname}} does not lock the data while you edit it: if two people change the same server at the same time, the last one to save wins. Keep the number of read-and-write accounts small.
 
 {% include 'footer.md' %}
-

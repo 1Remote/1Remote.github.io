@@ -1,54 +1,63 @@
 
-You may work with multiple devices to manage your servers. In this case, you can use the database synchronization settings to share server information across different devices.
+You can manage your servers on several devices, and keep the same server list on all of them. This page shows where {{appname}} keeps its data and the three ways to share it: a json export, a synced SQLite file, or an online database.
+
+## Where your data is
+
+{{appname}} keeps its data in one of two places, depending on the mode you chose on the first start (see [Run it](/download/#run-it)):
+
+| What                                   | Portable mode (data in the program folder)  | AppData mode                                           |
+| :------------------------------------- | :----------------------------------------- | :----------------------------------------------------- |
+| Settings                               | `<program folder>\1Remote.json`            | `%AppData%\1Remote\1Remote.json`                       |
+| List of data sources                   | `<program folder>\1Remote.dataSources.json` | `%AppData%\1Remote\1Remote.dataSources.json`          |
+| The default database `Local` (SQLite)  | `<program folder>\1Remote.db`              | `%AppData%\1Remote\1Remote.db`                         |
+| Local data: window positions, icons, logs, Quick Connect history | `<program folder>\.locality\` | `%LocalAppData%\1Remote\.locality\`        |
+
+In portable mode the whole program folder is your data: copy it and you have everything. In AppData mode you only need the two `.json` files and the `.db` file to move your servers to another PC.
 
 ## By export
 
-Nothing to talk about, export, copy to other device, import...over.
+1. Select the servers you want, click **`Export`** at the bottom of the main window and save the json file.
+2. Copy the file to the other device.
+3. On the other device click **`+`** -> **`Import`** -> **`import json`**.
 
-## Sqlite Synchronization
+!!! warning inline end
+    The json file contains all passwords in plain text.
+
+## By a synced SQLite file
 
 ![sqlite](img/sqllite-sync.png)
 
-- Our main database is a un-occupied Sqlite database, so you can copy the database while 1Remote is still in used.
-- We will check update and reload data every X minutes.
+- Our main database is a SQLite database that does not lock the file, so you can copy it while {{appname}} is running.
+- Every 10 seconds {{appname}} checks whether the database file was changed by someone else (it compares a change timestamp inside the database). If so, it reloads the servers.
 
-This means you can copy the database to other device using sync tools, and 1Remote will automatically detect the change and run a data reload procedure.
-
-> please do not remove the database file while 1Remote is still in used.
+This means you can put the database file in a folder that a sync tool keeps up to date on all your devices, and {{appname}} picks up the changes by itself.
 
 !!! tip
-    In `Options` -> `Database` -> `Local` -> `Edit`, you can check up where your database file is.
+    In `Options` -> `Database` -> `Local` -> `Edit`, you can see where your database file is.
 
-    You can also change the db path there.
+    You can also change the db path there, for example to move it into the synced folder.
 
 ![sqlite](img/sqlite-edit.jpg)
 
+Sync tools that work for this:
 
-recommended tools:
+- [Synology Drive](https://www.synology.com/en-global/dsm/feature/SynologyDrive) (Synology NAS)
+- [Google Drive](https://www.google.com/drive/)
+- [OneDrive](https://www.onedrive.com/)
+- [Jianguoyun](https://www.jianguoyun.com/) (坚果云)
 
-- Synology NAS: [Cloud Station](https://www.synology.com/en-us/dsm/feature/cloud_station)
-- Google Drive: [Google Drive](https://www.google.com/drive/)
-- OneDrive: [OneDrive](https://www.onedrive.com/)
-- Jianguoyun: [Jianguoyun](https://www.jianguoyun.com/)
+!!! warning
+    Do not remove the database file while {{appname}} is running, and do not edit on two devices at the same time: {{appname}} does not lock the data while you edit, so the second device may overwrite what the first one changed.
 
-## By using MySQL
+## By using MySQL or PostgreSQL
 
 ![MySQL](img/mysql.png)
 
-Using a MySQL database is a more professional way to synchronize data. When server info is edited on on device, other devices will update the modify in a few minutes. Go to `Options` -> `Database` -> `MySQL` to set up the database, check [Online database](./usage/database/use-a-online-database.md) for more details.
+An online database is the most robust way to synchronize data. When server info is edited on one device, other devices see the change within about 10 seconds, because they use the same 10-second check. Go to `Options` -> `Database` -> `Add` and choose `MySQL` or `PostgreSQL` to set it up, check [Online database](/usage/database/use-online-database/) for more details.
 
 ![MySQL](img/mysql-add.jpg)
 
 !!! warning
-    This app does not use concurrency locks on data editing, so if you modify the database on 2 devices at the same time, data loss may occur. Please try to avoid this situation.
-
-<!-- - Data export: By selecting multiple servers using the checkboxes and clicking the `Export` button at the bottom of the main window, you can export the server information to a JSON file. (Note that the exported data is stored in plain text, so please handle it with care.)
-- Database backup: Click the **`Settings`** button in the top right corner of the main window, expand the menu, select the **`Options`** button, and go to the Database tab. Find the database named "Local" and you can see its storage path. You can manually enter this path to backup the database.
-- Database synchronization: If you use multiple devices, you can back up the database to the cloud and set the synchronization path on each device, so that you can share server information across different devices.
-    1. First, move the "Local" database file to the sync folder. Synology NAS, OneDrive, Google Drive, and other cloud storage services can be used as sync service providers.
-    2. Click the **`Edit`** button to the right of the "Local" database in the **`Database`** tab, then click the **`Select`** button in the pop-up window and choose the database file you moved to the sync folder. Save the changes.
-    3. The app will check whether the database file has changed every once in a while. If changes are detected, the file will be automatically synchronized to the database.
-    4. (Note: This app does not use concurrency locks on the data, so if you modify the database on multiple devices at the same time, data loss may occur. Please try to avoid this situation.) -->
+    {{appname}} does not use concurrency locks on data editing, so if you modify the database on two devices at the same time, data loss may occur. Please try to avoid this situation.
 
 {% include 'footer.md' %}
-
